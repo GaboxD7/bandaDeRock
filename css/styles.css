@@ -163,6 +163,23 @@ width: 100%;
         .encabezado{
             display: none;
         }
+        .tituloG{
+            height: 30px;
+            width: 100%;
+            color: white;
+            background-color:  #123b5a;
+            box-shadow: 0 0 5px rgb(7, 6, 6);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        letter-spacing: 0.3rem;
+        text-shadow: 0 0 3px rgb(7, 3, 3);
+        height: 100%;
+        
+        font-weight: bold;
+        text-align: center;
+        
+        }
+        
         .irAlPrincipio{
             height: 48px;
             width: 80px;
@@ -264,20 +281,20 @@ width: 100%;
         
             border-radius: 0px;
             font-size: 16px;
-            background-color: #204885;
+            background-color: #082032;
           
         
         }
         
 
 .textoSide h2{
-    color: #206d85 ;
+    color: white ;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 
     text-shadow: 0 0 3px rgb(7, 3, 3);
     align-self: center;
- 
+    padding-top: 1rem;
     
    
 }
@@ -293,7 +310,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
-    color: black;
+    color:white;
     list-style: none;
     font-family: 'Audiowide', cursive;
     padding: 2rem;
@@ -905,12 +922,30 @@ width: 100%;
 }
     
     /* ------------------------------------------------------------------------------ */
-    @media only screen and (min-width: 540px) and (max-width: 1215px) {
+    @media only screen and (min-width: 540px) and (max-width: 1080px) {
       /* .encabezado{
           display: none;
       } */
 .menu_bar{
     display: none;
+}
+.tituloG{
+    height: 30px;
+    width: 100%;
+    color: white;
+background-color:  #123b5a;
+box-shadow: 0 0 5px rgb(7, 6, 6);
+
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+letter-spacing: 0.3rem;
+text-shadow: 0 0 3px rgb(14, 13, 13);
+height: 100%;
+
+font-weight: bold;
+text-align: center;
+
+
 }
         .container-1 {  display: grid;
             grid-template-columns: 1fr 1fr 1fr ;
@@ -963,7 +998,7 @@ width: 100%;
             padding: 2rem;
             text-shadow: 0 0 3px rgb(7, 3, 3);
             align-self: start;
-         
+            
         
         }
 
@@ -979,19 +1014,19 @@ width: 100%;
         
             border-radius: 0px;
             font-size: 12px;
-            background-color: #204885;
-          
+            background-color: #082032;
         
         }
         
 
 .textoSide h2{
-    color: #206d85 ;
+    color: white ;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 
     text-shadow: 0 0 3px rgb(7, 3, 3);
     align-self: center;
+    padding-top: 1rem;
  
     
    
@@ -1008,7 +1043,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
-    color: black;
+    color: white;
     list-style: none;
     font-family: 'Audiowide', cursive;
     padding: 2rem;
@@ -1737,10 +1772,27 @@ width: 100%;
 
 /*  DISCO */
 /*  DISCO */
-@media only screen and (min-width: 912px)  and (max-width:1214px) {
+@media only screen and (min-width: 912px)  and (max-width:1080px) {
     
       /* ------------------------------Discografia Grid ---------------------------------------------- */
   /* ------------------------------Discografia Grid ---------------------------------------------- */
+  .tituloG{
+    height: 40px;
+    width: 100%;
+    color: white;
+    background-color:  #123b5a;
+    box-shadow: 0 0 5px rgb(7, 6, 6);
+
+font-family: 'Montserrat', sans-serif;
+font-size: 25px;
+letter-spacing: 0.3rem;
+text-shadow: 0 0 3px rgb(7, 3, 3);
+height: 100%;
+
+font-weight: bold;
+text-align: center;
+
+}
   .container2{display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(9, 300px) ;
@@ -2361,10 +2413,13 @@ transform: scale(1.05)
 
   /* ----------------------------------------------- I  N  I  C  I  O------------------------------------------------------------- */
 
-  @media only screen and (min-width: 1215px)  {
+  @media only screen and (min-width: 1080px)  {
     .menu_bar{
         display: none;
     }
+    /* MENU */
+
+    /* MENU */
     .container-1 {  display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 700px    ;
@@ -2407,7 +2462,7 @@ transform: scale(1.05)
     color: #206d85 ;
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
- 
+    padding-left: 1.5rem;
     text-shadow: 0 0 3px rgb(7, 3, 3);
     align-self: start;
  
@@ -2418,23 +2473,23 @@ transform: scale(1.05)
     display: flex;
     flex-direction: column;
     align-items: center;    
-    background-color: white;
     width: 100%;
     height: 100%;
 
     border-radius: 0px;
     font-size: 20px;
-    background-color: #206d85;
+    background-color:#082032;
 
 
 }
 .textoSide h2{
-    color: #206d85 ;
+    color: white ;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
 
     text-shadow: 0 0 3px rgb(7, 3, 3);
     align-self: center;
+    padding-top: 1rem;
  
     
    
@@ -2451,7 +2506,7 @@ transform: scale(1.05)
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
-    color: black;
+    color: white;
     list-style: none;
     font-family: 'Audiowide', cursive;
     padding: 2rem;
@@ -3150,6 +3205,22 @@ transform: scale(1.05)
   margin: 0px;
   padding: 2rem;
 }
+.tituloG{
+    height: 50px;
+    width: 100%;
+    color: white;
+    background-color:  #123b5a;
+    box-shadow: 0 0 5px rgb(7, 6, 6);
+font-family: 'Montserrat', sans-serif;
+font-size: 30px;
+letter-spacing: 0.3rem;
+text-shadow: 0 0 3px rgb(7, 3, 3);
+height: 100%;
+
+font-weight: bold;
+text-align: center;
+
+}
   }
 
 
@@ -3331,22 +3402,7 @@ background-size: cover; }
     filter: grayscale();
 }
   
-.tituloG{
-    height: 50px;
-    width: 100%;
-    color: white;
-background-color: #082032;
 
-font-family: 'Montserrat', sans-serif;
-font-size: 30px;
-letter-spacing: 0.3rem;
-text-shadow: 0 0 3px rgb(7, 3, 3);
-height: 100%;
-
-font-weight: bold;
-text-align: center;
-
-}
 
 /* ----------------------------------------Contacto Grid ------------------------------------------------ */
 /* ----------------------------------------Contacto Grid ------------------------------------------------ */
@@ -3435,6 +3491,102 @@ font-family: 30px   ;
 /* ------------------------------------------------------- */
 
 /*  */
+nav input {
+    display: none;
+}
 
+nav {
+    background-color: #082032;
+    height: 80px;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 80px;
+}
+.logo{
+    height: 40px;
+}
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 
+}
+nav ul li a {
+    color: white;
+    font-size: 14px;
+    padding: 7px 13px;
+    text-decoration: none;
+   
 
+}
+li a:hover {
+    background-color: blue;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;float:  right;
+    line-height: 80px;
+    margin-right: 40px; 
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 1080px){
+    .enlace {
+        padding-left: 30px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    .logo{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        height: 30px;
+        padding-left: 1rem;
+    }
+}
+@media screen and (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+    nav {
+        position:fixed;
+        width: 100%;
+        height: 60px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #082032;
+        top:60px;
+        text-align: center;
+        transition: all 0.35s; 
+        left: -100%;
+    }
+    nav ul li  {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    li a:hover {
+        background: none;
+        color: orange;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
