@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,173 +14,225 @@
 </head>
 
 <body>
- 
-
-
   <header>
-    
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="icon-menu"></i>
-        </label>
-        <a href="#" class="enlace"> 
-            <img src="imagenes/logo.png" alt="logo" width="50px" height="60" class="logo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-cdc d.flex ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/logo.png" weith="25px" height="60px" alt=""> 
         </a>
-        <ul>
-            <li><a href="#"> <span class="icon-home2"></span> Inicio</a></li>
-            <li><a href="#banner-2"> <span class="icon-rocket"></span> Historia</a></li>
-            <li><a href="#banner-3"> <span class="icon-headphones"></span> Discografia</a></li>
-            <li><a href="news.html"> <span class="icon-earth"></span> Noticias</a></li>
-            <li><a href="gallery.html"> <span class="icon-pictures"></span> Galeria</a></li>
-            <li><a href="contact.html"> <span class="icon-envelop"></span> Contacto</a></li>
-        </ul>
-    </nav>
-</header>   
-  
-    <div class="container-1"> 
-        <section class="textoInicio">
-          <h2>Caramelos de cianuro</h2> 
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Es una banda venezolana de rock originaria de Caracas-Venezuela. También es conocida como CDC o Caramelos.Fundada en 1991 de la mano de Asier Cazalis (vocalista y bajista), Miguel Ángel González (guitarra), Pablo (batería) y Luis “Luitch” Barrios (guitarra).</p>
-          <img src="imagenes/cdc7.jpg" alt="" > 
-        </section>
-        <article class="textoSide"">
-            <h2 >Datos De Caramelos</h2>
-            <div class="aside" >
-              <li><strong>Integrantes:</strong> Asier Cazalis, Miguel Ángel González, Pavel Tello, Darío Ada.</li>
-              <li> <strong>Integrantes anteriores:</strong> Pablo Martínez, Luís Barrios (Luis Golding), Alfonso Tosta.</li>
-              <li><strong>Nombre Verdadero:</strong> Caramelos de Cianuro.</li>
-              <li><strong>Nacio en:</strong>Caracas, Venezuela.</li>
-              <li><strong> Género(s):</strong> Rock alternativo, punk rock, pop rock, hard rock latino 1989 - Actualidad.</li>
-              <li><strong>Instrumentos:</strong>Voz, guitarra eléctrica, batería, bajo.</li>
-              <li><strong>Ocupación:</strong>Cantantes, banda.</li>
-              <li><strong>Disquera(s):</strong>CNR Discos, Polygram-Rodven, Universal Music Group, Latin World Entertainment Group.</li>
-              <li><strong>Otros nombres</strong> CDC.</li>
-            </div>
-        </article>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  " id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#banner-2">HISTORIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#banner-3">DISCOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">NOTICIAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="gallery.html">GALERIA</a>
+            <li class="nav-item">
+              <a class="nav-link " href="contact.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
       </div>
-        <div class="tituloG" id="banner-2"><h2 >Historia</h2></div>
-        <section class="historia">
+    </nav>
+</header> 
+<div class="container-fluid">
+<div class="row">
+    <div class="textoInicio col-xs-12 col-sm-12 col-md-12 col-lg-8">
+      <h1 id="h1">Caramelos de cianuro<h1/> 
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Es una banda venezolana de rock originaria de Caracas-Venezuela. También es conocida como CDC o Caramelos.Fundada en 1991 de la mano de Asier Cazalis (vocalista y bajista), Miguel Ángel González (guitarra), Pablo (batería) y Luis “Luitch” Barrios (guitarra).</p>
+    <img src="imagenes/cdc7.jpg" class="w-100" alt="" >
+  </div>
+  <div class="textoSide col-xs-12 col-sm-12 col-md-12 col-lg-4"> 
+    
+    <h2 >Datos De Caramelos</h2>
+    <div class="aside">
+      <span><strong>Integrantes:</strong> Asier Cazalis, Miguel Ángel González, Pavel Tello, Darío Ada.</span>
+      <span><strong>Integrantes anteriores:</strong> Pablo Martínez, Luís Barrios (Luis Golding), Alfonso Tosta.</span>
+      <span><strong>Nombre Verdadero:</strong> Caramelos de Cianuro.</span>
+      <span><strong>Nacio en:</strong>Caracas, Venezuela.</span>
+      <span><strong> Género(s):</strong> Rock alternativo, punk rock, pop rock, hard rock latino 1989 - Actualidad.</span>
+      <span><strong>Instrumentos:</strong>Voz, guitarra eléctrica, batería, bajo.</l></span>
+      <span><strong>Ocupación:</strong>Cantantes, banda.</span>
+      <span><strong>Disquera(s):</strong>CNR Discos, Polygram-Rodven, Universal Music Group, Latin World Entertainment Group.</span>
+      <span><strong>Otros nombres</strong> CDC. </span>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  
+  </div>
+</div>
+</div>
+        <h2 class="tituloG container-fluid" id="banner-2">Historia</h2>
+        <section class="historia col-12">
           <h2>Historia de la banda</h2>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El primer tema realizado de Caramelos de Cianuro llevó por nombre “Nadando a través de la Galaxia”, el cual fue grabado en una casa que utilizaron como un estudio y que llegó a sonar en la Emisora Cultural de Caracas. Posteriormente vendrían con su segundo éxito, al que titularon “Tu Mamá Te Va A Pegar”, esta segunda considerada como una de las canciones que los dio a conocer en el resto de las radios juveniles de la capital. Tanto así, que luego de varias presentaciones a nivel nacional compartieron con la Orquesta Filarmónica Nacional en el Teatro Teresa Carreño.</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En 1992 participarían en varios festivales de Venezuela, como en la “Segunda Muestra Nuevas Bandas”, actualmente conocido como “Festival Nuevas Bandas”, donde llegaron a lanzar gallinas vivas pintadas de colores fluorescentes desde la tarima, actitud que fue captada por la prensa y los presentes, quienes reaccionaron y despertaron en su totalidad con el sarcasmo con el que vendrían estos chicos para aquel momento.</p> 
-           <p><Gracias>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En el mismo año firman un contrato con el sello discográfico CNN Discos, quien les abre las puerta para la realización del primer E.P. titulado “Las Paticas de la Abuela” el cual estaría de lleno con únicamente cuatro temas. Un año después grabarían su primer disco “Cuentos Para Adultos”, compuesto con un total de seis temas, el cual le permitió realizar sus primeras giras nacionales junto a otros grupos como Desorden Público, Zapato 3 y Sentimiento Muerto. Gracias a la particularidad de la banda, los medios de comunicación permitieron darle reconocimiento a la banda para así poder llegar a lugares que jamás ellos se imaginarían.</p> 
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El primer tema realizado de Caramelos de Cianuro llevó por nombre “Nadando a través de la Galaxia”, el cual fue grabado en una casa que utilizaron como un estudio y que llegó a sonar en la Emisora Cultural de Caracas. Posteriormente vendrían con su segundo éxito, al que titularon “Tu Mamá Te Va A Pegar”, esta segunda considerada como una de las canciones que los dio a conocer en el resto de las radios juveniles de la capital. Tanto así, que luego de varias presentaciones a nivel nacional compartieron con la Orquesta Filarmónica Nacional en el Teatro Teresa Carreño.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En 1992 participarían en varios festivales de Venezuela, como en la “Segunda Muestra Nuevas Bandas”, actualmente conocido como “Festival Nuevas Bandas”, donde llegaron a lanzar gallinas vivas pintadas de colores fluorescentes desde la tarima, actitud que fue captada por la prensa y los presentes, quienes reaccionaron y despertaron en su totalidad con el sarcasmo con el que vendrían estos chicos para aquel momento.</p> 
+           <p><Gracias>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En el mismo año firman un contrato con el sello discográfico CNN Discos, quien les abre las puerta para la realización del primer E.P. titulado “Las Paticas de la Abuela” el cual estaría de lleno con únicamente cuatro temas. Un año después grabarían su primer disco “Cuentos Para Adultos”, compuesto con un total de seis temas, el cual le permitió realizar sus primeras giras nacionales junto a otros grupos como Desorden Público, Zapato 3 y Sentimiento Muerto. Gracias a la particularidad de la banda, los medios de comunicación permitieron darle reconocimiento a la banda para así poder llegar a lugares que jamás ellos se imaginarían.</p> 
     
   
-       <div> <a href="history.html">Click aqui para ver mas sobre su historia</a> </div>
+       <div> <a href="history.html">Ver mas</a> </div>
           
         </section>
-        
-       
-      
-      
- 
-        </main>
        
 
 <!-- -------------------------------------------------------------------------------------- -->
-<div class="tituloG" id="banner-3"><h2 >Discografía</h2></div>
-      <section class="container2">
-        <div class="disco1"></div>
-
-        <div class="discoA">
-          <h3><strong>Album: </strong>Las paticas de la Abuela</h3>
-          <p>Las Paticas de la Abuela es la primera producción discográfica del grupo de pop rock venezolano Caramelos de Cianuro. A mediados de 1992, </p>
-          <button>Ver mas</button>
-        </div>
-
-
-
-
-        <div class="disco2">
-          <h3><strong>Album: </strong>Cuentos para Adultos</h3>
-          <p>En 1994 la banda lanza su primer álbum Cuentos para adultos, con moderado éxito nacional. Antes de comenzar la segunda grabación del segundo álbum, Luis Golding dejó la banda.</p>
-          <button>Ver&nbspmas</button>
-        </div>
-        <div class="discoB"></div>
-
-        <div class="disco3"></div>
-        <div class="discoC">
-          <h3><strong>Album: </strong>Harikiri</h3>
-          <p>segundo trabajo discográfico que llevó por nombre “Harakiri City</p>
-          <button>Ver mas</button>
-        </div>
-
-        <div class="disco4">
-
-          <h3><strong>Album: </strong> Miss Mujerzuela</h3>
-          <p>En 1994 la banda lanza su primer álbum Cuentos para adultos, con moderado éxito nacional. Antes de comenzar la segunda grabación del segundo álbum, Luis Golding dejó la banda.</p>
-          <button>Ver&nbspmas</button>
-        </div>
-        <div class="discoD">
-
-
-        </div>
-
-
-
-
-        <div class="disco5"></div>
-        <div class="discoE">
-          <h3><strong>Alubum: </strong>Frisbee</h3>
-          <p>Frisbee es el cuarto álbum de estudio de la banda venezolana de rock alternativo Caramelos de Cianuro. Este disco, que tiene un estilo punk pop mucho más marcado </p>
-          <button>Ver mas</button>
-        </div>
-
-        <div class="disco6">
-          <h3><strong>Alubum: </strong>Flor de fuego</h3>
-          <p>Flor de fuego es la sexta producción discográfica y el quinto álbum del grupo musical venezolano Caramelos de Cianuro.</p>
-          <button>Ver mas</button>
-        </div>
-        <div class="discoF"></div>
-
-        <div class="disco7"></div>
-        <div class="discoG">
-          <h3><strong>Album: </strong>Caramelos de cianuro</h3>
-          <p>Caramelos de cianuro es el sexto álbum en estudio de la banda venezolana Caramelos de Cianuro, editado en 2010.</p>
-          <button>Ver&nbspmas</button>
-          </h3>
-        </div>
-
-        <div class="disco8">
-          <h3><strong>Album: </strong>8</h3>
-          <p>8 es el octavo álbum en estudio de la banda venezolana Caramelos de cianuro.</p>
-          <button>Ver&nbspmas</button>
-        </div>
-        <div class="discoH"></div>
-        <div class="disco9"></div>
-        <div class="discoI">
-          <h3><strong>Album: </strong>Control</h3>
-          <p>Control es el noveno álbum en estudio del ahora duo venezolano Caramelos de cianuro, publicado en 2021.</p>
-          <button>Ver&nbspmas</button>
-        </div>
- 
-      </section>
-      <div class="contenedor">
-        <footer class="pie"> 
-          <p>Pagina no oficial, somos fans. desarrollada by Gabriel Rios 2022. all rights reserved.
-            A continuacion encontraras su sitio web oficial y redes Sociales oficiales:
-        </p>
-        <div>
-          <a href="https://www.instagram.com/caramelosdecianuro/?hl=es" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-          <a href="https://es-la.facebook.com/caramelosdecianuro/" target="_blank">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://twitter.com/cdcrock?lang=es" target="_blank"> 
-            <i class="fab fa-twitter"></i>
-           </a>
-          <a href="https://www.cdcrock.com/" target="_blank"> 
-            <i class="far fa-address-card"></i>
-          </a>
-       </div>
-           
-      
+  <h2 class="tituloG" id="banner-3">Discografía</h2>
+  <div class="container-fluid">
+     <!-- INICIO DISCO-1 -->
+  <div class="row">
+    <div  class="disImg-1 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    </div>
+    <div class="discos discoImpar col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <h4>Album: Las paticas de la Abuela</h4>
+        <p class="pdiscoImpar">Las Paticas de la Abuela es la primera producción discográfica del grupo de pop rock venezolano Caramelos de Cianuro. A mediados de 1992, </p>
+        <button>Ver mas</button>
+    </div>
+  </div>
+       <!-- FIN DISCO-1 -->
+       <!-- INICIO DISCO-2 -->
+  <div class="row">
+    <div class=" discos discoPar col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <h4>Album: Cuentos para Adultos</h4>
+      <p class="pdiscoPar">En 1994 la banda lanza su primer álbum Cuentos para adultos, con moderado éxito nacional. Antes de comenzar la segunda grabación del segundo álbum, Luis Golding dejó la banda.</p>
+      <button>Ver&nbspmas</button>
+    </div>
+    <div  class="disImg-2 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    </div>
+  </div>
+          <!-- FIN DISCO-2 -->
+              <!-- INICIO DISCO-3 -->
+  <div class="row">
+    <div  class="disImg-3 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    </div>
+    <div class="discos discoImpar col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <h4>Album: Las paticas de la Abuela</h4>
+        <p class="pdiscoImpar">Las Paticas de la Abuela es la primera producción discográfica del grupo de pop rock venezolano Caramelos de Cianuro. A mediados de 1992, </p>
+        <button>Ver mas</button>
+    </div>
+  </div>
+       <!-- FIN DISCO-3 -->
+       <!-- INICIO DISCO-4 -->
+  <div class="row">
+    <div class=" discos discoPar col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <h4>Album: Cuentos para Adultos</h4>
+      <p class="pdiscoPar">En 1994 la banda lanza su primer álbum Cuentos para adultos, con moderado éxito nacional. Antes de comenzar la segunda grabación del segundo álbum, Luis Golding dejó la banda.</p>
+      <button>Ver&nbspmas</button>
+    </div>
+    <div  class="disImg-4 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    </div>
+  </div>
+          <!-- FIN DISCO-4 -->
+          
+<!-- INICIO DISCO-5 -->
+<div class="row">
+  <div  class="disImg-5 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+  </div>
+  <div class="discos discoImpar col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <h4>Album: Las paticas de la Abuela</h4>
+      <p class="pdiscoImpar">Las Paticas de la Abuela es la primera producción discográfica del grupo de pop rock venezolano Caramelos de Cianuro. A mediados de 1992, </p>
+      <button>Ver mas</button>
+  </div>
+</div>
+     <!-- FIN DISCO-5 -->
+     <!-- INICIO DISCO-6 -->
+<div class="row">
+  <div class=" discos discoPar col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    <h4>Album: Cuentos para Adultos</h4>
+    <p class="pdiscoPar">En 1994 la banda lanza su primer álbum Cuentos para adultos, con moderado éxito nacional. Antes de comenzar la segunda grabación del segundo álbum, Luis Golding dejó la banda.</p>
+    <button>Ver&nbspmas</button>
+  </div>
+  <div  class="disImg-6 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+  </div>
+</div>
+        <!-- FIN DISCO-6 -->
+        <!-- INICIO DISCO-7 -->
+<div class="row">
+  <div  class="disImg-7 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+  </div>
+  <div class="discos discoImpar col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <h4>Album: Las paticas de la Abuela</h4>
+      <p class="pdiscoImpar">Las Paticas de la Abuela es la primera producción discográfica del grupo de pop rock venezolano Caramelos de Cianuro. A mediados de 1992, </p>
+      <button>Ver mas</button>
+  </div>
+</div>
+     <!-- FIN DISCO-7 -->
+     <!-- INICIO DISCO-8 -->
+<div class="row">
+  <div class=" discos discoPar col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    <h4>Album: Cuentos para Adultos</h4>
+    <p class="pdiscoPar">En 1994 la banda lanza su primer álbum Cuentos para adultos, con moderado éxito nacional. Antes de comenzar la segunda grabación del segundo álbum, Luis Golding dejó la banda.</p>
+    <button>Ver&nbspmas</button>
+  </div>
+  <div  class="disImg-8 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+  </div>
+</div>
+        <!-- FIN DISCO-8 -->
+  <!-- INICIO DISCO-9 -->
+<div class="row">
+  <div  class="disImg-9 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+  </div>
+  <div class="discos discoImpar col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <h4>Album: Las paticas de la Abuela</h4>
+      <p class="pdiscoImpar">Las Paticas de la Abuela es la primera producción discográfica del grupo de pop rock venezolano Caramelos de Cianuro. A mediados de 1992, </p>
+      <button>Ver mas</button>
+  </div>
+</div>
+     <!-- FIN DISCO-9 -->
         
+
+</div>
+ </section>
+    
+        <footer class="container-fluid">
+          <div class="row">
+            <div class="pie col-12">
+              <p class="animate__animated animate__backInDown">Pagina no oficial, somos fans. desarrollada by Gabriel Rios 2022. all rights reserved.
+                A continuacion encontraras su sitio web oficial y redes Sociales oficiales:
+              </p>
+              <div class="pie2">
+                <a href="https://www.instagram.com/caramelosdecianuro/?hl=es" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                 </a>
+                 <a href="https://es-la.facebook.com/caramelosdecianuro/" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                  </a>
+                 <a href="https://twitter.com/cdcrock?lang=es" target="_blank"> 
+                  <i class="fab fa-twitter"></i>
+                 </a>
+                 <a href="https://www.cdcrock.com/" target="_blank"> 
+                  <i class="far fa-address-card"></i>
+                  </a>
+              </div>
+             
+            </div>
+          </div>
         </footer>
-      </div>
-      <a href="#" class="irAlPrincipio">
-        <i class="far fa-angle-double-up"></i>
+  <div class="irAlPrincipio">
+    <a href="#" >
+    <i class="far fa-angle-double-up"></i>
+    </a>
+  </div>
+      
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

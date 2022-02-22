@@ -5,2406 +5,60 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-size: 20px;
 }
+
 html {
     scroll-behavior:smooth;
+
   }
-body{
-   background-color:white ;
-}
+
 /* ir-al-primcipio */
 .irAlPrincipio{
-    height: 68px;
-    width: 60px;
-    /* background-color: #1d7c7c;
-    border: 4px solid; color: aliceblue; */
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    bottom: 2em;
+    right: 2em;
     border-radius: 50%;
-    text-align: centEr;
-    justify-self: center;
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 0 0.5em black;
     
 }
 
 .irAlPrincipio i{
     color:#206d85;
-    font-size: 55px ;
-
+    font-size: 2.2em ;
     font-weight: bold;
     text-shadow: 0 0 10px black;
-    height: 55px;
-    width: 55px;
+    height: 1em;
+    width: 1em;
  
 }
 .irAlPrincipio:hover{
 
  
-transform: scale(1.3);
-    position: fixed;
-    right: 20px;
+transform: scale(1.1);
    
-    text-align: center;
 }
-
-/* -----------------------------------Encabezado Grid ----------------------------------------------- */
-/* -----------------------------------Encabezado Grid ----------------------------------------------- */
-
-.container-0{display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-    background-color: aqua;
-    width: 100%;
-    justify-content: end;
-}
-
-  /* -------------------------------------------------H E A D E R flex--------------------------------------------------------- */
-  .encabezado { grid-area: encabezado; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; 
-    align-items: center; 
-
-    background-color: rgb(239, 243, 247);
-    box-shadow:0 0 12px rgb(234, 247, 236);
-height: 100%;
-margin: 0px;
-background-color: #2cd35b;
-width: 100%;
-}
-
-/* .encabezado h1 {
-    display: node;
-    align-self:flex-end;
-    justify-content:left;
-    font-size: 4rem;
-    font-family: 'Style Script', cursive;
-    letter-spacing: 0px;
-    word-spacing: 0px;
-    color: black;
-    text-shadow: 0 0 3px black;
- align-self: flex-end;
-  
-    
-}
-
-.encabezado div a {
-    display: none;
-} */
-.encabezado img {
-   
-    /* margin-left: 3rem; */
-    align-self: center;
-    border-radius: 50px;
-    height: 90%;
-    width: 7%;
-
-}
-
-
-.encabezado ul {
-    display:flex;
-
- 
-
-    
-}
-
-.encabezado ul li{ 
-    display: inline-block;
-    align-self: flex-start;
- 
-    font-family: 'Montserrat', sans-serif;
-    /* font-weight: bold; */
-    color: black;
-    padding: 0.4rem;
-    
-}
-.encabezado ul li a {
-    
-    font-size: 22px;
-    text-decoration: none;
-    color: black;
-    text-shadow: 0 0 3px black;
-    font-weight: bold;
-   
-    align-self:flex-start;
-}
-.encabezado ul li a:hover {
-    font-size: 22px;
-    text-decoration: none;
-    color:#206d85;
-    text-shadow: 0 0 3px black;
-    transform: scale(1.5);
-    font-size: 23px;
-    font-weight: bold;
-  
-   padding: 0.4rem;
- background-color: white;
- transform: rotate(180deg);
-   
-} 
-
-/* media */
-/* media */
-
-
-/* ------------------------------- Inicio Grid---------------------------------------------------- */
-/* ------------------------------- Inicio Grid---------------------------------------------------- */
-
 
   /* ---------------------------------------------------------- */
 
-    @media only screen and (min-width: 320px) and (max-width: 540px) {
-        .encabezado{
-            display: none;
-        }
-        .tituloG{
-            height: 30px;
-            width: 100%;
-            color: white;
-            background-color:  #123b5a;
-            box-shadow: 0 0 5px rgb(7, 6, 6);
-        font-family: 'Montserrat', sans-serif;
-        font-size: 20px;
-        letter-spacing: 0.3rem;
-        text-shadow: 0 0 3px rgb(7, 3, 3);
-        height: 100%;
-        
-        font-weight: bold;
-        text-align: center;
-        
-        }
-        
-        .irAlPrincipio{
-            height: 48px;
-            width: 80px;
-            /* background-color: #1d7c7c;
-            border: 4px solid; color: aliceblue; */
-            position: fixed;
-            right: 2px;
-            bottom: 2px;
-            border-radius: 50%;
-            text-align: centEr;
-            justify-self: center;
-            text-shadow: 0 0 10px black;
-            
-        }
-        
-        .irAlPrincipio i{
-            color:#206d85;
-            font-size: 35px ;
-        
-            font-weight: bold;
-            text-shadow: 0 0 10px black;
-            height: 55px;
-            width: 55px;
-         
-        }
-        .irAlPrincipio:hover{
-        
-         
-        transform: scale(1.3);
-            position: fixed;
-           
-           
-            text-align: center;
-        }
-        .container-1 {  display: grid;
-            grid-template-columns: 1fr 1fr 1fr ;
-            grid-template-rows: 60vh 100vh    ;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-            
-            
-              "textoInicio textoInicio textoInicio "
-              "textoSide textoSide textoSide"
-               
-        
-           
-             
-            ;
-            width: 100%;
-            height: 100%;
-          }
-          .textoInicio { grid-area: textoInicio;
-            display: flex;
-            flex-direction: column;
-            align-items:center;
-            justify-content:center;
-            color: black;
-            background-color: white;
-    
-
-        }
-        .textoInicio p {
-            padding: 1rem;
-            font-family: 'Audiowide', cursive;
-            font-size: 18px;
-            color: black;
-            
-        }
-        
-          .textoInicio img {
-            align-self:center ;
-            background-color: beige;
-        display: none;
-        }
-
-
-        .textoInicio h2 {
-            padding-left: 2rem;
-            color: #206d85 ;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
-         
-            text-shadow: 0 0 3px rgb(7, 3, 3);
-            align-self: start;
-         
-        
-        }
-
-
-
-        .textoSide { grid-area: textoSide; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;    
-            background-color: white;
-            width: 100%;
-            height: 100%;
-        
-            border-radius: 0px;
-            font-size: 16px;
-            background-color: #082032;
-          
-        
-        }
-        
-
-.textoSide h2{
-    color: white ;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-
-    text-shadow: 0 0 3px rgb(7, 3, 3);
-    align-self: center;
-    padding-top: 1rem;
-    
-   
-}
-.textoSide ul li {
-    list-style: none;
-    
+     @media only screen and (min-width: 320px) and (max-width: 540px) {
   
-    
- 
-}
-
-.aside {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    color:white;
-    list-style: none;
-    font-family: 'Audiowide', cursive;
-    padding: 2rem;
-    font-size: 18px;
-   height: 100%;
-  
-} 
-/* ----------------------H I S T O R I A ------------------------------ */
-.historia { grid-area: historia; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem; */
-    text-align:justify;
-    background-color: white;
-
-    }
-
-
-.historia h2 {
-    color: #206d85 ;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    
-    text-shadow: 0 0 3px rgb(7, 3, 3);
-    align-self:flex-start;
-    margin: 2rem 0rem;
-    margin-left: 5rem;
-
-    
-    
-    
-   
-}
-.historia p{
-
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    font-family: 'Audiowide', cursive;
-    font-size: 18px;
- 
-}
-
-.historia div a {display: flex;
-    flex-direction: column;
-    text-align: end;
-   
-    color: black;
-    font-size: 18px;
-    font-family: 'Audiowide', cursive;
-}
-.historia div a:hover {display: flex;
-    flex-direction: column;
-    text-align: end;
-    margin-right: 7rem;
-    color: rgb(0, 0, 0);
-    font-family: 'Audiowide', cursive;
-} 
- /* ------------------------------Discografia Grid ---------------------------------------------- */
-    /* ------------------------------Discografia Grid ---------------------------------------------- */
-    .container2{display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(18, 300px) ;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-  
-  
-        "disco1 disco1 disco1 disco1"
-        "discoA discoA discoA discoA"
-  
-        "discoB discoB discoB discoB"
-        "disco2 disco2 disco2 disco2"
-  
-        "disco3 disco3 disco3 disco3"
-        "discoC discoC discoC discoC"
-  
-        "discoD discoD discoD discoD" 
-        "disco4 disco4 disco4 disco4"
-  
-        "disco5 disco5 disco5 disco5" 
-        "discoE discoE discoE discoE"
-  
-        "discoF discoF discoF discoF"
-        "disco6 disco6 disco6 disco6"
         
-        "disco7 disco7 disco7 disco7"
-        "discoG discoG discoG discoG"
-
-       "discoH discoH discoH discoH"
-        "disco8 disco8 disco8 disco8"
         
-        "disco9 disco9 disco9 disco9" 
-        "discoI discoI discoI discoI"
-        ;
-     
-        height: 100%;
       
-      }
-    /* ------------------------------------------------------Disco 1 ------------------------------------------------- */
-   
-    .disco1{ grid-area: disco1;
-        background-image: url(../imagenes/discos/CDC-1992.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:bottom;    
-    } 
-   
-    .discoA{ grid-area: discoA;
-      display: flex;
-      background-color: white;
-      color: black;
-      font-size: 14px;
-
-      flex-direction: column;
-      justify-content: space-evenly;
-     
-  
-      font-family: 'Audiowide', cursive;
-    }
-    .discoA p {
-      display: flex;
-      align-self:flex-end;
-      text-align:start; 
-        padding: 1rem;
-       
-    }
-  
-    .discoA h3 {
-      align-self: center;
-        justify-content: center;
-        text-align:justify;
-        padding-top: 1rem;
-       
-        font-size: 16px;
-    }
-    .discoA button {
-      display: flex;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      font-size: 12px;
-      color: black;
-      justify-content:center;
-     align-self: center;
-     padding: 0.7rem;
-   
-    }
-  
-        
-  
-    
-    
-    /*------------------------------------------------- DISCO 2 ----------------------------------------------------------*/
-    
-    .discoB{ grid-area: discoB;
-        background-image: url(../imagenes/discos/CDC-1993.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position:center;
-    }
-  
-   
-    .disco2{ grid-area: disco2;
-        display: flex;
-        background-color: white;
-        color: black;
-        font-size: 14px;
-  
-        flex-direction: column;
-        justify-content: space-evenly;
-       
-    
-        font-family: 'Audiowide', cursive;
-      }
-      .disco2 p {
-        display: flex;
-        align-self:flex-end;
-        text-align:start; 
-          padding: 1rem;
-         
-      }
-    
-      .disco2 h3 {
-        align-self: center;
-          justify-content: center;
-          text-align:justify;
-          padding-top: 1rem;
-         
-          font-size: 16px;
-      }
-      .disco2 button {
-        display: flex;
-        font-family: 'Audiowide', cursive;
-        font-weight: bolder;
-        font-size: 12px;
-        color: black;
-        justify-content:center;
-       align-self: center;
-       padding: 0.7rem;
-     
-      }
-    
-  
-    /* --------------------------------------------------  D I S C O 3 -------------------------------------------- */
-    
-    .disco3{ grid-area: disco3;
-       
-        background-image: url(../imagenes/discos/CDC-1996.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:center;
-    
-    }
-   
-    .discoC{ grid-area: discoC;
-        display: flex;
-        background-color: white;
-        color: black;
-        font-size: 14px;
-  
-        flex-direction: column;
-        justify-content: space-evenly;
-       
-    
-        font-family: 'Audiowide', cursive;
-      }
-      .discoC p {
-        display: flex;
-        align-self:flex-end;
-        text-align:start; 
-          padding: 1rem;
-         
-      }
-    
-      .discoC h3 {
-        align-self: center;
-          justify-content: center;
-          text-align:justify;
-          padding-top: 1rem;
-         
-          font-size: 16px;
-      }
-      .discoC button {
-        display: flex;
-        font-family: 'Audiowide', cursive;
-        font-weight: bolder;
-        font-size: 12px;
-        color: black;
-        justify-content:center;
-       align-self: center;
-       padding: 0.7rem;
-     
-      }
-        /* -----------------------------Disco 4------------------------------------ */
-    
-    
-    .discoD{ grid-area: discoD;
-        background-image: url(../imagenes/discos/CDC-2000.jpg);
-        background-repeat: repeat-x;
-        background-size: contain;
-        background-position:top;
-        
-    }
-  
-    .disco4{ grid-area: disco4;
-        display: flex;
-        background-color: white;
-        color: black;
-        font-size: 14px;
-  
-        flex-direction: column;
-        justify-content: space-evenly;
-       
-    
-        font-family: 'Audiowide', cursive;
-      }
-      .disco4 p {
-        display: flex;
-        align-self:flex-end;
-        text-align:start; 
-          padding: 1rem;
-         
-      }
-    
-      .disco4 h3 {
-        align-self: center;
-          justify-content: center;
-          text-align:justify;
-          padding-top: 1rem;
-         
-          font-size: 16px;
-      }
-      .disco4 button {
-        display: flex;
-        font-family: 'Audiowide', cursive;
-        font-weight: bolder;
-        font-size: 12px;
-        color: black;
-        justify-content:center;
-       align-self: center;
-       padding: 0.7rem;
-     
-      }
-    /* ---------------------- D I S C O 5--------------------- */
-    .disco5{ grid-area: disco5;
-        background-image: url(../imagenes/discos/CDC-2002.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:bottom ; 
-    }
-   
-    .discoE{ grid-area: discoE;
-        display: flex;
-        background-color: white;
-        color: black;
-        font-size: 14px;
-  
-        flex-direction: column;
-        justify-content: space-evenly;
-       
-    
-        font-family: 'Audiowide', cursive;
-      }
-      .discoE p {
-        display: flex;
-        align-self:flex-end;
-        text-align:start; 
-          padding: 1rem;
-         
-      }
-    
-      .discoE h3 {
-        align-self: center;
-          justify-content: center;
-          text-align:justify;
-          padding-top: 1rem;
-         
-          font-size: 16px;
-      }
-      .discoE button {
-        display: flex;
-        font-family: 'Audiowide', cursive;
-        font-weight: bolder;
-        font-size: 12px;
-        color: black;
-        justify-content:center;
-       align-self: center;
-       padding: 0.7rem;
-     
-      }
-    /* -----------------------D I S C O 6 ------------------------------ */
-    
-    
-    .discoF{ grid-area: discoF;
-        background-color: #a1ccec;
-        background-image: url(../imagenes/discos/CDC-2007.jpg);
-        background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
-    }
-    
-  
-    .disco6{ grid-area: disco6;
-        display: flex;
-        background-color: white;
-        color: black;
-        font-size: 14px;
-  
-        flex-direction: column;
-        justify-content: space-evenly;
-       
-    
-        font-family: 'Audiowide', cursive;
-      }
-      .disco6 p {
-        display: flex;
-        align-self:flex-end;
-        text-align:start; 
-          padding: 1rem;
-         
-      }
-    
-      .disco6 h3 {
-        align-self: center;
-          justify-content: center;
-          text-align:justify;
-          padding-top: 1rem;
-         
-          font-size: 16px;
-      }
-      .disco6 button {
-        display: flex;
-        font-family: 'Audiowide', cursive;
-        font-weight: bolder;
-        font-size: 12px;
-        color: black;
-        justify-content:center;
-       align-self: center;
-       padding: 0.7rem;
-     
-      }
-    /* ----------------------------D I S C O 7 -------------------------------- */
-    .disco7{ grid-area: disco7;
-        background-color: #a1ccec;
-        background-image: url(../imagenes/discos/CDC-2010.jfif);
-        background-repeat: no-repeat;
-    background-size: cover;
-    background-position:bottom;
-    }
-    
-    
-    .discoG{ grid-area: discoG;
-        display: flex;
-        background-color: white;
-        color: black;
-        font-size: 14px;
-  
-        flex-direction: column;
-        justify-content: space-evenly;
-       
-    
-        font-family: 'Audiowide', cursive;
-      }
-      .discoG p {
-        display: flex;
-        align-self:flex-end;
-        text-align:start; 
-          padding: 1rem;
-         
-      }
-    
-      .discoG h3 {
-        align-self: center;
-          justify-content: center;
-          text-align:justify;
-          padding-top: 1rem;
-         
-          font-size: 16px;
-      }
-      .discoG button {
-        display: flex;
-        font-family: 'Audiowide', cursive;
-        font-weight: bolder;
-        font-size: 12px;
-        color: black;
-        justify-content:center;
-       align-self: center;
-       padding: 0.7rem;
-     
-      }
-   
-    /* ------------------------------------------D I S C O 8 --------------------------- */
-    
-    
-    .discoH{ grid-area: discoH;
-        background-color: #a1ccec;
-        background-image: url(../imagenes/discos/CDC-2015.jfif);
-        background-repeat: repeat-x;
-        background-size: contain;
-        background-position:top;
-    }
-    
-    
-    
-    .disco8{ grid-area: disco8;
-        display: flex;
-        background-color: white;
-        color: black;
-        font-size: 14px;
-  
-        flex-direction: column;
-        justify-content: space-evenly;
-       
-    
-        font-family: 'Audiowide', cursive;
-      }
-      .disco8 p {
-        display: flex;
-        align-self:flex-end;
-        text-align:start; 
-          padding: 1rem;
-         
-      }
-    
-      .disco8 h3 {
-        align-self: center;
-          justify-content: center;
-          text-align:justify;
-          padding-top: 1rem;
-         
-          font-size: 16px;
-      }
-      .disco8 button {
-        display: flex;
-        font-family: 'Audiowide', cursive;
-        font-weight: bolder;
-        font-size: 12px;
-        color: black;
-        justify-content:center;
-       align-self: center;
-       padding: 0.7rem;
-     
-      }
-    /* ------------------------------------------------D I S C O 9-------------------------------- */
-    .disco9{ grid-area: disco9;
-        background-image: url(../imagenes/discos/CDC-2021.png);
-        background-repeat: no-repeat;
-        background-size:100% 100% ;
-        background-position:0rem ;
-    
-    
-    }
-   
-    .discoI{ grid-area: discoI;
-        display: flex;
-        background-color: white;
-        color: black;
-        font-size: 14px;
-  
-        flex-direction: column;
-        justify-content: space-evenly;
-       
-    
-        font-family: 'Audiowide', cursive;
-      }
-      .discoI p {
-        display: flex;
-        align-self:flex-end;
-        text-align:start; 
-          padding: 1rem;
-         
-      }
-    
-      .discoI h3 {
-        align-self: center;
-          justify-content: center;
-          text-align:justify;
-          padding-top: 1rem;
-         
-          font-size: 16px;
-      }
-      .discoI button {
-        display: flex;
-        font-family: 'Audiowide', cursive;
-        font-weight: bolder;
-        font-size: 12px;
-        color: black;
-        justify-content:center;
-       align-self: center;
-       padding: 0.7rem;
-     
-      }
-
- 
-
-   /* -------------------------------------------- footer Grid------------------------------------------------- */
-  /* -------------------------------------------- footer Grid------------------------------------------------- */
-
-  .contenedor { display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 200px;
-    gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas: 
-    "pie pie pie"
-    ;
-    width: 100%;
-    height: 100%;
-   
-}
-  /*------------------------------------------Pie Grid ----------------------------------------------------  */
-.pie { grid-area: pie;
-    background-color: rgb(239, 243, 247);
-    display: flex ;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    justify-content:space-evenly;
-    align-items: center;
-    font-weight: bold;
-
-}
-.pie p {
-    justify-content: center;
-    padding: 2rem;
-    text-align: center;
-    font-size: 10px;
- 
-    
-}
-.pie div {display:flex;
-    height: 100%;
-  
-    justify-content: space-between;
-
-   
-
-}
-.pie div i {
-    font-size: 20px;
-
-  margin: 0px;
-  padding: 1rem;
-}
-        
-}
-    
-    /* ------------------------------------------------------------------------------ */
-    @media only screen and (min-width: 540px) and (max-width: 1080px) {
-      /* .encabezado{
-          display: none;
-      } */
-.menu_bar{
-    display: none;
-}
-.tituloG{
-    height: 30px;
-    width: 100%;
-    color: white;
-background-color:  #123b5a;
-box-shadow: 0 0 5px rgb(7, 6, 6);
-
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-letter-spacing: 0.3rem;
-text-shadow: 0 0 3px rgb(14, 13, 13);
-height: 100%;
-
-font-weight: bold;
-text-align: center;
-
-
-}
-        .container-1 {  display: grid;
-            grid-template-columns: 1fr 1fr 1fr ;
-            grid-template-rows: 300px 700px    ;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-            
-            
-              "textoInicio textoInicio textoInicio "
-              "textoSide textoSide textoSide"
-               
-        
-           
-             
-            ;
-            width: 100%;
-            height: 100%;
-          }
-          .textoInicio { grid-area: textoInicio;
-            display: flex;
-            flex-direction: column;
-            align-items:center;
-            justify-content:center;
-            color: black;
-            background-color: white;
-    
-
-        }
-        .textoInicio p {
-            padding-left: 2rem;
-            font-family: 'Audiowide', cursive;
-            font-size: 20px;
-            color: black;
-            
-        }
-        
-          .textoInicio img {
-            align-self:center ;
-            background-color: beige;
-        display: none;
-        }
-
-
-        .textoInicio h2 {
-     
-            color: #206d85 ;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 30px;
-            padding: 2rem;
-            text-shadow: 0 0 3px rgb(7, 3, 3);
-            align-self: start;
-            
-        
-        }
-
-
-
-        .textoSide { grid-area: textoSide; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;    
-            background-color: white;
-            width: 100%;
-            height: 100%;
-        
-            border-radius: 0px;
-            font-size: 12px;
-            background-color: #082032;
-        
-        }
-        
-
-.textoSide h2{
-    color: white ;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-
-    text-shadow: 0 0 3px rgb(7, 3, 3);
-    align-self: center;
-    padding-top: 1rem;
- 
-    
-   
-}
-.textoSide ul li {
-    list-style: none;
-    
-  
-    
- 
-}
-
-.aside {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    color: white;
-    list-style: none;
-    font-family: 'Audiowide', cursive;
-    padding: 2rem;
-    font-size: 21px;
-   height: 100%;
-  
-} 
- /*---------------------------------H I S T O R I A  Grid----------------------------------------------- */
-
-/* ------------------------------   H i S t O R I A  Grid --------------------------------------------*/
-
-.containerHistoria {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 700px  ;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
- 
-       
-      "historia historia historia"
-   
-     
-    ;
-    width: 100%;
-    height: 100%;
-  }
-/* ----------------------H I S T O R I A ------------------------------ */
-  .historia { grid-area: historia; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem; */
-    text-align:justify;
-    background-color: white;
-
-    }
-
-
-.historia h2 {
-    color: #206d85 ;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    
-    text-shadow: 0 0 3px rgb(7, 3, 3);
-    align-self:flex-start;
-    margin: 2rem 0rem;
-    margin-left: 5rem;
-
-    
-    
-    
-   
-}
-.historia p{
-
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    font-family: 'Audiowide', cursive;
-    font-size: 18px;
- 
-}
-
-.historia div a {display: flex;
-    flex-direction: column;
-    text-align: end;
-   
-    color: black;
-    font-size: 18px;
-    font-family: 'Audiowide', cursive;
-}
-.historia div a:hover {display: flex;
-    flex-direction: column;
-    text-align: end;
-    margin-right: 7rem;
-    color: rgb(0, 0, 0);
-    font-family: 'Audiowide', cursive;
-}
-
-}        
-  
-/* 888888888888888888888888888888888888888888888888888888888 */
- 
-
-/* 888888888888888888888888888888888888888888888888888888888 */
-
-/* ------------------MIN 540 A 911------------------------------------------- */
-/* ------------------MIN 540 A 911------------------------------------------- */
-
-@media only screen and (min-width: 540px)  and (max-width:911px) {    
-    /* ------------------------------Discografia Grid ---------------------------------------------- */
-    /* ------------------------------Discografia Grid ---------------------------------------------- */
-    .container2{display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(18, 300px) ;
-      gap: 0px 0px;
-      grid-auto-flow: row;
-      grid-template-areas:
-
-
-      "disco1 disco1 disco1 disco1"
-      "discoA discoA discoA discoA"
-
-      "discoB discoB discoB discoB"
-      "disco2 disco2 disco2 disco2"
-
-      "disco3 disco3 disco3 disco3"
-      "discoC discoC discoC discoC"
-
-      "discoD discoD discoD discoD" 
-      "disco4 disco4 disco4 disco4"
-
-      "disco5 disco5 disco5 disco5" 
-      "discoE discoE discoE discoE"
-
-      "discoF discoF discoF discoF"
-      "disco6 disco6 disco6 disco6"
-      
-      "disco7 disco7 disco7 disco7"
-      "discoG discoG discoG discoG"
-"discoH discoH discoH discoH"
-      "disco8 disco8 disco8 disco8"
-      
-      "disco9 disco9 disco9 disco9" 
-      "discoI discoI discoI discoI"
-      ;
-   
-      height: 100%;
-      margin: 1.5rem;
-    }
-  /* ------------------------------------------------------Disco 1 ------------------------------------------------- */
-  
-  .disco1{ grid-area: disco1;
-      background-image: url(../imagenes/discos/CDC-1992.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position:bottom;    
-  } 
-  .disco1:hover{
-      transform: scale(1.05);
-      transition: all 1.5s;
-      filter: grayscale(10%);
-  }
-  .discoA{ grid-area: discoA;
-      background-color: white;
-      color: black;
-      font-size: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-family: 'Audiowide', cursive;
-  }
-  .discoA h3 {
-      margin-left: 4rem;
-  }
-  .discoA p {
-      margin-left: 2rem;
-      font-weight:lighter;
-  }
-  .discoA button {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      background-color: none;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      font-size: 20px;
-      color: black;
-      background-color: white;
-   
-  }
-  .discoA button:hover {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      color:#082032;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      transition: 1s;
-  transform: scale(1.05);
-      
-   
-  }
-  
-  /*------------------------------------------------- DISCO 2 ----------------------------------------------------------*/
-  
-  .discoB{ grid-area: discoB;
-      background-image: url(../imagenes/discos/CDC-1993.jpg);
-      background-repeat: no-repeat;
-      background-size:cover;
-      background-position:center;
-  }
-  .discoB:hover{
-      transform: scale(1.05);
-      transition: all 1.5s;
-      filter: grayscale(10%);
-  }
-  .disco2 { grid-area: disco2;
-      background-color: white;
-      color: black;
-      font-size: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content:center;
-      text-align: end;
-      font-family: 'Montserrat', sans-serif;
-      font-family: 'Audiowide', cursive;
-      
-    
-  }
-  
-  .disco2 h3 {
-      margin-right: 4rem;
-      text-align: end;
-    
-  }
-  .disco2 p {
-      display: flex;
-      margin-right: 2rem;
-      align-self:flex-end;
-      justify-content:flex-end;
-     
-  }
-  
-  
-  .disco2 button {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-right: 5rem;
-      margin-top: 2rem;
-      background-color: none;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      font-size: 20px;
-      color: black;
-      background-color: white;
-      align-self: flex-end;
-  
-  }
-  .disco2 button:hover {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-    
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      font-size: 20px;
-      transition: 1s;
-      transform: scale(1.05);
-  }
-  /* --------------------------------------------------  D I S C O 3 -------------------------------------------- */
-  
-  .disco3{ grid-area: disco3;
-     
-      background-image: url(../imagenes/discos/CDC-1996.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position:center;
-  
-  }
-  .disco3:hover{
-      transform: scale(1.05);
-      transition: all 1.5s;
-      filter: grayscale(10%);
-  }
-  
-  .discoC{ grid-area: discoC;
-      color: black;
-      background-color: white;
-      font-size: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-family: 'Audiowide', cursive;
-  }
-  .discoC h3 {
-      margin-left: 4rem;
-  }
-  .discoC p {
-      margin-left: 2rem;
-  }
-  .discoC button {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      background-color: none;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      font-size: 20px;
-      color: black;
-      background-color: white;
-  }
-  .discoC button:hover {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      color:#082032;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      transition: 1s;
-      transform: scale(1.05)
-      
-   
-  }
-  
-      /* -----------------------------Disco 4------------------------------------ */
-  
-  
-  .discoD{ grid-area: discoD;
-      background-image: url(../imagenes/discos/CDC-2000.jpg);
-      background-repeat: repeat-x;
-      background-size: contain;
-      background-position:top;
-      
-  }
-  .discoD:hover{
-      transform: scale(1.05);
-      transition: all 1s;
-      filter: grayscale(10%);
-  }
-  .disco4 { grid-area: disco4;
-      color: black;
-      background-color: white;
-      font-size: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content:center;
-      text-align: end;
-      font-family: 'Audiowide', cursive;
-      
-    
-  }
-  
-  .disco4 h3 {
-      margin-right: 4rem;
-      text-align: end;
-    
-  }
-  .disco4 p {
-      display: flex;
-      margin-right: 2rem;
-      align-self:flex-end;
-      justify-content:flex-end;
-     
-  }
-  
-  
-  .disco4 button {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-right: 5rem;
-      margin-top: 2rem;
-      background-color: none;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      font-size: 20px;
-      color: black;
-      background-color: white;
-      align-self: flex-end;
-  }
-  .disco4 button:hover {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      font-size: 20px;
-      transition: 1s;
-      transform: scale(1.05);
-   
-  }
-  /* ---------------------- D I S C O 5--------------------- */
-  .disco5{ grid-area: disco5;
-      background-image: url(../imagenes/discos/CDC-2002.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position:bottom ; 
-  }
-  .disco5:hover{
-      transform: scale(1.05);
-      transition: all 1s;
-      filter: grayscale(10%);
-  }
-  .discoE{ grid-area: discoE;
-      color: black;
-      background-color: white;
-      font-size: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-family: 'Audiowide', cursive;
-  }
-  .discoE h3 {
-      margin-left: 4rem;
-  }
-  .discoE p {
-      margin-left: 2rem;
-  }
-  .discoE button {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      background-color: none;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      font-size: 20px;
-      color: black;
-      background-color: white;
-  }
-  .discoE button:hover {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      color:#082032;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      transition: 1s;
-      transform: scale(1.05)
-   
-  }
-  /* -----------------------D I S C O 6 ------------------------------ */
-  
-  
-  .discoF{ grid-area: discoF;
-      background-color: #a1ccec;
-      background-image: url(../imagenes/discos/CDC-2007.jpg);
-      background-repeat: no-repeat;
-  background-size:cover;
-  background-position:center;
-  }
-  
-  
-  .discoF:hover{
-      transform: scale(1.05);
-      transition: all 1s;
-      filter: grayscale(10%);
-  }
-  .disco6 { grid-area: disco6;
-      color: black;
-      background-color: white;
-      font-size: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content:center;
-      text-align: end;
-      font-family: 'Montserrat', sans-serif;
-      
-    
-  }
-  
-  .disco6 h3 {
-      margin-right: 4rem;
-      text-align: end;
-    
-  }
-  .disco6 p {
-      display: flex;
-      margin-right: 2rem;
-      align-self:flex-end;
-      justify-content:flex-end;
-     
-  }
-  
-  
-  .disco6 button {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-right: 5rem;
-      margin-top: 2rem;
-      background-color: none;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      font-size: 20px;
-      color: black;
-      background-color: white;
-      align-self: flex-end;
-  }
-  .disco6 button:hover {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      font-size: 20px;
-      transition: 1s;
-      transform: scale(1.05);
-   
-  }
-  /* ----------------------------D I S C O 7 -------------------------------- */
-  .disco7{ grid-area: disco7;
-      background-color: #a1ccec;
-      background-image: url(../imagenes/discos/CDC-2010.jfif);
-      background-repeat: no-repeat;
-  background-size: cover;
-  background-position:bottom;
-  
-  }
-  
-  .disco7:hover{
-      transform: scale(1.05);
-      transition: all 1s;
-      filter: grayscale(10%);
-  }
-  .discoG{ grid-area: discoG;
-      color: black;
-      background-color: white;
-      font-size: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-family: 'Audiowide', cursive;
-  }
-  .discoG h3 {
-      margin-left: 4rem;
-  }
-  .discoG p {
-      margin-left: 2rem;
-  }
-  .discoG button {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      font-size: 20px;
-      color: black;
-      background-color: white;
-  }
-  .discoG button:hover {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      color:#082032;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      transition: 1s;
-  transform: scale(1.05)
-   
-  }
-  /* ------------------------------------------D I S C O 8 --------------------------- */
-  
-  
-  .discoH{ grid-area: discoH;
-      background-color: #a1ccec;
-      background-image: url(../imagenes/discos/CDC-2015.jfif);
-      background-repeat: repeat-x;
-      background-size: contain;
-      background-position:top;
-  }
-  
-  
-  
-  .discoH:hover{
-      transform: scale(1.05);
-      transition: all 1s;
-      filter: grayscale(10%);
-  }
-  .disco8 { grid-area: disco8;
-      color: black;
-      background-color: white;
-      font-size: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content:center;
-      text-align: end;
-      font-family: 'Audiowide', cursive;
-      
-    
-  }
-  
-  .disco8 h3 {
-      margin-right: 4rem;
-      text-align: end;
-    
-  }
-  .disco8 p {
-      display: flex;
-      margin-right: 2rem;
-      align-self:flex-end;
-      justify-content:flex-end;
-     
-  }
-  
-  
-  .disco8 button {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      font-size: 20px;
-      transition: 1s;
-      transform: scale(1.05);
-  }
-  .disco8 button:hover {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      color: black;
-      background-color: white;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bolder;
-      font-size: 20px;
-   
-  }
-  /* ------------------------------------------------D I S C O 9-------------------------------- */
-  .disco9{ grid-area: disco9;
-      background-image: url(../imagenes/discos/CDC-2021.png);
-      background-repeat: no-repeat;
-      background-size:100% 100% ;
-      background-position:0rem ;
-  
-  
-  }
-  .disco9:hover{
-      transform: scale(1.05);
-      transition: all 1s;
-      filter: grayscale(10%);
-  }
-  .discoI{ grid-area: discoI;
-      background-color:   white;
-      color: black;
-      font-size: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-family: 'Audiowide', cursive;
-  }
-  .discoI h3 {
-      margin-left: 4rem;
-  }
-  .discoI p {
-      margin-left: 2rem;
-  }
-  .discoI button {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      background-color: none;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      font-size: 20px;
-    
-      color: black;
-      background-color:  white;
-  }
-  .discoI button:hover {
-      padding: 1rem 0.5rem;
-      width: 7rem;
-      margin-left: 5rem;
-      margin-top: 2rem;
-      color:#082032;
-      font-family: 'Audiowide', cursive;
-      font-weight: bolder;
-      transition: 1s;
-  transform: scale(1.05)
-   
-  }
-    /* -------------------------------------------- footer Grid------------------------------------------------- */
-  /* -------------------------------------------- footer Grid------------------------------------------------- */
-
-  .contenedor { display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 250px;
-    gap: 10px 10 10px;
-    grid-auto-flow: row;
-    grid-template-areas: 
-    "pie pie pie"
-    ;
-    width: 100%;
-    height: 100%;
-}
-  /*------------------------------------------Pie Grid ----------------------------------------------------  */
-.pie { grid-area: pie;
-    background-color: rgb(239, 243, 247);
-    display: flex ;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    justify-content:space-evenly;
-    align-items: center;
-
-    font-weight: bold;
-
-}
-.pie p {
-    justify-content: center;
-    padding: 2rem;
-    text-align: center;
-    font-size: 12px;
- 
-    
-}
-.pie div {display:flex;
-    height: 100%;
-  
-    justify-content: space-between;
-
-   
-
-}
-.pie div i {
-    font-size: 20px;
-
-  margin: 0px;
-  padding:1rem;
-}
-    
 }
 
 /*  DISCO */
 /*  DISCO */
 @media only screen and (min-width: 912px)  and (max-width:1080px) {
     
-      /* ------------------------------Discografia Grid ---------------------------------------------- */
-  /* ------------------------------Discografia Grid ---------------------------------------------- */
-  .tituloG{
-    height: 40px;
-    width: 100%;
-    color: white;
-    background-color:  #123b5a;
-    box-shadow: 0 0 5px rgb(7, 6, 6);
-
-font-family: 'Montserrat', sans-serif;
-font-size: 25px;
-letter-spacing: 0.3rem;
-text-shadow: 0 0 3px rgb(7, 3, 3);
-height: 100%;
-
-font-weight: bold;
-text-align: center;
-
-}
-  .container2{display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(9, 300px) ;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "disco1 disco1 discoA discoA"
-    "disco2 disco2 discoB discoB"
-    "disco3 disco3 discoC discoC"
-    "disco4 disco4 discoD discoD"
-    "disco5 disco5 discoE discoE"
-    "disco6 disco6 discoF discoF"
-    "disco7 disco7 discoG discoG"
-    "disco8 disco8 discoH discoH" 
-    "disco9 disco9 discoI discoI" 
-    ;
- 
-    height: 100%;
-    margin: 1.5rem;
-  }
-/* ------------------------------------------------------Disco 1 ------------------------------------------------- */
-
-.disco1{ grid-area: disco1;
-    background-image: url(../imagenes/discos/CDC-1992.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:bottom;    
-} 
-.disco1:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-.discoA{ grid-area: discoA;
-    background-color: white;
-    color: black;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Audiowide', cursive;
-}
-.discoA h3 {
-    margin-left: 4rem;
-}
-.discoA p {
-    margin-left: 2rem;
-    font-weight:lighter;
-}
-.discoA button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
- 
-}
-.discoA button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    color:#082032;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    transition: 1s;
-transform: scale(1.05);
-    
- 
-}
-
-/*------------------------------------------------- DISCO 2 ----------------------------------------------------------*/
-
-.discoB{ grid-area: discoB;
-    background-image: url(../imagenes/discos/CDC-1993.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
-}
-.discoB:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-.disco2 { grid-area: disco2;
-    background-color: white;
-    color: black;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    text-align: end;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Audiowide', cursive;
-    
-  
-}
-
-.disco2 h3 {
-    margin-right: 4rem;
-    text-align: end;
-  
-}
-.disco2 p {
-    display: flex;
-    margin-right: 2rem;
-    align-self:flex-end;
-    justify-content:flex-end;
-   
-}
-
-
-.disco2 button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-right: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-    align-self: flex-end;
-
-}
-.disco2 button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-  
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    transition: 1s;
-    transform: scale(1.05);
-}
-/* --------------------------------------------------  D I S C O 3 -------------------------------------------- */
-
-.disco3{ grid-area: disco3;
-   
-    background-image: url(../imagenes/discos/CDC-1996.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-
-}
-.disco3:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-
-.discoC{ grid-area: discoC;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Audiowide', cursive;
-}
-.discoC h3 {
-    margin-left: 4rem;
-}
-.discoC p {
-    margin-left: 2rem;
-}
-.discoC button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-}
-.discoC button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    color:#082032;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    transition: 1s;
-    transform: scale(1.05)
-    
- 
-}
-
-    /* -----------------------------Disco 4------------------------------------ */
-
-
-.discoD{ grid-area: discoD;
-    background-image: url(../imagenes/discos/CDC-2000.jpg);
-    background-repeat: repeat-x;
-    background-size: contain;
-    background-position:top;
-    
-}
-.discoD:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-    filter: grayscale(10%);
-}
-.disco4 { grid-area: disco4;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    text-align: end;
-    font-family: 'Audiowide', cursive;
-    
-  
-}
-
-.disco4 h3 {
-    margin-right: 4rem;
-    text-align: end;
-  
-}
-.disco4 p {
-    display: flex;
-    margin-right: 2rem;
-    align-self:flex-end;
-    justify-content:flex-end;
-   
-}
-
-
-.disco4 button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-right: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-    align-self: flex-end;
-}
-.disco4 button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    transition: 1s;
-    transform: scale(1.05);
- 
-}
-/* ---------------------- D I S C O 5--------------------- */
-.disco5{ grid-area: disco5;
-    background-image: url(../imagenes/discos/CDC-2002.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:bottom ; 
-}
-.disco5:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-    filter: grayscale(10%);
-}
-.discoE{ grid-area: discoE;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Audiowide', cursive;
-}
-.discoE h3 {
-    margin-left: 4rem;
-}
-.discoE p {
-    margin-left: 2rem;
-}
-.discoE button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-}
-.discoE button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    color:#082032;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    transition: 1s;
-    transform: scale(1.05)
- 
-}
-/* -----------------------D I S C O 6 ------------------------------ */
-
-
-.discoF{ grid-area: discoF;
-    background-color: #a1ccec;
-    background-image: url(../imagenes/discos/CDC-2007.jpg);
-    background-repeat: no-repeat;
-background-size:cover;
-background-position:center;
-}
-
-
-.discoF:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-    filter: grayscale(10%);
-}
-.disco6 { grid-area: disco6;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    text-align: end;
-    font-family: 'Montserrat', sans-serif;
-    
-  
-}
-
-.disco6 h3 {
-    margin-right: 4rem;
-    text-align: end;
-  
-}
-.disco6 p {
-    display: flex;
-    margin-right: 2rem;
-    align-self:flex-end;
-    justify-content:flex-end;
-   
-}
-
-
-.disco6 button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-right: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-    align-self: flex-end;
-}
-.disco6 button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    transition: 1s;
-    transform: scale(1.05);
- 
-}
-/* ----------------------------D I S C O 7 -------------------------------- */
-.disco7{ grid-area: disco7;
-    background-color: #a1ccec;
-    background-image: url(../imagenes/discos/CDC-2010.jfif);
-    background-repeat: no-repeat;
-background-size: cover;
-background-position:bottom;
-
-}
-
-.disco7:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-    filter: grayscale(10%);
-}
-.discoG{ grid-area: discoG;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Audiowide', cursive;
-}
-.discoG h3 {
-    margin-left: 4rem;
-}
-.discoG p {
-    margin-left: 2rem;
-}
-.discoG button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-}
-.discoG button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    color:#082032;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    transition: 1s;
-transform: scale(1.05)
- 
-}
-/* ------------------------------------------D I S C O 8 --------------------------- */
-
-
-.discoH{ grid-area: discoH;
-    background-color: #a1ccec;
-    background-image: url(../imagenes/discos/CDC-2015.jfif);
-    background-repeat: repeat-x;
-    background-size: contain;
-    background-position:top;
-}
-
-
-
-.discoH:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-    filter: grayscale(10%);
-}
-.disco8 { grid-area: disco8;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    text-align: end;
-    font-family: 'Audiowide', cursive;
-    
-  
-}
-
-.disco8 h3 {
-    margin-right: 4rem;
-    text-align: end;
-  
-}
-.disco8 p {
-    display: flex;
-    margin-right: 2rem;
-    align-self:flex-end;
-    justify-content:flex-end;
-   
-}
-
-
-.disco8 button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    transition: 1s;
-    transform: scale(1.05);
-}
-.disco8 button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    color: black;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
- 
-}
-/* ------------------------------------------------D I S C O 9-------------------------------- */
-.disco9{ grid-area: disco9;
-    background-image: url(../imagenes/discos/CDC-2021.png);
-    background-repeat: no-repeat;
-    background-size:100% 100% ;
-    background-position:0rem ;
 
 
 }
-.disco9:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-    filter: grayscale(10%);
-}
-.discoI{ grid-area: discoI;
-    background-color:   white;
-    color: black;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Audiowide', cursive;
-}
-.discoI h3 {
-    margin-left: 4rem;
-}
-.discoI p {
-    margin-left: 2rem;
-}
-.discoI button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-  
-    color: black;
-    background-color:  white;
-}
-.discoI button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    color:#082032;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    transition: 1s;
-transform: scale(1.05)
- 
-}
 
-  /* -------------------------------------------- footer Grid------------------------------------------------- */
-  /* -------------------------------------------- footer Grid------------------------------------------------- */
 
-  .contenedor { display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 250px;
-    gap: 10px 10 10px;
-    grid-auto-flow: row;
-    grid-template-areas: 
-    "pie pie pie"
-    ;
-    width: 100%;
-    height: 100%;
-}
-  /*------------------------------------------Pie Grid ----------------------------------------------------  */
-.pie { grid-area: pie;
-    background-color: rgb(239, 243, 247);
-    display: flex ;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    justify-content:space-evenly;
-    align-items: center;
-
-    font-weight: bold;
-
-}
-.pie p {
-    justify-content: center;
-    padding: 2rem;
-    text-align: center;
- 
-    
-}
-.pie div {display:flex;
-    height: 100%;
-  
-    justify-content: space-between;
-
-   
-
-}
-.pie div i {
-    font-size: 20px;
-
-  margin: 0px;
-  padding: 1rem;
-}
-}
 
 
 /* ----------------------- D - E - S - D - E  ---------------  1-2-1-5----------------------------------------------------------------- */
@@ -2413,826 +67,12 @@ transform: scale(1.05)
 
   /* ----------------------------------------------- I  N  I  C  I  O------------------------------------------------------------- */
 
-  @media only screen and (min-width: 1080px)  {
-    .menu_bar{
-        display: none;
-    }
-    /* MENU */
 
-    /* MENU */
-    .container-1 {  display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 700px    ;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-        
-        
-          "textoInicio textoInicio textoSide "
-           
-    
-       
-         
-        ;
-        width: 100%;
-        height: 100%;
-      }
-    
-  .textoInicio { grid-area: textoInicio;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-evenly;
-    color: black;
-    background-color: white;
-}
-.textoInicio p {
-    padding: 1rem;
-    font-family: 'Audiowide', cursive;
-    font-size: 23px;
-    color: black;
-    
-}
-.textoInicio img {
-    align-self:center ;
-    background-color: beige;
-}
-.textoInicio h2 {
-     
-    color: #206d85 ;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
-    padding-left: 1.5rem;
-    text-shadow: 0 0 3px rgb(7, 3, 3);
-    align-self: start;
+
  
-
-}
-  
-.textoSide { grid-area: textoSide; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    width: 100%;
-    height: 100%;
-
-    border-radius: 0px;
-    font-size: 20px;
-    background-color:#082032;
-
-
-}
-.textoSide h2{
-    color: white ;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-
-    text-shadow: 0 0 3px rgb(7, 3, 3);
-    align-self: center;
-    padding-top: 1rem;
- 
-    
-   
-}
-.textoSide ul li {
-    list-style: none;
-    
-  
-    
- 
-}
-
-.aside {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    color: white;
-    list-style: none;
-    font-family: 'Audiowide', cursive;
-    padding: 2rem;
-    font-size: 21px;
-   height: 100%;
-  
-} 
-/*---------------------------------H I S T O R I A  Grid----------------------------------------------- */
-
-/* ------------------------------   H i S t O R I A  Grid --------------------------------------------*/
-
-.containerHistoria {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 600px  ;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
- 
-       
-      "historia historia historia"
-   
-     
-    ;
-    width: 100%;
-    height: 100%;
-  }
-/* ----------------------H I S T O R I A ------------------------------ */
-  .historia { grid-area: historia; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    text-align:justify;
-    background-color: white;
-
-    }
-
-
-.historia h2 {
-    color: #206d85 ;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
-    
-    text-shadow: 0 0 3px rgb(7, 3, 3);
-    align-self:flex-start;
-    margin: 2rem 0rem;
-    margin-left: 5rem;
-
-    
-    
-    
-   
-}
-.historia p{
-
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    font-family: 'Audiowide', cursive;
-    font-size: 22px;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-  .historia1 { grid-area: historia1; 
-
-
-}
-.historia div a {display: flex;
-    flex-direction: column;
-    text-align: end;
-    margin-right: 7rem;
-    color: black;
-    font-size: 25px;
-    font-family: 'Audiowide', cursive;
-}
-.historia div a:hover {display: flex;
-    flex-direction: column;
-    text-align: end;
-    margin-right: 7rem;
-    color: rgb(0, 0, 0);
-    font-family: 'Audiowide', cursive;
-}
-
-  /* ------------------------------Discografia Grid ---------------------------------------------- */
-  /* ------------------------------Discografia Grid ---------------------------------------------- */
-  .container2{display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(9, 300px) ;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "disco1 disco1 discoA discoA"
-    "disco2 disco2 discoB discoB"
-    "disco3 disco3 discoC discoC"
-    "disco4 disco4 discoD discoD"
-    "disco5 disco5 discoE discoE"
-    "disco6 disco6 discoF discoF"
-    "disco7 disco7 discoG discoG"
-    "disco8 disco8 discoH discoH" 
-    "disco9 disco9 discoI discoI" 
-    ;
- 
-    height: 100%;
-    margin: 1.5rem;
-  }
-/* ------------------------------------------------------Disco 1 ------------------------------------------------- */
-
-.disco1{ grid-area: disco1;
-    background-image: url(../imagenes/discos/CDC-1992.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:bottom;    
-} 
-.disco1:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-.discoA{ grid-area: discoA;
-    background-color: white;
-    color: black;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Audiowide', cursive;
-}
-.discoA h3 {
-    margin-left: 4rem;
-}
-.discoA p {
-    margin-left: 2rem;
-    font-weight:lighter;
-}
-.discoA button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
- 
-}
-.discoA button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    color:#082032;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    transition: 1s;
-transform: scale(1.05);
-    
- 
-}
-
-/*------------------------------------------------- DISCO 2 ----------------------------------------------------------*/
-
-.discoB{ grid-area: discoB;
-    background-image: url(../imagenes/discos/CDC-1993.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
-}
-.discoB:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-.disco2 { grid-area: disco2;
-    background-color: white;
-    color: black;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    text-align: end;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Audiowide', cursive;
-    
-  
-}
-
-.disco2 h3 {
-    margin-right: 4rem;
-    text-align: end;
-  
-}
-.disco2 p {
-    display: flex;
-    margin-right: 2rem;
-    align-self:flex-end;
-    justify-content:flex-end;
-   
-}
-
-
-.disco2 button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-right: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-    align-self: flex-end;
-
-}
-.disco2 button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-  
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    transition: 1s;
-    transform: scale(1.05);
-}
-/* --------------------------------------------------  D I S C O 3 -------------------------------------------- */
-
-.disco3{ grid-area: disco3;
-   
-    background-image: url(../imagenes/discos/CDC-1996.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-
-}
-.disco3:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-
-.discoC{ grid-area: discoC;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Audiowide', cursive;
-}
-.discoC h3 {
-    margin-left: 4rem;
-}
-.discoC p {
-    margin-left: 2rem;
-}
-.discoC button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-}
-.discoC button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    color:#082032;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    transition: 1s;
-    transform: scale(1.05)
-    
- 
-}
-
-    /* -----------------------------Disco 4------------------------------------ */
-
-
-.discoD{ grid-area: discoD;
-    background-image: url(../imagenes/discos/CDC-2000.jpg);
-    background-repeat: repeat-x;
-    background-size: contain;
-    background-position:top;
-    
-}
-.discoD:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-    filter: grayscale(10%);
-}
-.disco4 { grid-area: disco4;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    text-align: end;
-    font-family: 'Audiowide', cursive;
-    
-  
-}
-
-.disco4 h3 {
-    margin-right: 4rem;
-    text-align: end;
-  
-}
-.disco4 p {
-    display: flex;
-    margin-right: 2rem;
-    align-self:flex-end;
-    justify-content:flex-end;
-   
-}
-
-
-.disco4 button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-right: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-    align-self: flex-end;
-}
-.disco4 button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    transition: 1s;
-    transform: scale(1.05);
- 
-}
-/* ---------------------- D I S C O 5--------------------- */
-.disco5{ grid-area: disco5;
-    background-image: url(../imagenes/discos/CDC-2002.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:bottom ; 
-}
-.disco5:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-    filter: grayscale(10%);
-}
-.discoE{ grid-area: discoE;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Audiowide', cursive;
-}
-.discoE h3 {
-    margin-left: 4rem;
-}
-.discoE p {
-    margin-left: 2rem;
-}
-.discoE button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-}
-.discoE button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    color:#082032;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    transition: 1s;
-    transform: scale(1.05)
- 
-}
-/* -----------------------D I S C O 6 ------------------------------ */
-
-
-.discoF{ grid-area: discoF;
-    background-color: #a1ccec;
-    background-image: url(../imagenes/discos/CDC-2007.jpg);
-    background-repeat: no-repeat;
-background-size:cover;
-background-position:center;
-}
-
-
-.discoF:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-    filter: grayscale(10%);
-}
-.disco6 { grid-area: disco6;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    text-align: end;
-    font-family: 'Montserrat', sans-serif;
-    
-  
-}
-
-.disco6 h3 {
-    margin-right: 4rem;
-    text-align: end;
-  
-}
-.disco6 p {
-    display: flex;
-    margin-right: 2rem;
-    align-self:flex-end;
-    justify-content:flex-end;
-   
-}
-
-
-.disco6 button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-right: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-    align-self: flex-end;
-}
-.disco6 button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    transition: 1s;
-    transform: scale(1.05);
- 
-}
-/* ----------------------------D I S C O 7 -------------------------------- */
-.disco7{ grid-area: disco7;
-    background-color: #a1ccec;
-    background-image: url(../imagenes/discos/CDC-2010.jfif);
-    background-repeat: no-repeat;
-background-size: cover;
-background-position:bottom;
-
-}
-
-.disco7:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-    filter: grayscale(10%);
-}
-.discoG{ grid-area: discoG;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Audiowide', cursive;
-}
-.discoG h3 {
-    margin-left: 4rem;
-}
-.discoG p {
-    margin-left: 2rem;
-}
-.discoG button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-}
-.discoG button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    color:#082032;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    transition: 1s;
-transform: scale(1.05)
- 
-}
-/* ------------------------------------------D I S C O 8 --------------------------- */
-
-
-.discoH{ grid-area: discoH;
-    background-color: #a1ccec;
-    background-image: url(../imagenes/discos/CDC-2015.jfif);
-    background-repeat: repeat-x;
-    background-size: contain;
-    background-position:top;
-}
-
-
-
-.discoH:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-    filter: grayscale(10%);
-}
-.disco8 { grid-area: disco8;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    text-align: end;
-    font-family: 'Audiowide', cursive;
-    
-  
-}
-
-.disco8 h3 {
-    margin-right: 4rem;
-    text-align: end;
-  
-}
-.disco8 p {
-    display: flex;
-    margin-right: 2rem;
-    align-self:flex-end;
-    justify-content:flex-end;
-   
-}
-
-
-.disco8 button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-    transition: 1s;
-    transform: scale(1.05);
-}
-.disco8 button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    color: black;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
- 
-}
-/* ------------------------------------------------D I S C O 9-------------------------------- */
-.disco9{ grid-area: disco9;
-    background-image: url(../imagenes/discos/CDC-2021.png);
-    background-repeat: no-repeat;
-    background-size:100% 100% ;
-    background-position:0rem ;
-
-
-}
-.disco9:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-    filter: grayscale(10%);
-}
-.discoI{ grid-area: discoI;
-    background-color:   white;
-    color: black;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Audiowide', cursive;
-}
-.discoI h3 {
-    margin-left: 4rem;
-}
-.discoI p {
-    margin-left: 2rem;
-}
-.discoI button {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    background-color: none;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    font-size: 20px;
-  
-    color: black;
-    background-color:  white;
-}
-.discoI button:hover {
-    padding: 1rem 0.5rem;
-    width: 7rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    color:#082032;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    transition: 1s;
-transform: scale(1.05)
- 
-}
-
-  /* -------------------------------------------- footer Grid------------------------------------------------- */
-  /* -------------------------------------------- footer Grid------------------------------------------------- */
-
-  .contenedor { display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 250px;
-    gap: 10px 10 10px;
-    grid-auto-flow: row;
-    grid-template-areas: 
-    "pie pie pie"
-    ;
-    width: 100%;
-    height: 100%;
-}
-  /*------------------------------------------Pie Grid ----------------------------------------------------  */
-.pie { grid-area: pie;
-    background-color: rgb(239, 243, 247);
-    display: flex ;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    justify-content:space-evenly;
-    align-items: center;
-
-    font-weight: bold;
-
-}
-.pie p {
-    justify-content: center;
-    padding: 2rem;
-    text-align: center;
- 
-    
-}
-.pie div {display:flex;
-    height: 100%;
-  
-    justify-content: space-between;
-
-   
-
-}
-.pie div i {
-    font-size: 40px;
-
-  margin: 0px;
-  padding: 2rem;
-}
-.tituloG{
-    height: 50px;
-    width: 100%;
-    color: white;
-    background-color:  #123b5a;
-    box-shadow: 0 0 5px rgb(7, 6, 6);
-font-family: 'Montserrat', sans-serif;
-font-size: 30px;
-letter-spacing: 0.3rem;
-text-shadow: 0 0 3px rgb(7, 3, 3);
-height: 100%;
-
-font-weight: bold;
-text-align: center;
-
-}
-  }
-
-
-
-
-
-  /* .encabezado, .textoInicio, .textoSide, .historia, .discografia, .pie, .historia1, .historia2, .imagen-1, .imagen-2, .noticia-1, .noticia-2 {
-   
-  }  */
 /* -------------------------------------------   Noticias Grid--------------------------- */
 /* -------------------------------------------   Noticias  Grid--------------------------- */
-
+/* 
 .container-3 {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:  650px 850px;
@@ -3246,7 +86,7 @@ text-align: center;
     ;
   }
   /*----------------------------------------- Noticias----------------------------------------- */
-  .noticia-1 { grid-area: noticia-1;
+ /* .noticia-1 { grid-area: noticia-1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -3302,106 +142,138 @@ margin-bottom: 2rem;}
       .noticia-2 p {
         font-family: 'Audiowide', cursive;
   
+      } */
+
+/* -----------------------------------Galleria Grid--------------------------------------------- */
+/* -----------------------------------Galleria Grid--------------------------------------------- */
+@media only screen and (min-width: 753px)  {
+    .containerGaleria{
+        display: none;
+    }
+    .containerGaleria {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows:  200px 200px 200px 250px;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+      
+        "area-1 area-1 area-4 area-4 area-5"
+        "area-2 area-6 area-4 area-4 area-5"
+        "area-2 area-3 area-3 area-8 area-8"
+    
+        "area-7 area-7 area-7 area-8 area-8";
+          
+      padding: 5rem;
+       background-color: #082032;
+    
       }
-
-/* -----------------------------------Galleria Grid--------------------------------------------- */
-/* -----------------------------------Galleria Grid--------------------------------------------- */
-.containerGaleria {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows:  200px 200px 200px 250px;
-    gap: 5px 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-  
-    "area-1 area-1 area-4 area-4 area-5"
-    "area-2 area-6 area-4 area-4 area-5"
-    "area-2 area-3 area-3 area-8 area-8"
-
-    "area-7 area-7 area-7 area-8 area-8";
-      
-  padding: 5rem;
-   background-color: #082032;
-
-  }
- 
- /* --------------------------------------G A L  E R I A--------------------------------------------------- */
- 
-  .area-1 { grid-area: area-1;
-background-image: url(/imagenes/gallery/cdc1.png); 
-}
-.area-1:hover{
-    transform: scale(1.1);
-    transition: all 2s;
-    filter: grayscale();
-}
-  .area-2 { grid-area: area-2;
-    background-image: url(/imagenes/gallery/cdc5.jpg);
-background-position: center;
-background-size: cover; }
-.area-2:hover{
-    transform: scale(1.1);
-    transition: all 2s;
-    filter: grayscale();
-}
-  .area-3 { grid-area: area-3; 
-    background-image: url(/imagenes/gallery/cdc3.jpg);
-    background-position: top;
-    background-size: cover; }
-      
-    .area-3:hover{
+     
+     /* --------------------------------------G A L  E R I A--------------------------------------------------- */
+     .mostrar{
+         display: none;
+     }
+      .area-1 { grid-area: area-1;
+    background-image: url(/imagenes/gallery/cdc1.jpg); 
+    background-position: center;
+    }
+    .area-1:hover{
         transform: scale(1.1);
         transition: all 2s;
         filter: grayscale();
     }
-  .area-4 { grid-area: area-4;
-    background-image: url(/imagenes/gallery/cdc2.jpg);
-    background-position:none;
-    background-size: cover; }
-    .area-4:hover{
-        transform: scale(1.1);
-        transition: all 2s;
-        filter: grayscale();
-    }
-      
-  .area-5 { grid-area: area-5;
-    background-image: url(/imagenes/gallery/cdc8.jpg);
+      .area-2 { grid-area: area-2;
+        background-image: url(/imagenes/gallery/cdc5.jpg);
     background-position: center;
     background-size: cover; }
-    .area-5:hover{
+    .area-2:hover{
         transform: scale(1.1);
         transition: all 2s;
         filter: grayscale();
     }
+      .area-3 { grid-area: area-3; 
+        background-image: url(/imagenes/gallery/cdc3.jpg);
+        background-position: top;
+        background-size: cover; }
+          
+        .area-3:hover{
+            transform: scale(1.1);
+            transition: all 2s;
+            filter: grayscale();
+        }
+      .area-4 { grid-area: area-4;
+        background-image: url(/imagenes/gallery/cdc2.jpg);
+        background-position:none;
+        background-size: cover; }
+        .area-4:hover{
+            transform: scale(1.1);
+            transition: all 2s;
+            filter: grayscale();
+        }
+          
+      .area-5 { grid-area: area-5;
+        background-image: url(/imagenes/gallery/cdc8.jpg);
+        background-position: center;
+        background-size: cover; }
+        .area-5:hover{
+            transform: scale(1.1);
+            transition: all 2s;
+            filter: grayscale();
+        }
+          
+      .area-6 { grid-area: area-6;
+        background-image: url(/imagenes/gallery/cdc6.jpg);
+        background-position: center;
+        background-size: cover; }
+        .area-6:hover{
+            transform: scale(1.1);
+            transition: all 2s;
+            filter: grayscale();
+        }
+    
+        
       
-  .area-6 { grid-area: area-6;
-    background-image: url(/imagenes/gallery/cdc6.jpg);
+      .area-7 { grid-area: area-7;
+        background-image: url(/imagenes/gallery/cdc9.jpg);
+        background-position: center;
+        background-size: cover; }
+        .area-7:hover{
+            transform: scale(1.1);
+            transition: all 2s;
+            filter: grayscale();
+        }
+      .area-8 { grid-area: area-8; 
+        background-image: url(/imagenes/gallery/cdc10.jpg);
     background-position: center;
     background-size: cover; }
-    .area-6:hover{
+    .area-8:hover{
         transform: scale(1.1);
         transition: all 2s;
         filter: grayscale();
+
     }
-  
-  .area-7 { grid-area: area-7;
-    background-image: url(/imagenes/gallery/cdc9.jpg);
-    background-position: center;
-    background-size: cover; }
-    .area-7:hover{
-        transform: scale(1.1);
-        transition: all 2s;
-        filter: grayscale();
-    }
-  .area-8 { grid-area: area-8; 
-    background-image: url(/imagenes/gallery/cdc10.jpg);
-background-position: center;
-background-size: cover; }
-.area-8:hover{
-    transform: scale(1.1);
-    transition: all 2s;
-    filter: grayscale();
 }
+@media only screen and (min-width: 320px)  and (max-width:753px) {
+    .containerGaleria{
+        display: none;
+        
+    }
   
+  
+
+}  
+@media only screen and (min-width: 753px)  and (max-width:1105px) {
+    .area-6 { grid-area: area-6;
+        background-image: url(/imagenes/gallery/cdc6.jpg);
+        background-position: right;
+        background-size: cover; }
+        .area-6:hover{
+            transform: scale(1.1);
+            transition: all 2s;
+            filter: grayscale();
+        }
+
+    
+}
 
 
 /* ----------------------------------------Contacto Grid ------------------------------------------------ */
@@ -3487,106 +359,325 @@ font-family: 30px   ;
         height: 620px;
     }
 
- 
+
+
 /* ------------------------------------------------------- */
 
-/*  */
-nav input {
-    display: none;
-}
 
-nav {
+.bg-cdc {
     background-color: #082032;
-    height: 80px;
+    font-family: 'Montserrat', sans-serif;  
 }
-.enlace{
-    position: absolute;
-    padding: 20px 80px;
-}
-.logo{
-    height: 40px;
-}
-nav ul {
-    float: right;
-    margin-right: 40px;
-}
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+
+
+
+/* CODIGO NUEVO0 */
+
+.textoInicio { display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:none;
+    height: 100%;
 
 }
-nav ul li a {
-    color: white;
-    font-size: 14px;
-    padding: 7px 13px;
-    text-decoration: none;
+
+/* .textoInicio img {
+    height: 20em;
+    width: 100%;
+} */
+ #h1 {
+    color: #206d85 ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 0.5em;
+    padding-left: 0.3em;
+  
+ 
+}
+
+ p {
+    padding: 0rem 1rem;
+    font-family: 'Audiowide', cursive;
+    text-align: justify;
+    color: black;
+}
+
+
+.textoSide {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;  
+    background-image: linear-gradient(to bottom, #082032,rgb(140, 149, 173));
+    height:100%;
    
+}
+.aside { display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    color:white;
+    list-style: none;
+    font-family: 'Audiowide', cursive;
+    font-size: 0.6em;
+    height:100% ;
+    line-height: 3em;
+} 
+
+.textoSide h2{
+color:#206d85 ;
+font-family: 'Montserrat', sans-serif;
+font-size: 1em;
+font-weight: bolder;
+text-shadow: 0 0 3px rgb(7, 3, 3);
+align-self: center;
+padding-top:1rem;
+}
+
+
+
+/* ----------------------H I S T O R I A ------------------------------ */
+
+ h2, h3 {
+    color:#206d85 ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.9em;
+    font-weight: bolder;
+    align-self: center;
+    padding-top:1em;
+    padding-left: 1em;
+ 
+}
+
+.historia div  {display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 7em;
+    padding-bottom: 1em;
+    color: black;
+    font-size: 1.6em;
+    font-family: 'Audiowide', cursive;
+    text-decoration: none;
+}
+.historia div a:hover {
+   background-color: #206d85;
+   color: white;
+} 
+.tituloG{
+    color: white;
+    background-color: #082032;
+    box-shadow: 0 0 0.05em #206d85;
+font-family: 'Montserrat', sans-serif;
+font-size: 2em;
+letter-spacing: 0.09em;
+font-weight: bold;
+text-align: center;
+padding: 0.11em 0em;
 
 }
-li a:hover {
-    background-color: blue;
-    transition: .5s;
+/* Discos */
+.discos {display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+     height: 18em;
+     font-size: 1em;
+     background-image: linear-gradient(to bottom, #082032, rgb(140, 149, 173));
+     color: white;
+     padding: 0rem 1rem;
+     font-family: 'Audiowide', cursive;
+     
+    
 }
-.checkbtn{
-    font-size: 30px;
-    color: white;float:  right;
-    line-height: 80px;
-    margin-right: 40px; 
-    cursor: pointer;
-    display: none;
+.disImg-1{ 
+    background-image: url(../imagenes/discos/CDC-1992.jpg);
+    background-size: cover;
+    background-position:center; 
+    height: 18em;
 }
-#check{
-    display: none;
+.disImg-1:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
 }
-@media screen and (max-width: 1080px){
-    .enlace {
-        padding-left: 30px;
-    }
-    nav ul li a {
-        font-size: 16px;
-    }
-    .logo{
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        height: 30px;
-        padding-left: 1rem;
-    }
+.disImg-2{ 
+    background-image: url(../imagenes/discos/CDC-1993.jpg);
+    background-size: cover;
+    background-position:center; 
+    height: 18em;
 }
-@media screen and (max-width: 858px) {
-    .checkbtn{
-        display: block;
-    }
-    nav {
-        position:fixed;
-        width: 100%;
-        height: 60px;
-    }
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #082032;
-        top:60px;
-        text-align: center;
-        transition: all 0.35s; 
-        left: -100%;
-    }
-    nav ul li  {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-        
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-    li a:hover {
-        background: none;
-        color: orange;
-    }
-    #check:checked ~ ul {
-        left: 0;
-    }
+
+.disImg-2:hover{
+    transform: scale(1.003);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-3{ 
+    background-image: url(../imagenes/discos/CDC-1996.jpg);
+    background-size: cover;
+    background-position:center; 
+    height: 18em;
+}
+.disImg-3:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-4{ 
+    background-image: url(../imagenes/discos/CDC-2000.jpg);
+    background-size: cover;
+    background-position:center; 
+    height: 18em;
+}
+
+.disImg-4:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-5{ 
+    background-image: url(../imagenes/discos/CDC-2002.jpg);
+    background-size: cover;
+    background-position:bottom; 
+    height: 18em;
+}
+.disImg-5:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-6{ 
+    background-image: url(../imagenes/discos/CDC-2007.jpg);
+    background-size: cover;
+    background-position:center; 
+    height: 18em;
+}
+
+.disImg-6:hover{
+    transform: scale(1.003);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-7{ 
+    background-image: url(../imagenes/discos/CDC-2010.jfif);
+    background-size: cover;
+    background-position:top; 
+    height: 18em;
+}
+.disImg-7:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-8{ 
+    background-image: url(../imagenes/discos/CDC-2015.jfif);
+    background-size: cover;
+    background-position:center; 
+    height: 18em;
+}
+
+.disImg-8:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-9{ 
+    background-image: url(../imagenes/discos/CDC-2010.jfif);
+    background-size: cover;
+    background-position:top; 
+    height: 18em;
+}
+.disImg-9:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+
+.discos button {
+    align-self: center;
+    color: white;
+    background-color: rgb(32, 109, 133);
+    padding: 0.5em;
+ 
+ }
+ .discos button:hover {
+     background-color: rgba(32, 109, 133, 0.1);
+     transform: scale(1.1);
+  transition: 1.4s;
+  }
+
+
+  /* Discos IMPARES*/
+ 
+ 
+ .discoImpar h4 {
+    align-self: flex-start;
+   
+   
+}
+.pdiscoImpar{
+    padding-left: 0em;
+    padding-right: 1em;
+    font-family: 'Audiowide', cursive;
+    text-align: justify;
+    color: white;
+    align-self: flex-start;
+   
+}
+  /* Discos PARES*/
+
+
+
+.discoPar h4 {
+    align-self: flex-end;
+    padding-left: 1em;
+    padding-right: 0em;
+   
+   
+}
+.pdiscoPar{
+    padding-left: 1em;
+    padding-right: 0em;
+    font-family: 'Audiowide', cursive;
+    text-align: justify;
+    color: white;
+    align-self: flex-end;
+   /* -------------------------------------PIE--------------------------------- */
+}
+.pie { display: flex;
+    flex-direction:column;
+    background-color: #082032;
+    color: white;
+    height: 10em;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.pie2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.pie p {
+    color: white;
+    font-size: 0.5em;
+    font-family: 'Audiowide', cursive;
+    
+}
+.pie2  i {
+  
+  padding: 0 0.3em;
+  font-size: 1.5em;
+} 
+/* Noticias */
+.noticia-1{
+    background-image: url(/imagenes/nacho&CDC.jpeg);
+    background-size: cover;
+    background-repeat: repeat-y;
+   
+}
+.noticia-2{
+    background-image: url(/imagenes/CDC-R.jpg);
 }
