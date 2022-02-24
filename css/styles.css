@@ -43,106 +43,335 @@ transform: scale(1.1);
 
   /* ---------------------------------------------------------- */
 
-     @media only screen and (min-width: 320px) and (max-width: 540px) {
+
+/* ------------------------------------------------------- */
+
+
+.bg-cdc {
+    background-color: #082032;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+
+
+/* CODIGO NUEVO0 */
+
+.textoInicio { display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:none;
+    height: 100%;
+
+}
+
+/* .textoInicio img {
+    height: 20em;
+    width: 100%;
+} */
+ #h1 {
+    color: #206d85 ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 0.5em;
+    padding-left: 0.3em;
   
-        
-        
-      
-}
-
-/*  DISCO */
-/*  DISCO */
-@media only screen and (min-width: 912px)  and (max-width:1080px) {
-    
-
-
-}
-
-
-
-
-/* ----------------------- D - E - S - D - E  ---------------  1-2-1-5----------------------------------------------------------------- */
-/* ----------------------- D - E - S - D - E  ---------------  1-2-1-5----------------------------------------------------------------- */
-
-
-  /* ----------------------------------------------- I  N  I  C  I  O------------------------------------------------------------- */
-
-
-
  
-/* -------------------------------------------   Noticias Grid--------------------------- */
-/* -------------------------------------------   Noticias  Grid--------------------------- */
-/* 
-.container-3 {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  650px 850px;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-  
-      "noticia-1 noticia-1 imagen-1"
-      "imagen-2 noticia-2 noticia-2";
-      margin-top: 4rem;
-    ;
-  }
-  /*----------------------------------------- Noticias----------------------------------------- */
- /* .noticia-1 { grid-area: noticia-1;
+}
+
+ p {
+    padding: 0rem 1rem;
+    font-family: 'Audiowide', cursive;
+    text-align: justify;
+    color: black;
+    
+}
+
+
+.textoSide {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    text-align:justify;
-    background-color: white;
-    font-family: 'Audiowide', cursive;
-    font-size: 23px;
-    }
-  .noticia-1 h3{ align-self: center;
-    font-family: 'Montserrat', sans-serif;   
-    color:#082032;
-    text-shadow: 0 0 1px rgb(7, 3, 3);
-    margin-top: 2rem;
-  }
-  .noticia-1 p {
-    font-family: 'Audiowide', cursive;
-  }
-  .imagen-1 { grid-area: imagen-1;
-   background-image: url(/imagenes/nacho&CDC.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
+    justify-content:space-evenly;
+    align-items:flex-start; 
+   
+    background-position: center; 
     background-size: cover;
-    margin-right: 1rem;
+     background-image: linear-gradient(to bottom, #082032,rgb(33, 13, 121)); 
+    height: auto;
+  
+   
 }
-  
-  .imagen-2 { grid-area: imagen-2;
-background-size: cover;
-background-position: center;
-margin-left: 2rem;
-margin-top: 2rem;
-margin-bottom: 2rem;}
-  
-  .noticia-2 { grid-area: noticia-2; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    text-align:justify;
-    background-color: white;
+.te {
+    background-color: rgba(38, 207, 38, 0.3);
+}
+.aside { 
+    color:white;
     font-family: 'Audiowide', cursive;
-    font-size: 23px;
-}
-    .noticia-2 h3{ align-self: center;
-        font-family: 'Montserrat', sans-serif;   
-        color:#082032;
-        text-shadow: 0 0 1px rgb(7, 3, 3);
-        margin-top: 2rem;}
-      .noticia-2 p {
-        font-family: 'Audiowide', cursive;
+    font-size: 1em;
   
-      } */
+}
+
+.textoSide h2{
+color:#206d85 ;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.5em;
+font-weight: bolder;
+text-shadow: 0 0 3px rgb(7, 3, 3);
+align-self: center;
+padding-top:1rem;
+}
+
+
+
+/* ----------------------H I S T O R I A ------------------------------ */
+
+ h2, h3 {
+    color:#206d85 ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.9em;
+    font-weight: bolder;
+    align-self: center;
+    padding-top:1em;
+    padding-left: 1em;
+ 
+}
+
+.historia div  {display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 7em;
+    padding-bottom: 1em;
+    color: black;
+    font-size: 1.6em;
+    font-family: 'Audiowide', cursive;
+    text-decoration: none;
+}
+.historia div a:hover {
+   background-color: #206d85;
+   color: white;
+} 
+.tituloG{
+    color: white;
+    background-color: #082032;
+    box-shadow: 0 0 0.05em #206d85;
+font-family: 'Montserrat', sans-serif;
+font-size: 2em;
+letter-spacing: 0.09em;
+font-weight: bold;
+text-align: center;
+padding: 0.11em 0em;
+
+}
+/* Discos */
+.discos {display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+     height: 18em;
+     font-size: 1em;
+     background-image: linear-gradient(to bottom, #082032, rgb(33, 13, 121));
+
+     color: white;
+     padding: 0rem 1rem;
+     font-family: 'Audiowide', cursive;
+     
+    
+}
+.disImg-1{ 
+    background-image: url(../imagenes/discos/CDC-1992.jpg);
+    background-size: cover;
+    background-position:center; 
+    height: 18em;
+}
+.disImg-1:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-2{ 
+    background-image: url(../imagenes/discos/CDC-1993.jpg);
+    background-size: cover;
+    background-position:center; 
+    height: 18em;
+}
+
+.disImg-2:hover{
+    transform: scale(1.003);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-3{ 
+    background-image: url(../imagenes/discos/CDC-1996.jpg);
+    background-size: cover;
+    background-position:center; 
+    height: 18em;
+}
+.disImg-3:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-4{ 
+    background-image: url(../imagenes/discos/CDC-2000.jpg);
+    background-size: cover;
+    background-position:center; 
+    height: 18em;
+}
+
+.disImg-4:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-5{ 
+    background-image: url(../imagenes/discos/CDC-2002.jpg);
+    background-size: cover;
+    background-position:bottom; 
+    height: 18em;
+}
+.disImg-5:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-6{ 
+    background-image: url(../imagenes/discos/CDC-2007.jpg);
+    background-size: cover;
+    background-position:center; 
+    height: 18em;
+}
+
+.disImg-6:hover{
+    transform: scale(1.003);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-7{ 
+    background-image: url(../imagenes/discos/CDC-2010.jfif);
+    background-size: cover;
+    background-position:top; 
+    height: 18em;
+}
+.disImg-7:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-8{ 
+    background-image: url(../imagenes/discos/CDC-2015.jfif);
+    background-size: cover;
+    background-position:center; 
+    height: 18em;
+}
+
+.disImg-8:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+.disImg-9{ 
+    background-image: url(../imagenes/discos/CDC-2010.jfif);
+    background-size: cover;
+    background-position:top; 
+    height: 18em;
+}
+.disImg-9:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(10%);
+}
+
+.discos button {
+    align-self: center;
+    color: white;
+    background-color: rgb(32, 109, 133);
+    padding: 0.5em;
+ 
+ }
+ .discos button:hover {
+     background-color: rgba(32, 109, 133, 0.1);
+     transform: scale(1.1);
+  transition: 1.4s;
+  }
+
+
+  /* Discos IMPARES*/
+ 
+ 
+ .discoImpar h4 {
+    align-self: flex-start;
+   
+   
+}
+.pdiscoImpar{
+    padding-left: 0em;
+    padding-right: 1em;
+    font-family: 'Audiowide', cursive;
+    text-align: justify;
+    color: white;
+    align-self: flex-start;
+   
+}
+  /* Discos PARES*/
+
+
+
+.discoPar h4 {
+    align-self: flex-end;
+    padding-left: 1em;
+    padding-right: 0em;
+   
+   
+}
+.pdiscoPar{
+    padding-left: 1em;
+    padding-right: 0em;
+    font-family: 'Audiowide', cursive;
+    text-align: justify;
+    color: white;
+    align-self: flex-end;
+   /* -------------------------------------PIE--------------------------------- */
+}
+.pie { display: flex;
+    flex-direction:column;
+    background-color: #082032;
+    color: white;
+    height: 10em;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.pie2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.pie p {
+    color: white;
+    font-size: 0.5em;
+    font-family: 'Audiowide', cursive;
+    
+}
+.pie2  i {
+  
+  padding: 0 0.3em;
+  font-size: 1.5em;
+} 
+/* Noticias */
+/* .noticia-1{
+    background-image: url(/imagenes/nacho&CDC.jpeg);
+    background-size: cover;
+    background-repeat: repeat-y;
+   
+} */
+/* .noticia-2{
+    background-image: url(/imagenes/CDC-R.jpg);
+} */
+
+/* ----------------------*******************************------------------ */
+
+
 
 /* -----------------------------------Galleria Grid--------------------------------------------- */
 /* -----------------------------------Galleria Grid--------------------------------------------- */
@@ -359,325 +588,3 @@ font-family: 30px   ;
         height: 620px;
     }
 
-
-
-/* ------------------------------------------------------- */
-
-
-.bg-cdc {
-    background-color: #082032;
-    font-family: 'Montserrat', sans-serif;  
-}
-
-
-
-/* CODIGO NUEVO0 */
-
-.textoInicio { display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items:none;
-    height: 100%;
-
-}
-
-/* .textoInicio img {
-    height: 20em;
-    width: 100%;
-} */
- #h1 {
-    color: #206d85 ;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    padding-top: 0.5em;
-    padding-left: 0.3em;
-  
- 
-}
-
- p {
-    padding: 0rem 1rem;
-    font-family: 'Audiowide', cursive;
-    text-align: justify;
-    color: black;
-}
-
-
-.textoSide {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: center;  
-    background-image: linear-gradient(to bottom, #082032,rgb(140, 149, 173));
-    height:100%;
-   
-}
-.aside { display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-start;
-    color:white;
-    list-style: none;
-    font-family: 'Audiowide', cursive;
-    font-size: 0.6em;
-    height:100% ;
-    line-height: 3em;
-} 
-
-.textoSide h2{
-color:#206d85 ;
-font-family: 'Montserrat', sans-serif;
-font-size: 1em;
-font-weight: bolder;
-text-shadow: 0 0 3px rgb(7, 3, 3);
-align-self: center;
-padding-top:1rem;
-}
-
-
-
-/* ----------------------H I S T O R I A ------------------------------ */
-
- h2, h3 {
-    color:#206d85 ;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.9em;
-    font-weight: bolder;
-    align-self: center;
-    padding-top:1em;
-    padding-left: 1em;
- 
-}
-
-.historia div  {display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding-right: 7em;
-    padding-bottom: 1em;
-    color: black;
-    font-size: 1.6em;
-    font-family: 'Audiowide', cursive;
-    text-decoration: none;
-}
-.historia div a:hover {
-   background-color: #206d85;
-   color: white;
-} 
-.tituloG{
-    color: white;
-    background-color: #082032;
-    box-shadow: 0 0 0.05em #206d85;
-font-family: 'Montserrat', sans-serif;
-font-size: 2em;
-letter-spacing: 0.09em;
-font-weight: bold;
-text-align: center;
-padding: 0.11em 0em;
-
-}
-/* Discos */
-.discos {display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-     height: 18em;
-     font-size: 1em;
-     background-image: linear-gradient(to bottom, #082032, rgb(140, 149, 173));
-     color: white;
-     padding: 0rem 1rem;
-     font-family: 'Audiowide', cursive;
-     
-    
-}
-.disImg-1{ 
-    background-image: url(../imagenes/discos/CDC-1992.jpg);
-    background-size: cover;
-    background-position:center; 
-    height: 18em;
-}
-.disImg-1:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-.disImg-2{ 
-    background-image: url(../imagenes/discos/CDC-1993.jpg);
-    background-size: cover;
-    background-position:center; 
-    height: 18em;
-}
-
-.disImg-2:hover{
-    transform: scale(1.003);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-.disImg-3{ 
-    background-image: url(../imagenes/discos/CDC-1996.jpg);
-    background-size: cover;
-    background-position:center; 
-    height: 18em;
-}
-.disImg-3:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-.disImg-4{ 
-    background-image: url(../imagenes/discos/CDC-2000.jpg);
-    background-size: cover;
-    background-position:center; 
-    height: 18em;
-}
-
-.disImg-4:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-.disImg-5{ 
-    background-image: url(../imagenes/discos/CDC-2002.jpg);
-    background-size: cover;
-    background-position:bottom; 
-    height: 18em;
-}
-.disImg-5:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-.disImg-6{ 
-    background-image: url(../imagenes/discos/CDC-2007.jpg);
-    background-size: cover;
-    background-position:center; 
-    height: 18em;
-}
-
-.disImg-6:hover{
-    transform: scale(1.003);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-.disImg-7{ 
-    background-image: url(../imagenes/discos/CDC-2010.jfif);
-    background-size: cover;
-    background-position:top; 
-    height: 18em;
-}
-.disImg-7:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-.disImg-8{ 
-    background-image: url(../imagenes/discos/CDC-2015.jfif);
-    background-size: cover;
-    background-position:center; 
-    height: 18em;
-}
-
-.disImg-8:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-.disImg-9{ 
-    background-image: url(../imagenes/discos/CDC-2010.jfif);
-    background-size: cover;
-    background-position:top; 
-    height: 18em;
-}
-.disImg-9:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
-}
-
-.discos button {
-    align-self: center;
-    color: white;
-    background-color: rgb(32, 109, 133);
-    padding: 0.5em;
- 
- }
- .discos button:hover {
-     background-color: rgba(32, 109, 133, 0.1);
-     transform: scale(1.1);
-  transition: 1.4s;
-  }
-
-
-  /* Discos IMPARES*/
- 
- 
- .discoImpar h4 {
-    align-self: flex-start;
-   
-   
-}
-.pdiscoImpar{
-    padding-left: 0em;
-    padding-right: 1em;
-    font-family: 'Audiowide', cursive;
-    text-align: justify;
-    color: white;
-    align-self: flex-start;
-   
-}
-  /* Discos PARES*/
-
-
-
-.discoPar h4 {
-    align-self: flex-end;
-    padding-left: 1em;
-    padding-right: 0em;
-   
-   
-}
-.pdiscoPar{
-    padding-left: 1em;
-    padding-right: 0em;
-    font-family: 'Audiowide', cursive;
-    text-align: justify;
-    color: white;
-    align-self: flex-end;
-   /* -------------------------------------PIE--------------------------------- */
-}
-.pie { display: flex;
-    flex-direction:column;
-    background-color: #082032;
-    color: white;
-    height: 10em;
-    justify-content: space-evenly;
-    align-items: center;
-   
-}
-.pie2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-.pie p {
-    color: white;
-    font-size: 0.5em;
-    font-family: 'Audiowide', cursive;
-    
-}
-.pie2  i {
-  
-  padding: 0 0.3em;
-  font-size: 1.5em;
-} 
-/* Noticias */
-.noticia-1{
-    background-image: url(/imagenes/nacho&CDC.jpeg);
-    background-size: cover;
-    background-repeat: repeat-y;
-   
-}
-.noticia-2{
-    background-image: url(/imagenes/CDC-R.jpg);
-}
