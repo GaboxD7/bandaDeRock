@@ -120,6 +120,15 @@ text-shadow: 0 0 3px rgb(7, 3, 3);
 align-self: center;
 padding-top:1rem;
 }
+h5 {
+    color:#206d85 ;
+font-family: 'Audiowide', cursive;
+font-size: 1.1em;
+padding-left: 1em;
+
+align-self: center;
+
+}
 
 
 
@@ -358,151 +367,211 @@ padding: 0.11em 0em;
   padding: 0 0.3em;
   font-size: 1.5em;
 } 
-/* Noticias */
-/* .noticia-1{
-    background-image: url(/imagenes/nacho&CDC.jpeg);
-    background-size: cover;
-    background-repeat: repeat-y;
-   
-} */
-/* .noticia-2{
-    background-image: url(/imagenes/CDC-R.jpg);
-} */
 
-/* ----------------------*******************************------------------ */
+
 
 
 
 /* -----------------------------------Galleria Grid--------------------------------------------- */
 /* -----------------------------------Galleria Grid--------------------------------------------- */
-@media only screen and (min-width: 753px)  {
-    .containerGaleria{
-        display: none;
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 7em;
+    gap: 0.050em;
+}
+.gallery-item{
+  position: relative;  
+}
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.gallery-item:nth-child(1){
+    grid-column-start: span 2;
+    grid-row-start:span 2 ;
+}
+
+.gallery-item:nth-child(4){
+    grid-column-start: span 2;
+    grid-row-start:span 2 ;
+}
+.gallery-item:nth-child(7){
+    grid-column-start: span 2;
+    grid-row-start:span 2 ;
+}
+.gallery-title {
+    position: absolute;
+    bottom:0;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0),rgba(0,0,0,1));
+    width: 100%;
+}
+@media screen and (min-width: 476px){
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 6em;
+        gap: 0.050em;
     }
-    .containerGaleria {  display: grid;
+    
+    .gallery-item:nth-child(1){
+        grid-column-start: span 3;
+        grid-row-start:span 3 ;
+    }
+    .gallery-item:nth-child(2){
+        grid-column-start: span 1;
+        grid-row-start:span 2 ;
+    }
+    .gallery-item:nth-child(3){
+        grid-column-start: span 2;
+        grid-row-start:span 2 ;
+    }
+    .gallery-item:nth-child(5){
+        grid-column-start: span 1;
+        grid-row-start:span 2 ;
+    }
+    .gallery-item:nth-child(6){
+        grid-column-start: span 1;
+        grid-row-start:span 2 ;
+    }
+    .gallery-item:nth-child(8){
+        grid-column-start: span 2;
+        grid-row-start:span 2 ;
+    }
+    .gallery-item:nth-child(9){
+        grid-column-start: span 1;
+        grid-row-start:span 2 ;
+    }
+}
+@media screen and (min-width: 576px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 8em;
+        gap: 0.090em;
+    }
+    .gallery-item:nth-child(9){
+        grid-column-start: span 3;
+        grid-row-start:span 3 ;
+    }
+    .gallery-item:nth-child(8){
+        grid-column-start: span 3;
+        grid-row-start:span 2 ;
+    }
+}
+@media screen  (min-width: 780px) and (max-height:990px){
+    .gallery-container {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows:  200px 200px 200px 250px;
-        gap: 5px 5px;
-        grid-auto-flow: row;
-        grid-template-areas:
-      
-        "area-1 area-1 area-4 area-4 area-5"
-        "area-2 area-6 area-4 area-4 area-5"
-        "area-2 area-3 area-3 area-8 area-8"
-    
-        "area-7 area-7 area-7 area-8 area-8";
-          
-      padding: 5rem;
-       background-color: #082032;
-    
-      }
+        grid-auto-rows: 7em;
+        gap: 0.2em;
+        margin: 2em;
      
-     /* --------------------------------------G A L  E R I A--------------------------------------------------- */
-     .mostrar{
-         display: none;
+    }
+    .gallery-item:nth-child(1){
+        grid-column-start: span 4;
+        grid-row-start:span 3 ;
+    }
+    .gallery-item:nth-child(5){
+        grid-column-start: span 1;
+        grid-row-start:span 2 ;
+    }
+    .gallery-item:nth-child(3){
+        grid-column-start: span 1;
+        grid-row-start:span 1 ;
+    }
+    .gallery-item:nth-child(6){
+        grid-column-start: span 2;
+        grid-row-start:span 2 ;
+    }
+    .gallery-item:nth-child(9){
+       display: none;
+    }
+}
+@media screen and (min-width: 991px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 7em;
+        gap: 0.2em;
+        margin: 2em;
+     
+    }
+    .gallery-item:nth-child(1){
+        grid-column-start: span 2;
+        grid-row-start:span 3 ;
+    }
+    .gallery-item:nth-child(2){
+        grid-column-start: span 3;
+        grid-row-start:span 3 ;
+    }
+    .gallery-item:nth-child(3){
+        grid-column-start: span 1;
+        grid-row-start:span 3 ;
+    }
+    .gallery-item:nth-child(4){
+        grid-column-start: span 3;
+        grid-row-start:span 3 ;
+    }
+    .gallery-item:nth-child(5){
+        grid-column-start: span 2;
+        grid-row-start:span 2 ;
+    }
+    .gallery-item:nth-child(9){
+        grid-column-start: span 1;
+        grid-row-start:span 2 ;
      }
-      .area-1 { grid-area: area-1;
-    background-image: url(/imagenes/gallery/cdc1.jpg); 
-    background-position: center;
-    }
-    .area-1:hover{
-        transform: scale(1.1);
-        transition: all 2s;
-        filter: grayscale();
-    }
-      .area-2 { grid-area: area-2;
-        background-image: url(/imagenes/gallery/cdc5.jpg);
-    background-position: center;
-    background-size: cover; }
-    .area-2:hover{
-        transform: scale(1.1);
-        transition: all 2s;
-        filter: grayscale();
-    }
-      .area-3 { grid-area: area-3; 
-        background-image: url(/imagenes/gallery/cdc3.jpg);
-        background-position: top;
-        background-size: cover; }
-          
-        .area-3:hover{
-            transform: scale(1.1);
-            transition: all 2s;
-            filter: grayscale();
-        }
-      .area-4 { grid-area: area-4;
-        background-image: url(/imagenes/gallery/cdc2.jpg);
-        background-position:none;
-        background-size: cover; }
-        .area-4:hover{
-            transform: scale(1.1);
-            transition: all 2s;
-            filter: grayscale();
-        }
-          
-      .area-5 { grid-area: area-5;
-        background-image: url(/imagenes/gallery/cdc8.jpg);
-        background-position: center;
-        background-size: cover; }
-        .area-5:hover{
-            transform: scale(1.1);
-            transition: all 2s;
-            filter: grayscale();
-        }
-          
-      .area-6 { grid-area: area-6;
-        background-image: url(/imagenes/gallery/cdc6.jpg);
-        background-position: center;
-        background-size: cover; }
-        .area-6:hover{
-            transform: scale(1.1);
-            transition: all 2s;
-            filter: grayscale();
-        }
-    
-        
-      
-      .area-7 { grid-area: area-7;
-        background-image: url(/imagenes/gallery/cdc9.jpg);
-        background-position: center;
-        background-size: cover; }
-        .area-7:hover{
-            transform: scale(1.1);
-            transition: all 2s;
-            filter: grayscale();
-        }
-      .area-8 { grid-area: area-8; 
-        background-image: url(/imagenes/gallery/cdc10.jpg);
-    background-position: center;
-    background-size: cover; }
-    .area-8:hover{
-        transform: scale(1.1);
-        transition: all 2s;
-        filter: grayscale();
-
-    }
+     .gallery-item:nth-child(6){
+        grid-column-start: span 1;
+        grid-row-start:span 3 ;
+     }
+     .gallery-item:nth-child(7){
+        grid-column-start: span 2;
+        grid-row-start:span 3 ;
+     }
+     .gallery-item:nth-child(){
+        grid-column-start: span 1;
+        grid-row-start:span 2 ;
+     }
 }
-@media only screen and (min-width: 320px)  and (max-width:753px) {
-    .containerGaleria{
-        display: none;
-        
-    }
-  
-  
+.gallery-item:hover {
+    transform: scale(1.05);
+    transition: all 1.8s;
 
-}  
-@media only screen and (min-width: 753px)  and (max-width:1105px) {
-    .area-6 { grid-area: area-6;
-        background-image: url(/imagenes/gallery/cdc6.jpg);
-        background-position: right;
-        background-size: cover; }
-        .area-6:hover{
-            transform: scale(1.1);
-            transition: all 2s;
-            filter: grayscale();
-        }
+}
 
     
-}
+/* @media screen and (min-width: 576px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 6em;
+        gap: 0.090em;
+    }
+    
+    .gallery-item:nth-child(1){
+        grid-column-start: span 5;
+        grid-row-start:span 3 ;
+    }
+    .gallery-item:nth-child(2){
+        grid-column-start: span 1;
+        grid-row-start:span 2 ;
+    }
+    .gallery-item:nth-child(2){
+        grid-column-start: span 2;
+        grid-row-start:span 2 ;
+    }
+    .gallery-item:nth-child(4){
+        grid-column-start: span 2;
+        grid-row-start:span 2 ;
+    }
+    
+
+
+} */
 
 
 /* ----------------------------------------Contacto Grid ------------------------------------------------ */
