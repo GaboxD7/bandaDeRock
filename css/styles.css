@@ -5,14 +5,17 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-size: 20px;
-}
+    /* font-size: 20px; */
+    
+} 
 
 html {
     scroll-behavior:smooth;
 
   }
-
+ body {
+    font-size: 20px;
+} 
 /* ir-al-primcipio */
 .irAlPrincipio{
     position: fixed;
@@ -51,8 +54,44 @@ transform: scale(1.1);
     background-color: #082032;
     font-family: 'Montserrat', sans-serif;  
 }
+.animation {
+    background-image: url(/imagenes/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 4rem; 
+    height:4rem;
+}
+.animation {
+    animation: logo 1.3s;
+    
+    
+
+}
+@keyframes logo {
+  0% {
+    width: 10%;
+
+  }
+  15% {
+      width: 30%;
+  }
+  30% {
+      width:50%;
+  }
+  60% {
+      width: 70%;
+  }
+
+75% {
+    width: 80%;
+}
+
+90% {
+    width: 100%;
+}
 
 
+}
 
 /* CODIGO NUEVO0 */
 
@@ -71,19 +110,19 @@ transform: scale(1.1);
  #h1 {
     color: #206d85 ;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
     padding-top: 0.5em;
     padding-left: 0.3em;
-  
- 
 }
 
  p {
-    padding: 0rem 1rem;
+    padding: 0rem 0rem;
     font-family: 'Audiowide', cursive;
     text-align: justify;
     color: black;
+    font-size: 1rem;
+    padding: 0 0.5rem;
     
 }
 
@@ -93,10 +132,9 @@ transform: scale(1.1);
     flex-direction: column;
     justify-content:space-evenly;
     align-items:flex-start; 
-   
     background-position: center; 
     background-size: cover;
-     background-image: linear-gradient(to bottom, #082032,rgb(33, 13, 121)); 
+    background-image: linear-gradient(to bottom, #082032,rgb(44, 61, 24)); 
     height: auto;
   
    
@@ -107,7 +145,7 @@ transform: scale(1.1);
 .aside { 
     color:white;
     font-family: 'Audiowide', cursive;
-    font-size: 1em;
+    font-size: 1rem;
   
 }
 
@@ -123,7 +161,7 @@ padding-top:1rem;
 h5 {
     color:#206d85 ;
 font-family: 'Audiowide', cursive;
-font-size: 1.1em;
+font-size: 0.9rem;
 padding-left: 1em;
 
 align-self: center;
@@ -137,7 +175,19 @@ align-self: center;
  h2, h3 {
     color:#206d85 ;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.9em;
+    font-size: 1.95rem;
+    font-weight: bolder;
+    align-self: center;
+    padding-top:1em;
+    padding-left: 1em;
+ 
+}
+@media screen and (min-width: 320px) and (max-height:420px) {
+    
+ h2, h3 {
+    color:#206d85 ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.rem;
     font-weight: bolder;
     align-self: center;
     padding-top:1em;
@@ -145,13 +195,15 @@ align-self: center;
  
 }
 
+}
+
 .historia div  {display: flex;
     flex-direction: row;
     justify-content: end;
-    padding-right: 7em;
-    padding-bottom: 1em;
+    padding-right: 10%;
+    padding-bottom: 1%;
     color: black;
-    font-size: 1.6em;
+    font-size: 1rem;
     font-family: 'Audiowide', cursive;
     text-decoration: none;
 }
@@ -164,7 +216,7 @@ align-self: center;
     background-color: #082032;
     box-shadow: 0 0 0.05em #206d85;
 font-family: 'Montserrat', sans-serif;
-font-size: 2em;
+font-size: 2rem;
 letter-spacing: 0.09em;
 font-weight: bold;
 text-align: center;
@@ -173,12 +225,11 @@ padding: 0.11em 0em;
 }
 /* Discos */
 .discos {display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-     height: 18em;
+     flex-direction: column;
+     justify-content: space-evenly;
+     height: 17.5rem;
      font-size: 1em;
-     background-image: linear-gradient(to bottom, #082032, rgb(33, 13, 121));
-
+     background-image: linear-gradient(to bottom, #082032, rgb(52, 57, 80));
      color: white;
      padding: 0rem 1rem;
      font-family: 'Audiowide', cursive;
@@ -189,103 +240,104 @@ padding: 0.11em 0em;
     background-image: url(../imagenes/discos/CDC-1992.jpg);
     background-size: cover;
     background-position:center; 
-    height: 18em;
+    height: 17.5rem;
 }
 .disImg-1:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
+    transform:scaley(1.1);
+    transition: all 1s ease-in;
     filter: grayscale(10%);
+
 }
 .disImg-2{ 
     background-image: url(../imagenes/discos/CDC-1993.jpg);
     background-size: cover;
     background-position:center; 
-    height: 18em;
+    height: 17.5rem;
 }
 
 .disImg-2:hover{
-    transform: scale(1.003);
-    transition: all 1.5s;
+    transform:scaley(1.1);
+    transition: all 1s ease-in;
     filter: grayscale(10%);
 }
 .disImg-3{ 
     background-image: url(../imagenes/discos/CDC-1996.jpg);
     background-size: cover;
     background-position:center; 
-    height: 18em;
+    height: 17.5rem;
 }
 .disImg-3:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
+    transform:scaley(1.1);
+    transition: all 1s ease-in;
     filter: grayscale(10%);
 }
 .disImg-4{ 
     background-image: url(../imagenes/discos/CDC-2000.jpg);
     background-size: cover;
     background-position:center; 
-    height: 18em;
+    height: 17.5rem;
 }
 
 .disImg-4:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
-    filter: grayscale(10%);
+    transform:scaley(1.1);
+    transition: all 1s ease-in;
+    filter: grayscale(10%);;
 }
 .disImg-5{ 
     background-image: url(../imagenes/discos/CDC-2002.jpg);
     background-size: cover;
     background-position:bottom; 
-    height: 18em;
+    height: 17.5rem;
 }
 .disImg-5:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
+    transform:scaley(1.1);
+    transition: all 1s ease-in;
     filter: grayscale(10%);
 }
 .disImg-6{ 
     background-image: url(../imagenes/discos/CDC-2007.jpg);
     background-size: cover;
     background-position:center; 
-    height: 18em;
+    height: 17.5rem;
 }
 
 .disImg-6:hover{
-    transform: scale(1.003);
-    transition: all 1.5s;
+    transform:scaley(1.1);
+    transition: all 1s ease-in;
     filter: grayscale(10%);
 }
 .disImg-7{ 
     background-image: url(../imagenes/discos/CDC-2010.jfif);
     background-size: cover;
     background-position:top; 
-    height: 18em;
+    height: 17.5rem;
 }
 .disImg-7:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
+    transform:scaley(1.1);
+    transition: all 1s ease-in;
     filter: grayscale(10%);
 }
 .disImg-8{ 
     background-image: url(../imagenes/discos/CDC-2015.jfif);
     background-size: cover;
     background-position:center; 
-    height: 18em;
+    height: 17.5rem;
 }
 
 .disImg-8:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
+    transform:scaley(1.1);
+    transition: all 1s ease-in;
     filter: grayscale(10%);
 }
 .disImg-9{ 
     background-image: url(../imagenes/discos/CDC-2010.jfif);
     background-size: cover;
     background-position:top; 
-    height: 18em;
+    height: 17.5rem;
 }
 .disImg-9:hover{
-    transform: scale(1.05);
-    transition: all 1.5s;
+    transform:scaley(1.1);
+    transition: all 1s ease-in;
     filter: grayscale(10%);
 }
 
@@ -297,9 +349,9 @@ padding: 0.11em 0em;
  
  }
  .discos button:hover {
-     background-color: rgba(32, 109, 133, 0.1);
-     transform: scale(1.1);
-  transition: 1.4s;
+    background-color: rgba(32, 109, 133, 0.1);
+    transform: scale(1.1);
+    transition: 1.4s;
   }
 
 
@@ -313,7 +365,7 @@ padding: 0.11em 0em;
 }
 .pdiscoImpar{
     padding-left: 0em;
-    padding-right: 1em;
+    padding-right: 1rem;
     font-family: 'Audiowide', cursive;
     text-align: justify;
     color: white;
@@ -326,7 +378,7 @@ padding: 0.11em 0em;
 
 .discoPar h4 {
     align-self: flex-end;
-    padding-left: 1em;
+    padding-left: 1rem;
     padding-right: 0em;
    
    
@@ -358,22 +410,22 @@ padding: 0.11em 0em;
 }
 .pie p {
     color: white;
-    font-size: 0.5em;
+    font-size: 0.8rem;
     font-family: 'Audiowide', cursive;
     
 }
 .pie2  i {
   
   padding: 0 0.3em;
-  font-size: 1.5em;
+  font-size: 2rem;
 } 
 
 
 
 
 
-/* -----------------------------------Galleria Grid--------------------------------------------- */
-/* -----------------------------------Galleria Grid--------------------------------------------- */
+/* -----------------------------------Galeria Grid--------------------------------------------- */
+/* -----------------------------------Galeria Grid--------------------------------------------- */
 .gallery-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -462,7 +514,7 @@ padding: 0.11em 0em;
         grid-row-start:span 2 ;
     }
 }
-@media screen  (min-width: 780px) and (max-height:990px){
+@media screen and (min-width: 780px) and (max-height:990px){
     .gallery-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -521,8 +573,11 @@ padding: 0.11em 0em;
         grid-row-start:span 2 ;
     }
     .gallery-item:nth-child(9){
+        display: inline-block;
         grid-column-start: span 1;
-        grid-row-start:span 2 ;
+        grid-row-start:span 2;
+      
+        
      }
      .gallery-item:nth-child(6){
         grid-column-start: span 1;
@@ -532,16 +587,14 @@ padding: 0.11em 0em;
         grid-column-start: span 2;
         grid-row-start:span 3 ;
      }
-     .gallery-item:nth-child(){
-        grid-column-start: span 1;
-        grid-row-start:span 2 ;
-     }
+     
+     .gallery-item:hover {
+        transform: scale(1.05);
+        transition: all 1.8s;
+    
+    }
 }
-.gallery-item:hover {
-    transform: scale(1.05);
-    transition: all 1.8s;
 
-}
 
     
 /* @media screen and (min-width: 576px) {
@@ -595,7 +648,7 @@ padding: 0.11em 0em;
 
 /* ----------------------------------    C O N T A C T O    ------------------------------------------------- */
 
-.sugerencia {grid-area: sugerencia;
+/* .sugerencia {grid-area: sugerencia;
   display: flex;
   flex-direction: column;
 justify-content:space-around;
@@ -656,4 +709,4 @@ font-family: 30px   ;
         line-height: 30px;
         height: 620px;
     }
-
+ */
