@@ -1,0 +1,23 @@
+{
+  "name": "paginabandarock-bstraps-rios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaboxD7/bandaDeRock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaboxD7/bandaDeRock/issues"
+  },
+  "homepage": "https://github.com/GaboxD7/bandaDeRock#readme",
+  "devDependencies": {
+    "node": "^17.5.0",
+    "nodemon": "^2.0.15"
+  }
+}

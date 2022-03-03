@@ -62,14 +62,14 @@ transform: scale(1.1);
     height:4rem;
 }
 .animation {
-    animation: logo 1.3s;
+    animation: logo 5s;
     
     
 
 }
 @keyframes logo {
   0% {
-    width: 10%;
+    width: 0%;
 
   }
   15% {

@@ -1,0 +1,153 @@
+@import '../base/variables';
+.discos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 17.5rem;
+	font-size: 1em;
+	background-image: linear-gradient(to bottom, $color-1, $color-2);
+	color: white;
+	padding: 0rem 1rem;
+	font-family: 'Audiowide', cursive;
+	button {
+		align-self: center;
+		color: white;
+		background-color: $color-1;
+		padding: 0.5em;
+		border: none;
+		border-radius: 0.25rem;
+		&:hover {
+			background-color: rgba(32, 109, 133, 0);
+			transform: scale(1.1);
+			transition: 1.4s;
+			border: none;
+		}
+	}
+}
+.disImg-1 {
+	background-image: url(../imagenes/discos/CDC-1992.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 17.5rem;
+	&:hover {
+		transform: scaley(1.1);
+		transition: all 1s ease-in;
+		filter: grayscale(10%);
+	}
+}
+.disImg-2 {
+	background-image: url(../imagenes/discos/CDC-1993.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 17.5rem;
+	&:hover {
+		transform: scaley(1.1);
+		transition: all 1s ease-in;
+		filter: grayscale(10%);
+	}
+}
+.disImg-3 {
+	background-image: url(../imagenes/discos/CDC-1996.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 17.5rem;
+	&:hover {
+		transform: scaley(1.1);
+		transition: all 1s ease-in;
+		filter: grayscale(10%);
+	}
+}
+.disImg-4 {
+	background-image: url(../imagenes/discos/CDC-2000.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 17.5rem;
+	&:hover {
+		transform: scaley(1.1);
+		transition: all 1s ease-in;
+		filter: grayscale(10%);
+	}
+}
+.disImg-5 {
+	background-image: url(../imagenes/discos/CDC-2002.jpg);
+	background-size: cover;
+	background-position: bottom;
+	height: 17.5rem;
+	&:hover {
+		transform: scaley(1.1);
+		transition: all 1s ease-in;
+		filter: grayscale(10%);
+	}
+}
+.disImg-6 {
+	background-image: url(../imagenes/discos/CDC-2007.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 17.5rem;
+	&:hover {
+		transform: scaley(1.1);
+		transition: all 1s ease-in;
+		filter: grayscale(10%);
+	}
+}
+.disImg-7 {
+	background-image: url(../imagenes/discos/CDC-2010.jfif);
+	background-size: cover;
+	background-position: top;
+	height: 17.5rem;
+	&:hover {
+		transform: scaley(1.1);
+		transition: all 1s ease-in;
+		filter: grayscale(10%);
+	}
+}
+.disImg-8 {
+	background-image: url(../imagenes/discos/CDC-2015.jfif);
+	background-size: cover;
+	background-position: center;
+	height: 17.5rem;
+	&:hover {
+		transform: scaley(1.1);
+		transition: all 1s ease-in;
+		filter: grayscale(10%);
+	}
+}
+.disImg-9 {
+	background-image: url(../imagenes/discos/CDC-2010.jfif);
+	background-size: cover;
+	background-position: top;
+	height: 17.5rem;
+	&:hover {
+		transform: scaley(1.1);
+		transition: all 1s ease-in;
+		filter: grayscale(10%);
+	}
+}
+.discoImpar {
+	
+}
+.pdiscoImpar {
+	padding-left: 0em;
+	padding-right: 1rem;
+	font-family: 'Audiowide', cursive;
+	text-align: justify;
+	color: white;
+	align-self: flex-start;
+	h4 {
+		align-self: flex-start;
+	}
+}
+
+.pdiscoPar {
+	padding-left: 1em;
+	padding-right: 0em;
+	font-family: 'Audiowide', cursive;
+	text-align: justify;
+	color: white;
+	align-self: flex-end;
+	h4 {
+		align-self: flex-end;
+		padding-left: 1rem;
+		padding-right: 0em;
+	}
+}

@@ -1,0 +1,38 @@
+@import '../base/variables';
+.bg-cdc {
+	background-color: $color-1;
+	font-family: 'Montserrat', sans-serif;
+}
+.animation {
+    background-image: url(/imagenes/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 4rem; 
+    height:4rem;
+}
+.animation {
+    animation: logo 2s;  
+}
+@keyframes logo {
+  0% {
+    width: 0%;
+
+  }
+  15% {
+      width: 30%;
+  }
+  30% {
+      width:50%;
+  }
+  60% {
+      width: 70%;
+  }
+
+75% {
+    width: 80%;
+}
+
+90% {
+    width: 100%;
+}
+}
