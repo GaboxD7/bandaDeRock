@@ -65,10 +65,8 @@
   position: fixed;
   justify-content: center;
   align-items: center;
-  bottom: 2em;
-  right: 2em;
-  border-radius: 50%;
-  text-shadow: 0 0 0.5em black;
+  bottom: 2rem;
+  right: 2rem;
 }
 .irAlPrincipio i {
   color: #082032;
@@ -81,6 +79,17 @@
 .irAlPrincipio:hover {
   transform: scale(1.05);
   transition: 0.3s;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* font-size: 20px; */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .textoInicio {
@@ -142,7 +151,7 @@ h2 {
   font-weight: bolder;
   align-self: center;
   padding-top: 1em;
-  padding-left: 1em;
+  padding: 0.5rem;
 }
 
 h3 {
@@ -152,7 +161,6 @@ h3 {
   font-weight: bolder;
   align-self: center;
   padding-top: 1em;
-  padding-left: 1em;
 }
 
 .historia div {
@@ -222,31 +230,36 @@ h3 {
   color: white;
   padding: 0rem 1rem;
   font-family: "Audiowide", cursive;
+  box-shadow: 0 0 0.25rem #082032;
 }
-.discos button {
+.discos form {
+  display: flex;
   align-self: center;
+}
+.discos form button {
   color: white;
   background-color: #082032;
   padding: 0.5em;
   border: none;
   border-radius: 0.25rem;
+  box-shadow: 0 0 0.25rem #f8f6f6;
 }
-.discos button:hover {
+.discos form button:hover {
   background-color: rgba(32, 109, 133, 0);
-  transform: scale(1.1);
-  transition: 1.4s;
+  transform: translatey(-0.2rem);
   border: none;
 }
 
 .disImg-1 {
   background-image: url(../imagenes/discos/CDC-1992.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   height: 17.5rem;
+  box-shadow: 0 0 0.25rem #082032;
 }
 .disImg-1:hover {
-  transform: scaley(1.1);
-  transition: all 1s ease-in;
+  transform: scaley(1.03);
+  transition: all 0.6s ease-in;
   filter: grayscale(10%);
 }
 
@@ -255,10 +268,11 @@ h3 {
   background-size: cover;
   background-position: center;
   height: 17.5rem;
+  box-shadow: 0 0 0.25rem #082032;
 }
 .disImg-2:hover {
-  transform: scaley(1.1);
-  transition: all 1s ease-in;
+  transform: scaley(1.03);
+  transition: all 0.6s ease-in;
   filter: grayscale(10%);
 }
 
@@ -267,10 +281,11 @@ h3 {
   background-size: cover;
   background-position: center;
   height: 17.5rem;
+  box-shadow: 0 0 0.25rem #082032;
 }
 .disImg-3:hover {
-  transform: scaley(1.1);
-  transition: all 1s ease-in;
+  transform: scaley(1.03);
+  transition: all 0.6s ease-in;
   filter: grayscale(10%);
 }
 
@@ -279,10 +294,11 @@ h3 {
   background-size: cover;
   background-position: center;
   height: 17.5rem;
+  box-shadow: 0 0 0.25rem #082032;
 }
 .disImg-4:hover {
-  transform: scaley(1.1);
-  transition: all 1s ease-in;
+  transform: scaley(1.03);
+  transition: all 0.6s ease-in;
   filter: grayscale(10%);
 }
 
@@ -291,10 +307,11 @@ h3 {
   background-size: cover;
   background-position: bottom;
   height: 17.5rem;
+  box-shadow: 0 0 0.25rem #082032;
 }
 .disImg-5:hover {
-  transform: scaley(1.1);
-  transition: all 1s ease-in;
+  transform: scaley(1.03);
+  transition: all 0.6s ease-in;
   filter: grayscale(10%);
 }
 
@@ -303,10 +320,11 @@ h3 {
   background-size: cover;
   background-position: center;
   height: 17.5rem;
+  box-shadow: 0 0 0.25rem #082032;
 }
 .disImg-6:hover {
-  transform: scaley(1.1);
-  transition: all 1s ease-in;
+  transform: scaley(1.03);
+  transition: all 0.6s ease-in;
   filter: grayscale(10%);
 }
 
@@ -315,10 +333,11 @@ h3 {
   background-size: cover;
   background-position: top;
   height: 17.5rem;
+  box-shadow: 0 0 0.25rem #082032;
 }
 .disImg-7:hover {
-  transform: scaley(1.1);
-  transition: all 1s ease-in;
+  transform: scaley(1.03);
+  transition: all 0.6s ease-in;
   filter: grayscale(10%);
 }
 
@@ -327,10 +346,11 @@ h3 {
   background-size: cover;
   background-position: center;
   height: 17.5rem;
+  box-shadow: 0 0 0.25rem #082032;
 }
 .disImg-8:hover {
-  transform: scaley(1.1);
-  transition: all 1s ease-in;
+  transform: scaley(1.03);
+  transition: all 0.6s ease-in;
   filter: grayscale(10%);
 }
 
@@ -339,14 +359,15 @@ h3 {
   background-size: cover;
   background-position: top;
   height: 17.5rem;
+  box-shadow: 0 0 0.25rem #082032;
 }
 .disImg-9:hover {
-  transform: scaley(1.1);
-  transition: all 1s ease-in;
+  transform: scaley(1.03);
+  transition: all 0.6s ease-in;
   filter: grayscale(10%);
 }
 
-.pdiscoImpar {
+.discoImpar p {
   padding-left: 0em;
   padding-right: 1rem;
   font-family: "Audiowide", cursive;
@@ -354,24 +375,30 @@ h3 {
   color: white;
   align-self: flex-start;
 }
-.pdiscoImpar h4 {
+.discoImpar h4 {
   align-self: flex-start;
 }
 
-.pdiscoPar {
-  padding-left: 1em;
+.discoPar p {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0em;
   padding-right: 0em;
   font-family: "Audiowide", cursive;
   text-align: justify;
   color: white;
   align-self: flex-end;
+  justify-self: flex-end;
 }
-.pdiscoPar h4 {
+.discoPar h4 {
   align-self: flex-end;
-  padding-left: 1rem;
-  padding-right: 0em;
 }
 
+@media screen and (max-width: 991px) {
+  .discoPar h4, .discoImpar h4 {
+    align-self: center;
+  }
+}
 .gallery-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
