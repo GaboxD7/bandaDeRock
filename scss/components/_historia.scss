@@ -1,12 +1,12 @@
 @import '../base/variables';
 h2 {
-	color: $color-2;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.95rem;
 	font-weight: bolder;
-	align-self: center;
-	padding-top: 1em;
-	padding: 0.5rem;
+	padding-top: 0.5rem;
+	padding-left: 0.3rem;
+	 text-shadow: 0 0 0.4rem $color-1;
+	color: #DB3A34;
 }
 h3 {
 	color: 	$color-2;
@@ -16,6 +16,15 @@ h3 {
 	align-self: center;
 	padding-top: 1em;
 
+}
+h4{
+	color: 	$color-2;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	font-weight: bolder;
+	align-self: center;
+	padding-top: 1em;
+	font-weight: lighter;
 }
 .historia {
 	div {

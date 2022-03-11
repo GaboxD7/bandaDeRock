@@ -1,84 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
 .bg-cdc {
-  background-color: #082032;
+  background-color: #17183B;
   font-family: "Montserrat", sans-serif;
 }
 
 .animation {
-  background-image: url(/imagenes/logo.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 4rem;
+  border-radius: 2.5rem;
   height: 4rem;
+  margin-left: 3rem;
 }
 
-.animation {
-  animation: logo 2s;
-}
-
-@keyframes logo {
-  0% {
-    width: 0%;
-  }
-  15% {
-    width: 30%;
-  }
-  30% {
-    width: 50%;
-  }
-  60% {
-    width: 70%;
-  }
-  75% {
-    width: 80%;
-  }
-  90% {
-    width: 100%;
-  }
-}
-.pie {
-  display: flex;
-  flex-direction: column;
-  background-color: #082032;
-  color: white;
-  height: 10em;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.pie p {
-  color: white;
-  font-size: 0.8rem;
-  font-family: "Audiowide", cursive;
-}
-
-.pie2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.pie2 i {
-  padding: 0 0.3em;
-  font-size: 2rem;
-}
-
-.irAlPrincipio {
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  bottom: 2rem;
-  right: 2rem;
-}
-.irAlPrincipio i {
-  color: #082032;
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-shadow: 0 0 0.25rem #f8f6f6;
-  height: 1em;
-  width: 1em;
-}
-.irAlPrincipio:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
+.bg-sha {
+  border-radius: 7px;
+  box-shadow: -9px -9px 18px white, -9px -9px 18px white;
 }
 
 * {
@@ -86,6 +23,10 @@
   padding: 0px;
   box-sizing: border-box;
   /* font-size: 20px; */
+}
+
+body {
+  background-color: #17183B;
 }
 
 html {
@@ -100,13 +41,14 @@ html {
   height: 100%;
 }
 
-#h1 {
-  color: #206d85;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  padding-top: 0.5em;
-  padding-left: 0.3em;
+.h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  padding-top: 0.5rem;
+  padding-left: 0.3rem;
+  text-shadow: 0 0 0.4rem #17183B;
+  color: #DB3A34;
 }
 
 p {
@@ -125,42 +67,127 @@ p {
   align-items: flex-start;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(to bottom, #082032, #206d85);
   height: auto;
+  background-color: #17183B;
 }
-.textoSide h2 {
-  color: #206d85;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
-  font-weight: bolder;
-  text-shadow: 0 0 0.25rem #082032;
-  align-self: center;
-  padding-top: 1rem;
-}
-
 .aside {
   color: white;
-  font-family: "Audiowide", cursive;
-  font-size: 1rem;
+}
+
+.hola {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/imagenes/cdc-new.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+}
+
+.bg-oscuro {
+  background-color: #17183B;
+}
+
+.bg-sha {
+  border-radius: 7px;
+  background: linear-gradient(315deg, #191a3f, #151635);
+  box-shadow: -9px -9px 18px #0d0e22, -9px -9px 18px #0d0e22;
+}
+
+.front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  box-shadow: 0.5rem 0.5rem 0.5rem #db3a34;
+  padding: 0rem 1rem;
+  border-radius: 0px;
+  box-shadow: 5px 5px 10px #0d256c;
+}
+.front form {
+  display: flex;
+  flex-direction: column;
+}
+.front form button {
+  display: flex;
+  font-size: 1.5rem;
+  align-self: flex-end;
+  color: white;
+  background-color: #17183B;
+  padding: 0.8rem 0.8rem;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.25rem #f8f6f6;
+}
+.front form button:hover {
+  background-color: rgba(32, 109, 133, 0);
+  transform: translatey(-0.2rem);
+  border: none;
+  color: #17183B;
+}
+
+.pfront {
+  padding: 0rem 0rem;
+  text-align: justify;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgba(252, 252, 252, 0.6);
+  text-shadow: 0 0 0.1rem #17183B;
+}
+
+.irAlPrincipio {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  bottom: 2rem;
+  right: 2rem;
+}
+.irAlPrincipio i {
+  color: #17183B;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 0 0 0.25rem #f8f6f6;
+  height: 1em;
+  width: 1em;
+}
+.irAlPrincipio:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 h2 {
-  color: #206d85;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.95rem;
   font-weight: bolder;
-  align-self: center;
-  padding-top: 1em;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 0.3rem;
+  text-shadow: 0 0 0.4rem #17183B;
+  color: #DB3A34;
 }
 
 h3 {
-  color: #206d85;
+  color: #DB3A34;
   font-family: "Montserrat", sans-serif;
   font-size: 1.95rem;
   font-weight: bolder;
   align-self: center;
   padding-top: 1em;
+}
+
+h4 {
+  color: #DB3A34;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  align-self: center;
+  padding-top: 1em;
+  font-weight: lighter;
 }
 
 .historia div {
@@ -171,14 +198,14 @@ h3 {
   padding-bottom: 1%;
 }
 .historia div a {
-  background-color: #206d85;
+  background-color: #DB3A34;
   color: white;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   text-decoration: none;
 }
 .historia div a:hover {
-  background-color: #082032;
+  background-color: #17183B;
   color: white;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
@@ -210,8 +237,8 @@ h3 {
 }
 .tituloG {
   color: white;
-  background-color: #082032;
-  box-shadow: 0 0 0.05em #206d85;
+  background-color: #17183B;
+  box-shadow: 0 0 0.05em #17183B;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   letter-spacing: 0.09em;
@@ -220,185 +247,42 @@ h3 {
   padding: 0.11em 0em;
 }
 
-.discos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 17.5rem;
-  font-size: 1em;
-  background-image: linear-gradient(to bottom, #082032, #206d85);
-  color: white;
-  padding: 0rem 1rem;
-  font-family: "Audiowide", cursive;
-  box-shadow: 0 0 0.25rem #082032;
+.slide img {
+  height: 40rem;
 }
-.discos form {
+
+.slide-1 {
+  border-radius: 7px;
+  box-shadow: -9px -9px 18px #0d0e22, -9px -9px 18px #0d0e22;
+}
+
+form {
   display: flex;
   align-self: center;
 }
-.discos form button {
+form button {
   color: white;
-  background-color: #082032;
-  padding: 0.5em;
+  background-color: #17183B;
+  padding: 0.5rem;
+  margin: 0.5rem;
   border: none;
   border-radius: 0.25rem;
   box-shadow: 0 0 0.25rem #f8f6f6;
 }
-.discos form button:hover {
+form button:hover {
   background-color: rgba(32, 109, 133, 0);
-  transform: translatey(-0.2rem);
   border: none;
 }
 
-.disImg-1 {
-  background-image: url(../imagenes/discos/CDC-1992.jpg);
-  background-size: cover;
-  background-position: bottom;
-  height: 17.5rem;
-  box-shadow: 0 0 0.25rem #082032;
-}
-.disImg-1:hover {
-  transform: scaley(1.03);
-  transition: all 0.6s ease-in;
-  filter: grayscale(10%);
-}
-
-.disImg-2 {
-  background-image: url(../imagenes/discos/CDC-1993.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 17.5rem;
-  box-shadow: 0 0 0.25rem #082032;
-}
-.disImg-2:hover {
-  transform: scaley(1.03);
-  transition: all 0.6s ease-in;
-  filter: grayscale(10%);
-}
-
-.disImg-3 {
-  background-image: url(../imagenes/discos/CDC-1996.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 17.5rem;
-  box-shadow: 0 0 0.25rem #082032;
-}
-.disImg-3:hover {
-  transform: scaley(1.03);
-  transition: all 0.6s ease-in;
-  filter: grayscale(10%);
-}
-
-.disImg-4 {
-  background-image: url(../imagenes/discos/CDC-2000.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 17.5rem;
-  box-shadow: 0 0 0.25rem #082032;
-}
-.disImg-4:hover {
-  transform: scaley(1.03);
-  transition: all 0.6s ease-in;
-  filter: grayscale(10%);
-}
-
-.disImg-5 {
-  background-image: url(../imagenes/discos/CDC-2002.jpg);
-  background-size: cover;
-  background-position: bottom;
-  height: 17.5rem;
-  box-shadow: 0 0 0.25rem #082032;
-}
-.disImg-5:hover {
-  transform: scaley(1.03);
-  transition: all 0.6s ease-in;
-  filter: grayscale(10%);
-}
-
-.disImg-6 {
-  background-image: url(../imagenes/discos/CDC-2007.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 17.5rem;
-  box-shadow: 0 0 0.25rem #082032;
-}
-.disImg-6:hover {
-  transform: scaley(1.03);
-  transition: all 0.6s ease-in;
-  filter: grayscale(10%);
-}
-
-.disImg-7 {
-  background-image: url(../imagenes/discos/CDC-2010.jfif);
-  background-size: cover;
-  background-position: top;
-  height: 17.5rem;
-  box-shadow: 0 0 0.25rem #082032;
-}
-.disImg-7:hover {
-  transform: scaley(1.03);
-  transition: all 0.6s ease-in;
-  filter: grayscale(10%);
-}
-
-.disImg-8 {
-  background-image: url(../imagenes/discos/CDC-2015.jfif);
-  background-size: cover;
-  background-position: center;
-  height: 17.5rem;
-  box-shadow: 0 0 0.25rem #082032;
-}
-.disImg-8:hover {
-  transform: scaley(1.03);
-  transition: all 0.6s ease-in;
-  filter: grayscale(10%);
-}
-
-.disImg-9 {
-  background-image: url(../imagenes/discos/CDC-2010.jfif);
-  background-size: cover;
-  background-position: top;
-  height: 17.5rem;
-  box-shadow: 0 0 0.25rem #082032;
-}
-.disImg-9:hover {
-  transform: scaley(1.03);
-  transition: all 0.6s ease-in;
-  filter: grayscale(10%);
-}
-
-.discoImpar p {
-  padding-left: 0em;
-  padding-right: 1rem;
-  font-family: "Audiowide", cursive;
-  text-align: justify;
-  color: white;
-  align-self: flex-start;
-}
-.discoImpar h4 {
-  align-self: flex-start;
-}
-
-.discoPar p {
+.bg-sha-1 {
   display: flex;
-  flex-direction: column;
-  padding-left: 0em;
-  padding-right: 0em;
-  font-family: "Audiowide", cursive;
-  text-align: justify;
-  color: white;
-  align-self: flex-end;
-  justify-self: flex-end;
-}
-.discoPar h4 {
-  align-self: flex-end;
+  flex-direction: row;
+  width: 35%;
+  height: 8rem;
+  border-radius: 7px;
+  box-shadow: -9px -9px 18px #0d0e22, -9px -9px 18px #0d0e22;
 }
 
-@media screen and (max-width: 991px) {
-  .discoPar h4, .discoImpar h4 {
-    align-self: center;
-  }
-}
 .gallery-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -569,9 +453,116 @@ h3 {
 h5 {
   color: #206d85;
   font-family: "Audiowide", cursive;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   padding-left: 1rem;
   align-self: center;
+  font-size: bolder;
+}
+
+/* ----------------------------------------Contacto Grid ------------------------------------------------ */
+/* ----------------------------------------Contacto Grid ------------------------------------------------ */
+.containerContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 300px 300px;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "contacto contacto sugerencia " "contacto contacto img " "contacto contacto img";
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+}
+
+/* ----------------------------------    C O N T A C T O    ------------------------------------------------- */
+.sugerencia {
+  grid-area: sugerencia;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 3rem;
+  font-family: "Audiowide", cursive;
+  padding: 1.5rem;
+}
+.sugerencia h2 {
+  margin-bottom: 0rem;
+  color: #a1ccec;
+  box-shadow: 0 0 12px #050805;
+}
+
+.sugerencia ul {
+  list-style: url("https://icongr.am/octicons/check-circle.svg?size=15&color=26858c");
+  text-align: justify;
+  font-family: "Audiowide", cursive;
+  font-size: 20px;
+  border: #0a0a0a solid 5px;
+}
+
+.img {
+  grid-area: img;
+  background-color: #082032;
+  background-image: url(/imagenes/cdc-Contact.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-right: 3rem;
+}
+
+.contacto {
+  grid-area: contacto;
+  background-color: #2cd35b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contacto h2 {
+  background-color: blue;
+  align-self: center;
+  justify-content: flex-end;
+  font-family: 30px;
+}
+
+.formularioBorde {
+  display: flex;
+  border: #95cdee;
+  border-radius: 2em;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #29b4b4;
+  margin-top: 5%;
+  margin-left: 180px;
+  border-style: outset;
+  line-height: 30px;
+  height: 620px;
+}
+
+.pie {
+  display: flex;
+  flex-direction: column;
+  background-color: #17183B;
+  color: white;
+  height: 10em;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pie p {
+  color: white;
+  font-size: 0.8rem;
+  font-family: "Audiowide", cursive;
+}
+
+.pie2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pie2 i {
+  padding: 0 0.3em;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
