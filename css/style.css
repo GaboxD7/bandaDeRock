@@ -77,7 +77,7 @@ p {
 .hola {
   display: flex;
   height: 100vh;
-  background-image: url(/imagenes/cdcn.jpg);
+  background-image: url(../imagenes/cdcn.jpg);
   background-size: cover;
   background-repeat: repeat-x;
   background-position: top;
