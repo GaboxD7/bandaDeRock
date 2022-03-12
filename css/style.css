@@ -76,8 +76,8 @@ p {
 
 .hola {
   display: flex;
-  height: 115vh;
-  background-image: url(/imagenes/CDC-Jump.webp);
+  height: 100%;
+  background-image: url(/imagenes/cdc-new.jpg);
   background-size: cover;
   background-repeat: repeat-x;
   background-position: top;
