@@ -71,7 +71,7 @@ p {
 
 .hola{display: flex;
 
-	height: 100%;
+	height: 60rem;
 	background-image: url(/imagenes/cdc-new.jpg);
 
 	background-size: cover;
@@ -81,9 +81,7 @@ p {
 	justify-content:space-around;
 
 }
-.bg-oscuro{
-	// background-color: $color-1;
-}
+
 .bg-sha{
 	border-radius: 7px;
 background: linear-gradient(315deg, #191a3f, #151635);
