@@ -179,3 +179,27 @@ form{
 		box-shadow:  -9px -9px 18px #0d0e22,
 					 -9px -9px 18px #0d0e22;
 		}
+		@media screen and (min-width: 320px) and (max-width:460px){
+			.slide {
+			
+			
+			
+				img{
+					height: 20rem;
+				
+				}
+			}
+		
+		}
+@media screen and (min-width: 460px) and (max-width:991px){
+	.slide {
+	
+	
+	
+		img{
+			height: 30rem;
+		
+		}
+	}
+
+}
