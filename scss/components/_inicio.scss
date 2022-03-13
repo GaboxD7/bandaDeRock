@@ -73,13 +73,11 @@ p {
 
 	height: 100vh;
 	background-image: url(/imagenes/cdcn.jpg);
-
 	background-size: cover;
 	background-repeat:repeat-x;;
 	background-position:top;
 	flex-direction: column;
 	justify-content:space-around;
-
 }
 
 .bg-sha{
@@ -90,8 +88,6 @@ box-shadow:  -9px -9px 18px #0d0e22,
 }
 .bg-sha-1{
 background-color: #DB3A34;
-width: 100%;
-
 }
 
 .front{display: flex;
