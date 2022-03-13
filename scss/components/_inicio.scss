@@ -34,12 +34,13 @@ html {
 
 }
 p {
-	padding: 0rem 0rem;
+
 	font-family: 'Audiowide', cursive;
 	text-align: justify;
-	color: black;
-	font-size: 1rem;
-	padding: 0 0.5rem;
+	color: white;
+	font-size: 1.1rem;
+	font-weight:lighter;
+	
 }
 .textoSide {
 	display: flex;
@@ -83,11 +84,13 @@ p {
 .bg-sha{
 	border-radius: 7px;
 
-box-shadow:  -9px -9px 18px #0d0e22,
-             -9px -9px 18px #0d0e22;
+box-shadow:  -5px -5px 8px #0d0e22,
+             ;
 }
 .bg-sha-1{
-background-color: #DB3A34;
+	border-radius: 7px;
+background-color:rgba($color:$color-1, $alpha: 0.5);
+box-shadow:  -5px -5px 8px #0d0e22,
 }
 
 .front{display: flex;
@@ -145,6 +148,37 @@ background-color: #DB3A34;
 				text-shadow: 0 0 0.1rem $color-1;
 				
 				
+	}
+	.h5{
+		font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+	
+	 text-shadow: 0 0 0.4rem $color-1;
+	color: #DB3A34;
+		 span {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1.5rem;
+			
+			 text-shadow: 0 0 0.4rem $color-1;
+			color: $color-2;
+		}
+
+}
+	p {
+
+		font-family: 'Audiowide', cursive;
+		text-align: justify;
+		color: white;
+		font-size: 1.2rem;
+		font-weight:lighter;
+		
+	}
+	.bg-album {
+		position: absolute;
+		
+		color: white;
+		background: linear-gradient(rgba($color: $color-1, $alpha: 0.5),rgba($color:white, $alpha:0.5));
+		
 	}
 // @media screen and (max-width: 900px){
 // 	.hola{
