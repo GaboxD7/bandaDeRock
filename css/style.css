@@ -76,7 +76,7 @@ p {
 .hola {
   display: flex;
   height: 100vh;
-  background-image: url(/imagenes/cdcn.jpg);
+  background-image: url(/imagenes/cdcn.jpg) !important;
   background-size: cover;
   background-repeat: repeat-x;
   background-position: top;
@@ -223,15 +223,6 @@ h5 {
   padding-left: 1rem;
   align-self: center;
   font-size: bolder;
-}
-
-.h5 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
-  padding-top: 0.5rem;
-  padding-left: 0.3rem;
-  text-shadow: 0 0 0.4rem #17183B;
-  color: #DB3A34;
 }
 
 .historia div {
