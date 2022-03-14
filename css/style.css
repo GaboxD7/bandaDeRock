@@ -583,6 +583,7 @@ form button:hover {
 }
 
 .pie {
+  background-image: url(/imagenes/cdcn.jpg);
   display: flex;
   flex-direction: column;
   background-color: #17183B;
