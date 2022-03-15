@@ -52,7 +52,7 @@ p {
 	 align-items: center;
 	text-align: justify;
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 730px) {
 	.jumbotron {
 		background-image: url(../imagenes/bg-cdc.jpg);
 		height: 100vh;
@@ -69,7 +69,7 @@ p {
 .bg-sha{
 	border-radius: 7px;
 	background-color: rgba($color: $color-1, $alpha: 0.6);
-box-shadow:  -5px -5px 8px #0d0e22;
+	box-shadow:  -5px -5px 8px #0d0e22;
 &:hover {
 	background-color: rgba($color: $color-1, $alpha: 1);
 }
@@ -85,7 +85,7 @@ form{
 		border-radius: 0.25rem;
 		box-shadow: 0 0 0.25rem rgb(248, 246, 246);
 		&:hover {
-		background-color: #DB3A34;
+		background-color: $color-2;
 		transform: scale(1.1);
 		transition: 0.5s;
 		
@@ -96,11 +96,6 @@ form{
 }
         
 }
-.bg-sha-1{
-	border-radius: 7px;
-background-color:rgba($color:$color-1, $alpha: 0.5);
-box-shadow:  -5px -5px 8px #0d0e22,
-}
 
 			
 
@@ -108,7 +103,7 @@ box-shadow:  -5px -5px 8px #0d0e22,
 
 	background-color: #0d0e22;
 	background: linear-gradient(180deg, rgba(23,24,59,1) 65%, rgba(23,24,59,0.67) 100%);
-	padding: 7rem; 
+
 	}
 			
 	
