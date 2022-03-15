@@ -26,29 +26,16 @@
 }
 
 body {
-  background-image: url(../imagenes/CDC-Jump.webp);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: repeat-x;
-  background-position: top;
+  background-color: #17183B;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.textoInicio {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: none;
-  height: 100%;
-}
-
 .h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 2.5rem;
-  font-weight: bolder;
+  font-size: 2rem;
   padding-top: 0.5rem;
   padding-left: 0.3rem;
   text-shadow: 0 0 0.4rem #17183B;
@@ -58,39 +45,64 @@ html {
 p {
   font-family: "Audiowide", cursive;
   text-align: justify;
-  color: white;
+  color: black;
   font-size: 1.1rem;
-  font-weight: lighter;
+  font-weight: bold;
 }
 
-.textoSide {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  background-position: center;
-  background-size: cover;
-  height: auto;
-  background-color: #17183B;
-}
-
-.aside {
-  color: white;
-}
-
-.hola {
-  display: flex;
+.jumbotron {
+  background-image: url(../imagenes/bg-cdc.jpg);
+  background-attachment: fixed;
   height: 100vh;
   background-size: cover;
-  background-repeat: repeat-x;
-  background-position: top;
-  flex-direction: column;
+  background-position: 0 0;
+  display: flex;
+  flex-direction: column-reverse;
   justify-content: space-around;
+  align-items: center;
+  text-align: justify;
 }
 
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .jumbotron {
+    background-image: url(../imagenes/bg-cdc.jpg);
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+  .bg-sha {
+    width: 100%;
+  }
+}
 .bg-sha {
   border-radius: 7px;
+  background-color: rgba(23, 24, 59, 0.6);
   box-shadow: -5px -5px 8px #0d0e22;
+}
+.bg-sha:hover {
+  background-color: #17183b;
+}
+.bg-sha form {
+  display: flex;
+  justify-content: end;
+}
+.bg-sha form button {
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 1.5rem;
+  background-color: #17183B;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.25rem #f8f6f6;
+}
+.bg-sha form button:hover {
+  background-color: #DB3A34;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .bg-sha-1 {
@@ -99,49 +111,10 @@ p {
   box-shadow: -5px -5px 8px #0d0e22;
 }
 
-.front {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  background-color: rgba(255, 255, 255, 0.3);
-  border: none;
-  box-shadow: 0.5rem 0.5rem 0.5rem #db3a34;
-  padding: 0rem 1rem;
-  border-radius: 0px;
-  box-shadow: 5px 5px 10px #0d256c;
-}
-.front form {
-  display: flex;
-  flex-direction: column;
-}
-.front form button {
-  display: flex;
-  font-size: 1.5rem;
-  align-self: flex-end;
-  color: white;
-  background-color: #17183B;
-  padding: 0.8rem 0.8rem;
-  border: none;
-  border-radius: 0.25rem;
-  box-shadow: 0 0 0.25rem #f8f6f6;
-}
-.front form button:hover {
-  background-color: rgba(32, 109, 133, 0);
-  transform: translatey(-0.2rem);
-  border: none;
-  color: #17183B;
-}
-
-.pfront {
-  padding: 0rem 0rem;
-  text-align: justify;
-  color: black;
-  font-size: 1.5rem;
-  padding: 0 0.5rem;
-  font-family: "Open Sans", sans-serif;
-  background-color: rgba(252, 252, 252, 0.6);
-  text-shadow: 0 0 0.1rem #17183B;
+.bg-disco {
+  background-color: #0d0e22;
+  background: linear-gradient(180deg, #17183b 65%, rgba(23, 24, 59, 0.67) 100%);
+  padding: 7rem;
 }
 
 .h5 {
@@ -163,12 +136,6 @@ p {
   color: white;
   font-size: 1.2rem;
   font-weight: lighter;
-}
-
-.bg-album {
-  position: absolute;
-  color: white;
-  background: linear-gradient(rgba(23, 24, 59, 0.5), rgba(255, 255, 255, 0.5));
 }
 
 .irAlPrincipio {
@@ -584,7 +551,6 @@ form button:hover {
 }
 
 .pie {
-  background-image: url(/imagenes/cdcn.jpg);
   display: flex;
   flex-direction: column;
   background-color: #17183B;
