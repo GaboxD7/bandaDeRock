@@ -47,7 +47,7 @@ p {
 	background-size: cover;
 	background-position: 0 0;
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
  	justify-content:space-around;
 	 align-items: center;
 	text-align: justify;
@@ -104,8 +104,16 @@ form{
 	background-color: #0d0e22;
 	background: linear-gradient(180deg, rgba(23,24,59,1) 65%, rgba(23,24,59,0.67) 100%);
 
+
 	}
-			
+
+	.bg-noticia {
+
+		background-color: #0d0e22;
+		background: linear-gradient(180deg, rgba(23,24,59,1) 15%, rgba(23,24,59,0.67) 100%);
+	
+	
+		}		
 	
 
 	.h5{

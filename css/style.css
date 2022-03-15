@@ -4,8 +4,15 @@
 }
 
 .nav-link {
-  color: #DB3A34;
+  color: white;
   font-family: "Montserrat", sans-serif;
+}
+.nav-link:hover {
+  color: #DB3A34;
+}
+
+.active {
+  color: #DB3A34 !important;
 }
 
 .animation {
@@ -56,7 +63,7 @@ p {
   background-size: cover;
   background-position: 0 0;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: justify;
@@ -107,6 +114,11 @@ p {
 .bg-disco {
   background-color: #0d0e22;
   background: linear-gradient(180deg, #17183b 65%, rgba(23, 24, 59, 0.67) 100%);
+}
+
+.bg-noticia {
+  background-color: #0d0e22;
+  background: linear-gradient(180deg, #17183b 15%, rgba(23, 24, 59, 0.67) 100%);
 }
 
 .h5 {
@@ -160,10 +172,7 @@ h2 {
 h3 {
   color: #DB3A34;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.95rem;
-  font-weight: bolder;
-  align-self: center;
-  padding-top: 1em;
+  font-size: 1.6rem;
 }
 
 h4 {
@@ -488,6 +497,14 @@ form button:hover {
   border-style: outset;
   line-height: 30px;
   height: 620px;
+}
+
+.body-img {
+  background-image: url(../imagenes/bg-cdc.jpg);
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+  background-position: 0 0;
 }
 
 .pie {

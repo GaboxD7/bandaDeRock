@@ -6,8 +6,15 @@
    
 }
 .nav-link {
-    color: $color-2  ;
+    color: white  ;
     font-family: 'Montserrat', sans-serif ;
+    &:hover {
+        color: $color-2;
+    }
+}
+.active {
+    color: $color-2 !important;
+
 }
 .animation {
     
