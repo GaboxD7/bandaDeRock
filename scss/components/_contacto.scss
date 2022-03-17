@@ -1,92 +1,163 @@
-/* ----------------------------------------Contacto Grid ------------------------------------------------ */
-/* ----------------------------------------Contacto Grid ------------------------------------------------ */
-// .containerContacto { display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     grid-template-rows: 400px 300px 300px;
-//     gap: 10px 10px;
-//     grid-auto-flow: row;
-//     grid-template-areas: 
+@import '../base/variables';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-size: 20px; */
     
-//     "contacto contacto sugerencia "
-//     "contacto contacto img "
-//     "contacto contacto img";
+} 
 
-//     width: 100%;
-//       height: 100%;
-//      background-color: aliceblue;
-     
-// }
-
-// /* ----------------------------------    C O N T A C T O    ------------------------------------------------- */
-
-//  .sugerencia {grid-area: sugerencia;
-//   display: flex;
-//   flex-direction: column;
-// justify-content:space-around;
-// align-items:center;
-// margin-right: 3rem;
-// font-family: 'Audiowide', cursive;
-// padding: 1.5rem;
-//  h2{
-//     margin-bottom: 0rem;
-//     color: #a1ccec;
-//     box-shadow:0 0 12px rgb(5, 8, 5);
-//  }
-// }
-
-    
-// .sugerencia ul {
-//     list-style:url("https://icongr.am/octicons/check-circle.svg?size=15&color=26858c");
-//     text-align:justify;
-//     font-family: 'Audiowide', cursive;
-//     font-size: 20px;
-//     border: #0a0a0a solid 5px;
-// }
-
-// .img {grid-area: img;
-//  background-color: #082032;
-//     background-image: url(/imagenes/cdc-Contact.jpg);
-//     background-position: center    ;
-//     background-size:cover;
-//     background-repeat: no-repeat;
-//     background-position:top;
-//     margin-right: 3rem;}
+.bg-sha-3{
    
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+    align-items: center;
+    justify-content:space-around;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
 
-// .contacto { grid-area: contacto;
-//     background-color:#2cd35b;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-evenly;
-//     align-items: center;    
-//     h2{
-//         background-color: blue;
-// align-self:center;
-// justify-content: flex-end;
-// font-family: 30px   ;
-//     }
-// }
-
-// .formularioBorde{ display: flex;
-//     border: rgb(149, 205, 238); 
-//     border-radius: 2em;
-//     width: 100%;
-//     height: 100%;
-//     padding: 20px;
-//     background-color: #29b4b4;
-//     margin-top: 5%;
-//     margin-left: 180px;
-//     border-style: outset;
-//     line-height: 30px;
-//     height: 620px;
-//     }
-
-.body-img {
-    background-image: url(../imagenes/bg-cdc.jpg);
-    background-attachment: fixed;
-	height: 100vh;
-	background-size: cover;
-	background-position: 0 0;
-
+    width: 100%;
 
 }
+.titulo-formulario {
+  
+    font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+    padding: 1rem;
+	text-shadow: 0 0 0.4rem $color-1;
+	color: #DB3A34;
+    text-align: center;
+    border-radius: 7px;
+	background-color: rgba($color: $color-1, $alpha: 0.6);
+	box-shadow:  -5px -5px 8px #0d0e22;
+    width: auto;
+}
+.formulario {
+    display: block;
+    margin: 0rem auto;
+    width: 90%;
+    max-width: 28.5rem;
+    min-width: 16rem;
+    position: relative;
+    overflow: hidden;
+    background-color:#17183B;
+    border-radius: 0.4rem;
+}
+  .formulario p {
+    margin: 0.1rem;
+    text-align: center;
+  }
+  .forma {display: flex;
+      flex-direction: column;
+  }
+  .formulario p:first-child {
+    margin: 1rem 1rem 0;
+    color: #DB3A34;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 0.05rem;
+  }
+  .formulario input[type="text"] {
+    margin: 2.25rem 1.5rem;
+    color: #999;
+    padding: 1.25rem 0.75rem !important;
+    text-align: center;
+    width: 100% !important;
+    max-width: calc(100% - 4.5rem);
+    outline: none;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+  }
+  
+  .formulario input[type="email"] {
+    margin: 2.25rem 1.5rem;
+    color: #999;
+    padding: 1.25rem 0.75rem !important;
+    text-align: center;
+    width: 100% !important;
+    max-width: calc(100% - 4.5rem);
+    outline: none;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+  }
+  .formulario input[type="text"]::-webkit-input-placeholder {
+    color: #69D2E7;
+  }
+  .formulario input[type="text"]:-moz-placeholder {
+    color: #69D2E7;
+  }
+  .formulario input[type="text"]::-moz-placeholder {
+    color: #69D2E7;
+  }
+  .formulario input[type="text"]:-ms-input-placeholder {
+    color: #69D2E7;
+  }
+  
+  /* Email */
+  .formulario input[type="email"]::-webkit-input-placeholder {
+    color: #69D2E7;
+  }
+  .formulario input[type="email"]:-moz-placeholder {
+    color: #69D2E7;
+  }
+  .formulario input[type="email"]::-moz-placeholder {
+    color: #69D2E7;
+  }
+  .formulario input[type="email"]:-ms-input-placeholder {
+    color: #69D2E7;
+  }
+  .formulario input[type="submit"] {
+
+    background-color:#DB3A34;
+    color:white;
+    padding: 1.25rem 0.75rem;
+    text-align: center;
+    width: 100%;
+    border: 0;
+    border-top: #69D2E7 1px solid;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor:pointer;
+    -webkit-transition: .1s all ease-in-out;
+    -moz-transition: .1s all ease-in-out;
+    -o-transition: .1s all ease-in-out;
+    transition: .1s all ease-in-out;
+  }
+  .formulario input[type="submit"]:hover {
+    background-color:#17183B;
+    
+  
+  }
+  
+
+
+  .zoom-area { 
+  
+    margin: 2.5rem auto 3.5rem;
+    font-size: 1rem;
+    color: rgb(35, 13, 134);
+    text-align: center;
+  }
+  .link-container {
+    text-align: center;
+  }
+  a.more-link {
+    text-transform: uppercase;
+    font-size: 12px;
+      background-color:#17183B;
+      padding: 0.6rem 0.5rem;
+      border-radius: 0;
+      color: #fff;
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      line-height: 1.5;
+      text-decoration: none;
+    margin-top: 0.3rem;
+  }
