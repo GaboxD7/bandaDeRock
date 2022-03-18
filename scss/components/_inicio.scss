@@ -82,8 +82,8 @@ form{
 		}    
 }
 // }MEDIA QUERIES PARA EL JUMBOTRON 320PX A 730PX
-@media screen and (min-width: 320px) and (max-width: 730px) {
-	.jumbotron {
+@media screen and (min-width: 320px) and (max-width: 991px) {
+	.jumbotron-1, .jumbotron-2 {
 		background-image: url(../imagenes/bg-cdc.jpg);
 		height: 100vh;
 		width: auto;
@@ -92,10 +92,13 @@ form{
 		background-repeat: no-repeat;
 		color: white;
 	}
-.bg-sha{
-	width: 100%;
-}
 	}
+
+@media screen and (min-width: 320px) and (max-width: 730px)  {
+	.bg-sha{
+		width: 100%;
+	}
+}
 // MIEMBROS DE LA BANDA
 .bg-miembros {
 	border-radius: 7px;
