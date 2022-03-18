@@ -3,33 +3,30 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    /* font-size: 20px; */
-    
+    box-sizing: border-box; 
 } 
 body {
-	background-color: $color-1;
-	
+	background-color: $color-1;	
 }
 html {
     scroll-behavior:smooth;
-
   }
-
-.h1 {
-	
+.h1 {	
 	// font-family: 'Montserrat', sans-serif;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $fallback-font;
 	font-size: 2rem;
-
 	padding-top: 0.5rem;
 	padding-left: 0.3rem;
-	 text-shadow: 0 0 0.4rem $color-1;
-	color: #DB3A34;
-	
+	text-shadow: 0 0 0.4rem $color-1;
+	color: $color-2;	
 }
-
-.jumbotron {
+.h5{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+	text-shadow: 0 0 0.4rem $color-1;
+	color: $color-2;	
+}
+.jumbotron-1 {
 	background-image: url(../imagenes/bg-cdc.jpg);
 	background-attachment: fixed;
 	height: 100vh;
@@ -37,23 +34,25 @@ html {
 	background-position: 0 0;
 	display: flex;
 	flex-direction: column;
- 	justify-content:space-around;
-	 align-items: center;
-	text-align: justify;
+ 	justify-content:center;
+	align-items: center;
 }
-@media screen and (min-width: 320px) and (max-width: 730px) {
-	.jumbotron {
-		background-image: url(../imagenes/bg-cdc.jpg);
-		height: 100vh;
-		width: auto;
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		color: white;
-	}
-.bg-sha{
-	width: 100%;
+.jumbotron-2 {
+	background-image: url(../imagenes/bg-cdc.jpg);
+	background-attachment: fixed;
+	height: 100%;
+	background-size: cover;
+	background-position: 0 0;
+	display: flex;
+	flex-direction: column;
+ 	justify-content:center;
+	align-items: center;
 }
+.bg-disco{
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	justify-content: flex-start;
 }
 .bg-sha{
 	border-radius: 7px;
@@ -77,77 +76,40 @@ form{
 		background-color: $color-2;
 		transform: scale(1.1);
 		transition: 0.5s;
-		
-			
 				}
 			}
 	
+		}    
 }
-        
+// }MEDIA QUERIES PARA EL JUMBOTRON 320PX A 730PX
+@media screen and (min-width: 320px) and (max-width: 730px) {
+	.jumbotron {
+		background-image: url(../imagenes/bg-cdc.jpg);
+		height: 100vh;
+		width: auto;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		color: white;
+	}
+.bg-sha{
+	width: 100%;
 }
-
-			
-
+	}
+// MIEMBROS DE LA BANDA
+.bg-miembros {
+	border-radius: 7px;
+	box-shadow:  -5px -5px 8px #0d0e22;
+}	
 .bg-disco {
-
 	background-color: #0d0e22;
 	background: linear-gradient(180deg, rgba(23,24,59,1) 65%, rgba(23,24,59,0.67) 100%);
-
-
+	}	
+p {
+	font-family: 'Audiowide', cursive;
+	text-align: justify;
+	color: white;
+	font-size: 1.2rem;
+	font-weight:lighter;
+	text-shadow: 0 0 0.5rem $color-1;	
 	}
-
-	.bg-noticia {
-
-		background-color: #0d0e22;
-		background: linear-gradient(180deg, rgba(23,24,59,1) 15%, rgba(23,24,59,0.67) 100%);
-	
-	
-		}		
-	
-
-	.h5{
-		font-family: 'Open Sans', sans-serif;
-	font-size: 1.5rem;
-	
-	 text-shadow: 0 0 0.4rem $color-1;
-	color: #DB3A34;
-		 span {
-			font-family: 'Open Sans', sans-serif;
-			font-size: 1.5rem;
-			
-			 text-shadow: 0 0 0.4rem $color-1;
-			color: $color-2;
-		}
-
-}
-	p {
-
-		font-family: 'Audiowide', cursive;
-		text-align: justify;
-		color: white;
-		font-size: 1.2rem;
-		font-weight:lighter;
-		text-shadow: 0 0 0.5rem $color-1;
-		
-		
-		
-	}
-	// .bg-album {
-	// 	position: absolute;
-		
-	// 	color: white;
-	// 	background: linear-gradient(rgba($color: $color-1, $alpha: 0.5),rgba($color:white, $alpha:0.5));
-		
-	// }
-	
-// @media screen and (max-width: 900px){
-// 	.hola{
-// 		height: 30rem;
-// 	}
-// }
-// @media screen and (min-width: 320px) and (max-width: 714px) {
-// 	.hola{
-// 		height: 20rem;
-// 		background-size: cover;
-// 	}
-// }

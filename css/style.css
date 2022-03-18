@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
-.bg-cdc {
+.navbar-dark {
   background-color: #17183B;
 }
 
 .nav-link {
-  color: white;
+  color: white !important;
   font-family: "Montserrat", sans-serif;
 }
 .nav-link:hover {
@@ -29,7 +29,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  /* font-size: 20px; */
 }
 
 body {
@@ -41,7 +40,7 @@ html {
 }
 
 .h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   padding-top: 0.5rem;
   padding-left: 0.3rem;
@@ -49,7 +48,14 @@ html {
   color: #DB3A34;
 }
 
-.jumbotron {
+.h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  text-shadow: 0 0 0.4rem #17183B;
+  color: #DB3A34;
+}
+
+.jumbotron-1 {
   background-image: url(../imagenes/bg-cdc.jpg);
   background-attachment: fixed;
   height: 100vh;
@@ -57,26 +63,29 @@ html {
   background-position: 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  text-align: justify;
 }
 
-@media screen and (min-width: 320px) and (max-width: 730px) {
-  .jumbotron {
-    background-image: url(../imagenes/bg-cdc.jpg);
-    height: 100vh;
-    width: auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-  }
-
-  .bg-sha {
-    width: 100%;
-  }
+.jumbotron-2 {
+  background-image: url(../imagenes/bg-cdc.jpg);
+  background-attachment: fixed;
+  height: 100%;
+  background-size: cover;
+  background-position: 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.bg-disco {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: flex-start;
+}
+
 .bg-sha {
   border-radius: 7px;
   background-color: rgba(23, 24, 59, 0.7);
@@ -104,27 +113,29 @@ html {
   transition: 0.5s;
 }
 
+@media screen and (min-width: 320px) and (max-width: 730px) {
+  .jumbotron {
+    background-image: url(../imagenes/bg-cdc.jpg);
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+  .bg-sha {
+    width: 100%;
+  }
+}
+.bg-miembros {
+  border-radius: 7px;
+  box-shadow: -5px -5px 8px #0d0e22;
+}
+
 .bg-disco {
   background-color: #0d0e22;
   background: linear-gradient(180deg, #17183b 65%, rgba(23, 24, 59, 0.67) 100%);
-}
-
-.bg-noticia {
-  background-color: #0d0e22;
-  background: linear-gradient(180deg, #17183b 15%, rgba(23, 24, 59, 0.67) 100%);
-}
-
-.h5 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
-  text-shadow: 0 0 0.4rem #17183B;
-  color: #DB3A34;
-}
-.h5 span {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
-  text-shadow: 0 0 0.4rem #17183B;
-  color: #DB3A34;
 }
 
 p {

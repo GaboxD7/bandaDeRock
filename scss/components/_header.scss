@@ -1,13 +1,10 @@
 @import '../base/variables';
-.bg-cdc {
+.navbar-dark {
 	background-color: $color-1;
-	
-   
-   
 }
 .nav-link {
-    color: white  ;
-    font-family: 'Montserrat', sans-serif ;
+    color: white !important ;
+    font-family:$fallback-font ;
     &:hover {
         color: $color-2;
     }
@@ -17,7 +14,6 @@
 
 }
 .animation {
-    
     background-repeat: no-repeat;
     background-size: cover;
     width: 3rem; 

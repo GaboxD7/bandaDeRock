@@ -33,7 +33,7 @@
 <body>
 <!-- Inicio | Menu de Navegacion -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-cdc d.flex fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark d.flex fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <div class="animate__animated animate__bounce ">
@@ -48,9 +48,6 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">INICIO</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="index.html#historia">HISTORIA</a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="index.html#discografia">DISCOS</a>
             </li>
@@ -69,7 +66,7 @@
 </header> 
 <!-- Fin | Menu de Navegacion -->
 <!-- Inicio | Jumbotron -->
-  <div class=" jumbotron text-center">
+  <div class=" jumbotron jumbotron-1 text-center">
     <div class=" bg-sha animate__animated animate__backInLeft animate__slower 0s col-6" >
       <h1  class=" h1 ">Caramelos de cianuro<h1/> 
       <p class=" px-2 ">Es una banda venezolana de rock originaria de Caracas-Venezuela. También es conocida como CDC o Caramelos. Fundada en 1991.</p>
@@ -80,15 +77,15 @@
 </div>
 <!-- Fin | Jumbotron -->
 <!-- Inicio | Miembros -->
-<section class="container-fluid  bg-oscuro bg-sha">
+<section class="container-fluid  bg-miembros ">
   <div class="row ">
     <div class="col-12">
       <h2 class=" text-center p-2 h1">Miembros de la banda</h2>
     </div>
     <div class="col-12 col-sm-6 col-md-3 col-lg-3 "> 
-      <div class="bg-sha d-flex justify-content-center align-items-center pt-2 px-2  rounded-lg flex-column">
+      <div class=" d-flex justify-content-center align-items-center pt-2 px-2  rounded-lg flex-column">
         <div class="person-img">
-          <img src="imagenes/Perfil/AsierCasaliz.png" class="img-fluid rounded-circle" alt="img-1">
+          <img  src="imagenes/Perfil/AsierCasaliz.png" class="img-fluid rounded-circle" alt="img-1">
         </div>
         <div class="person-name my-2">
           <h4>Asier Cazalis</h4>
@@ -101,10 +98,8 @@
         </div>
       </div>
     </div>
-
-
     <div class="col-12 col-sm-6 col-md-3 col-lg-3"> 
-      <div class="bg-sha d-flex justify-content-center align-items-center pt-2 px-2  rounded-lg flex-column">
+      <div class="bg-miembro d-flex justify-content-center align-items-center pt-2 px-2  rounded-lg flex-column">
         <div class="person-img">
           <img src="imagenes/Perfil/pavel-tello.jpg" width="612px" height="612px" class="img-fluid rounded-circle" alt="img-1">
         </div>
@@ -119,9 +114,8 @@
         </div>
       </div>
     </div>
-
     <div class="col-12 col-sm-6 col-md-3 col-lg-3"> 
-      <div class="bg-sha d-flex justify-content-center align-items-center pt-2 px-2rounded-lg flex-column">
+      <div class=" d-flex justify-content-center align-items-center pt-2 px-2rounded-lg flex-column">
         <div class="person-img">
           <img src="imagenes/Perfil/miguel-angel.jpg"  class="img-fluid rounded-circle" alt="img-1">
         </div>
@@ -137,7 +131,7 @@
       </div>
     </div>
     <div class="col-12 col-sm-6 col-md-3 col-lg-3"> 
-      <div class=" bg-sha d-flex justify-content-center align-items-center pt-2 px-2 rounded-lg flex-column">
+      <div class="  d-flex justify-content-center align-items-center pt-2 px-2 rounded-lg flex-column">
         <div class="person-img">
           <img src="imagenes/Perfil/dario-adames.jpg" class="img-fluid rounded-circle" alt="img-1">
         </div>
@@ -153,13 +147,13 @@
       </div>
     </div>
   </div>
-</section>
+</section >
+<span ></span>
 <!-- Fin | Miembros -->
 <!-- Inicio | Section Discografiaa -->
-<h3 class=" text-center pb-2  bg-disco container-fluid "  id="discografia">Discografia de Caramelos de cianuro</h3>
-<section class="jumbotron">
-  
-<div class="container mb-5 ">
+<section class="jumbotron jumbotron-2" id="discografia">
+  <h3 class=" text-center py-2  bg-disco container-fluid pt-5"  >Discografia de Caramelos de cianuro</h3>   
+<div class="container  ">
   <div id="carouselExampleCaptions" class="carousel slide  " data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -172,9 +166,7 @@
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 7"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 8"></button>
     </div>
-   
     <div class="carousel-inner slide-1">
-      
       <div class="carousel-item active">
         <img src="imagenes/discos/CDC-1992.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block bg-sha">
@@ -290,7 +282,6 @@
                   <i class="far fa-address-card"></i>
                   </a>
               </div>
-             
             </div>
           </div>
         </footer>
