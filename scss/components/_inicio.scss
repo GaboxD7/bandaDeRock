@@ -11,7 +11,7 @@ body {
 html {
     scroll-behavior:smooth;
   }
-.h1 {	
+  h1 {	
 	// font-family: 'Montserrat', sans-serif;
 	font-family: $fallback-font;
 	font-size: 2rem;
@@ -20,6 +20,40 @@ html {
 	text-shadow: 0 0 0.4rem $color-1;
 	color: $color-2;	
 }
+  h2 {
+	font-family: $fallback-font;
+	font-size: 2rem;
+	padding-top: 0.5rem;
+	padding-left: 0.3rem;
+	text-shadow: 0 0 0.4rem $color-1;
+	color: $color-2;
+}
+h3 {
+	font-family: $fallback-font;
+	font-size: 2rem;
+	padding-top: 0.5rem;
+	padding-left: 0.3rem;
+	text-shadow: 0 0 0.4rem $color-1;
+	color: $color-2;
+}
+h4{
+	color: 	$color-2;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.7rem;
+	
+	align-self: center;
+	font-weight: lighter;
+}
+h5 {
+	color: #206d85;
+	font-family: 'Audiowide', cursive;
+	font-size: 1.5rem;
+
+	align-self: center;
+	
+}
+
+
 .h5{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5rem;
