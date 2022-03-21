@@ -22,16 +22,13 @@
 
 }
 .titulo-formulario {
-  
     font-family: 'Open Sans', sans-serif;
-	font-size: 1.5rem;
+	  font-size: 1.5rem;
     padding: 1rem;
-	text-shadow: 0 0 0.4rem $color-1;
-	color: #DB3A34;
     text-align: center;
     border-radius: 7px;
-	background-color: rgba($color: $color-1, $alpha: 0.6);
-	box-shadow:  -5px -5px 8px #0d0e22;
+	  background-color: rgba($color: $color-1, $alpha: 0.6);
+  	box-shadow:  -5px -5px 8px #0d0e22;
     width: auto;
 }
 .formulario {
@@ -45,16 +42,16 @@
     background-color:#17183B;
     border-radius: 0.4rem;
 }
-  .formulario p {
+  .formulario h2 {
     margin: 0.1rem;
     text-align: center;
   }
   .forma {display: flex;
       flex-direction: column;
+      color: #DB3A34;
   }
-  .formulario p:first-child {
+  .formulario h2{
     margin: 1rem 1rem 0;
-    color: #DB3A34;
     text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
@@ -63,10 +60,10 @@
   }
   .formulario input[type="text"] {
     margin: 2.25rem 1.5rem;
-    color: #999;
-    padding: 1.25rem 0.75rem !important;
+    color: $color-w;
+    padding: 1.25rem 0.75rem;
     text-align: center;
-    width: 100% !important;
+    width: 100%;
     max-width: calc(100% - 4.5rem);
     outline: none;
     border: 0;
@@ -76,7 +73,7 @@
   
   .formulario input[type="email"] {
     margin: 2.25rem 1.5rem;
-    color: #999;
+    color: $color-w;
     padding: 1.25rem 0.75rem !important;
     text-align: center;
     width: 100% !important;
@@ -86,37 +83,19 @@
     text-transform: uppercase;
     font-size: 0.6rem;
   }
-  .formulario input[type="text"]::-webkit-input-placeholder {
+  .formulario input[type="text"]::placeholder {
     color: #1691aa;
     font-size: 1rem;
     
     font-family:Arial, Helvetica, sans-serif; 
   }
-  .formulario input[type="text"]:-moz-placeholder {
-    color: #69D2E7;
-  }
-  .formulario input[type="text"]::-moz-placeholder {
-    color: #69D2E7;
-  }
-  .formulario input[type="text"]:-ms-input-placeholder {
-    color: #69D2E7;
-  }
+
   
   /* Email */
-  .formulario input[type="email"]::-webkit-input-placeholder {
+  .formulario input[type="email"]::placeholder {
     color: #1691aa;
     font-size: 1rem;
-    
     font-family:Arial, Helvetica, sans-serif;
-  }
-  .formulario input[type="email"]:-moz-placeholder {
-    color: #69D2E7;
-  }
-  .formulario input[type="email"]::-moz-placeholder {
-    color: #69D2E7;
-  }
-  .formulario input[type="email"]:-ms-input-placeholder {
-    color: #69D2E7;
   }
   .formulario input[type="submit"] {
 
@@ -128,18 +107,12 @@
     border: 0;
     border-top: #69D2E7 1px solid;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor:pointer;
-    -webkit-transition: .1s all ease-in-out;
-    -moz-transition: .1s all ease-in-out;
-    -o-transition: .1s all ease-in-out;
-    transition: .1s all ease-in-out;
-    font-family:Arial, Helvetica, sans-serif;
+   font-family: $fallback-font;
   }
   .formulario input[type="submit"]:hover {
     background-color:#17183B;
-    
-  
   }
   
 
@@ -156,15 +129,12 @@
   }
   a.more-link {
     text-transform: uppercase;
-    font-size: 12px;
-      background-color:#17183B;
-      padding: 0.6rem 0.5rem;
-      border-radius: 0;
-      color: #fff;
-      display: inline-block;
-      margin-right: 5px;
-      margin-bottom: 5px;
-      line-height: 1.5;
-      text-decoration: none;
+    font-size: 1rem;
+    background-color:#17183B;
+    padding: 0.6rem 0.5rem;
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
     margin-top: 0.3rem;
   }
