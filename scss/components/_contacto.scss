@@ -60,7 +60,7 @@
   }
   .formulario input[type="text"] {
     margin: 2.25rem 1.5rem;
-    color: $color-w;
+    color: $color-2;
     padding: 1.25rem 0.75rem;
     text-align: center;
     width: 100%;
@@ -68,25 +68,23 @@
     outline: none;
     border: 0;
     text-transform: uppercase;
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
-  
   .formulario input[type="email"] {
     margin: 2.25rem 1.5rem;
-    color: $color-w;
+    color: $color-2;
     padding: 1.25rem 0.75rem !important;
     text-align: center;
-    width: 100% !important;
+    width: 100%;
     max-width: calc(100% - 4.5rem);
     outline: none;
     border: 0;
     text-transform: uppercase;
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
   .formulario input[type="text"]::placeholder {
     color: #1691aa;
-    font-size: 1rem;
-    
+    font-size: 0.8rem;
     font-family:Arial, Helvetica, sans-serif; 
   }
 
@@ -113,11 +111,7 @@
   .formulario input[type="submit"]:hover {
     background-color:#17183B;
   }
-  
-
-
   .zoom-area { 
-  
     margin: 2.5rem auto 3.5rem;
     font-size: 1rem;
     color: rgb(35, 13, 134);
