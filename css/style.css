@@ -139,7 +139,7 @@ h5 {
     color: white;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 730px) {
+@media screen and (min-width: 320px) and (max-width: 813px) {
   .bg-sha {
     width: 100%;
   }
@@ -506,7 +506,7 @@ a.more-link {
 .pie p {
   color: white;
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .pie2 {
