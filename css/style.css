@@ -103,7 +103,7 @@ h5 {
 
 .bg-sha {
   border-radius: 7px;
-  background-color: rgba(23, 24, 59, 0.7);
+  background-color: rgba(23, 24, 59, 0.9);
   box-shadow: -5px -5px 8px #0d0e22;
 }
 .bg-sha:hover {
@@ -121,6 +121,9 @@ h5 {
   border: none;
   border-radius: 0.25rem;
   box-shadow: 0 0 0.25rem #f8f6f6;
+  animation-name: animar;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
 }
 .bg-sha form button:hover {
   background-color: #17183B;
@@ -128,6 +131,51 @@ h5 {
   transition: 0.5s;
 }
 
+@keyframes animar {
+  0% {
+    transform: rotate(0deg);
+    color: white;
+  }
+  10% {
+    transform: rotate(0.5deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  35% {
+    transform: rotate(1.5deg);
+  }
+  40% {
+    transform: rotate(1deg);
+  }
+  60% {
+    transform: rotate(0.5deg);
+    color: cornflowerblue;
+  }
+  65% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-0.5deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+  80% {
+    transform: rotate(-1.5deg);
+    color: cornflowerblue;
+  }
+  85% {
+    transform: rotate(-1deg);
+  }
+  90% {
+    transform: rotate(-0.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    color: cornflowerblue;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 991px) {
   .jumbotron-1, .jumbotron-2 {
     background-image: url(../imagenes/bg-cdc.jpg);
@@ -159,7 +207,6 @@ p {
   text-align: justify;
   color: white;
   font-size: 1.2rem;
-  font-weight: lighter;
   text-shadow: 0 0 0.5rem #17183B;
 }
 
@@ -351,21 +398,12 @@ form button:hover {
     transition: all 1.8s;
   }
 }
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  /* font-size: 20px; */
-}
-
 .bg-sha-3 {
   display: flex;
   flex-direction: column;
   align-self: center;
   align-items: center;
   justify-content: space-around;
-  padding: 0 0.5rem;
-  margin-top: 1rem;
   width: 100%;
 }
 
@@ -374,7 +412,6 @@ form button:hover {
   font-size: 1.5rem;
   padding: 1rem;
   text-align: center;
-  border-radius: 7px;
   background-color: rgba(23, 24, 59, 0.6);
   box-shadow: -5px -5px 8px #0d0e22;
   width: auto;
@@ -384,12 +421,11 @@ form button:hover {
   display: block;
   margin: 0rem auto;
   width: 90%;
-  max-width: 28.5rem;
+  max-width: 32.5rem;
   min-width: 16rem;
   position: relative;
   overflow: hidden;
   background-color: #17183B;
-  border-radius: 0.4rem;
 }
 
 .formulario h2 {
@@ -408,47 +444,28 @@ form button:hover {
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 0.05rem;
 }
 
-.formulario input[type=text] {
+.formulario input[type=text], .formulario input[type=email] {
   margin: 2.25rem 1.5rem;
   color: #DB3A34;
   padding: 1.25rem 0.75rem;
   text-align: center;
   width: 100%;
-  max-width: calc(100% - 4.5rem);
+  max-width: calc(100% - 3rem);
   outline: none;
   border: 0;
   text-transform: uppercase;
   font-size: 1rem;
 }
 
-.formulario input[type=email] {
-  margin: 2.25rem 1.5rem;
-  color: #DB3A34;
-  padding: 1.25rem 0.75rem !important;
-  text-align: center;
-  width: 100%;
-  max-width: calc(100% - 4.5rem);
-  outline: none;
-  border: 0;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.formulario input[type=text]::placeholder {
-  color: #1691aa;
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Email */
+.formulario input[type=text]::placeholder,
 .formulario input[type=email]::placeholder {
   color: #1691aa;
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .formulario input[type=submit] {
@@ -458,13 +475,11 @@ form button:hover {
   text-align: center;
   width: 100%;
   border: 0;
-  border-top: #69D2E7 1px solid;
   text-transform: uppercase;
   font-size: 1.2rem;
   cursor: pointer;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .formulario input[type=submit]:hover {
   background-color: #17183B;
 }
@@ -490,6 +505,8 @@ a.more-link {
   display: inline-block;
   text-decoration: none;
   margin-top: 0.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0 0 1rem black;
 }
 
 .pie {

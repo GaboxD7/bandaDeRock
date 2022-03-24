@@ -89,7 +89,7 @@ h5 {
 }
 .bg-sha{
 	border-radius: 7px;
-	background-color: rgba($color: $color-1, $alpha: 0.7);
+	background-color: rgba($color: $color-1, $alpha: 0.9);
 	box-shadow:  -5px -5px 8px #0d0e22;
 &:hover {
 	background-color: rgba($color: $color-1, $alpha: 1);
@@ -105,6 +105,9 @@ form{
 		border: none ;
 		border-radius: 0.25rem;
 		box-shadow: 0 0 0.25rem rgb(248, 246, 246);
+		animation-name: animar;
+		animation-duration: 0.8s;
+		animation-iteration-count: infinite;
 		&:hover {
 		background-color: $color-1;
 		transform: scale(1.1);
@@ -113,6 +116,62 @@ form{
 			}
 	
 		}    
+}
+@keyframes animar {
+	0% {
+	transform: rotate(0deg);
+	color: white;
+	  }
+	  10% {
+		transform: rotate(0.5deg);
+		
+	  }
+	  25% {
+		transform: rotate(1deg);
+		
+	  }
+	  35%{
+		transform: rotate(1.5deg);
+	
+	  }
+	  40% {
+		transform: rotate(1deg);
+		
+	  }
+	  
+	  60% {
+		transform: rotate(0.5deg);
+		color:cornflowerblue ;
+	  }
+	  65% {
+		transform: rotate(0deg);
+
+	  }
+	  70%{
+		transform: rotate(-0.5deg);
+	
+	  }
+	  75% {
+		transform: rotate(-1deg);
+		
+	  }
+	  80%{
+		transform: rotate(-1.5deg);
+		color:cornflowerblue ;
+	  }
+	  85% {
+		transform: rotate(-1deg);
+	
+	  }
+	  90% {
+		transform: rotate(-0.5deg);
+		
+	  }
+	  100%{
+		transform: rotate(0deg);
+		color:cornflowerblue ;
+	  }
+	
 }
 // }MEDIA QUERIES PARA EL JUMBOTRON 320PX A 730PX
 @media screen and (min-width: 320px) and (max-width: 991px) {
@@ -142,11 +201,10 @@ form{
 	background: linear-gradient(180deg, rgba(23,24,59,1) 65%, rgba(23,24,59,0.67) 100%);
 	}	
 p {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: $fallback-font;
 	text-align: justify;
 	color: white;
 	font-size: 1.2rem;
-	font-weight:lighter;
 	text-shadow: 0 0 0.5rem $color-1;	
 	}
 .titulo-album {

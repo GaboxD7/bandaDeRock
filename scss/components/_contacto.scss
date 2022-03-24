@@ -1,12 +1,6 @@
 @import '../base/variables';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    /* font-size: 20px; */
-    
-} 
+
 
 .bg-sha-3{
    
@@ -15,18 +9,13 @@
     align-self:center;
     align-items: center;
     justify-content:space-around;
-    padding: 0 0.5rem;
-    margin-top: 1rem;
-
     width: 100%;
-
 }
 .titulo-formulario {
     font-family: 'Open Sans', sans-serif;
 	  font-size: 1.5rem;
     padding: 1rem;
     text-align: center;
-    border-radius: 7px;
 	  background-color: rgba($color: $color-1, $alpha: 0.6);
   	box-shadow:  -5px -5px 8px #0d0e22;
     width: auto;
@@ -35,12 +24,11 @@
     display: block;
     margin: 0rem auto;
     width: 90%;
-    max-width: 28.5rem;
+    max-width: 32.5rem;
     min-width: 16rem;
     position: relative;
     overflow: hidden;
     background-color:#17183B;
-    border-radius: 0.4rem;
 }
   .formulario h2 {
     margin: 0.1rem;
@@ -55,45 +43,29 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: $font-h12;
     letter-spacing: 0.05rem;
   }
-  .formulario input[type="text"] {
+  .formulario input[type="text"], .formulario input[type="email"] {
     margin: 2.25rem 1.5rem;
     color: $color-2;
     padding: 1.25rem 0.75rem;
     text-align: center;
     width: 100%;
-    max-width: calc(100% - 4.5rem);
+    max-width: calc(100% - 3rem);
     outline: none;
     border: 0;
     text-transform: uppercase;
     font-size: 1rem;
-  }
-  .formulario input[type="email"] {
-    margin: 2.25rem 1.5rem;
-    color: $color-2;
-    padding: 1.25rem 0.75rem !important;
-    text-align: center;
-    width: 100%;
-    max-width: calc(100% - 4.5rem);
-    outline: none;
-    border: 0;
-    text-transform: uppercase;
-    font-size: 1rem;
-  }
-  .formulario input[type="text"]::placeholder {
-    color: #1691aa;
-    font-size: 1rem;
-    font-family:Arial, Helvetica, sans-serif; 
   }
 
-  /* Email */
+  .formulario input[type="text"]::placeholder, 
   .formulario input[type="email"]::placeholder {
     color: #1691aa;
     font-size: 1rem;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:$fallback-font; 
   }
+
   .formulario input[type="submit"] {
     background-color:#DB3A34;
     color:white;
@@ -101,15 +73,15 @@
     text-align: center;
     width: 100%;
     border: 0;
-    border-top: #69D2E7 1px solid;
     text-transform: uppercase;
     font-size: 1.2rem;
     cursor:pointer;
     font-family: $fallback-font;
+    &:hover {
+      background-color:#17183B;
+    }
   }
-  .formulario input[type="submit"]:hover {
-    background-color:#17183B;
-  }
+ 
   .zoom-area { 
     margin: 2.5rem auto 3.5rem;
     font-size: 1rem;
@@ -129,4 +101,6 @@
     display: inline-block;
     text-decoration: none;
     margin-top: 0.3rem;
+    font-family: $fallback-font;
+    text-shadow: 0 0 1rem black;
   }
