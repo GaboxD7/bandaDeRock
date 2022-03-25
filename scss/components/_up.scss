@@ -9,7 +9,7 @@
 		color: $color-2;
 		font-size: 1.8rem;
 		font-weight: bold;
-		text-shadow: 0 0 0.25rem rgb(248, 246, 246);
+		text-shadow: 0 0 1rem rgb(248, 246, 246);
 		height: 1em;
 		width: 1em;
 	}
@@ -18,3 +18,21 @@
 		transition: 0.3s;
 	}
 }
+
+// .irASuscribir {
+// position:relative;
+// 	top: 100vh;
+// 	left: 5rem;
+// 	i {
+// 		color: white;
+// 		font-size: 3.8rem;
+// 		font-weight: bold;
+// 		text-shadow: 0 0 0.25rem rgb(248, 246, 246);
+// 		height: 1em;
+// 		width: 1em;
+// 	}
+// 	// &:hover {
+// 	// 	transform: scale(1.05);
+// 	// 	transition: 0.3s;
+// 	// }
+// }

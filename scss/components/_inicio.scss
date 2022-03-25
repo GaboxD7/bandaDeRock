@@ -30,7 +30,7 @@ html {
 // }
 h3, h4 {
 	font-family: $font-h345;
-	font-size: 1.6rem;
+	font: size 2rem;
 	padding-top: 0.5rem;
 	padding-left: 0.3rem;
 	text-shadow: 0 0 1rem black;
@@ -109,12 +109,11 @@ form{
 		border-radius: 0.25rem;
 		box-shadow: 0 0 0.25rem rgb(248, 246, 246);
 		animation-name: animar;
-		animation-duration: 0.8s;
+		animation-duration: 2s;
 		animation-iteration-count: infinite;
+		
 		&:hover {
 		background-color: $color-1;
-		transform: scale(1.1);
-		transition: 0.5s;
 				}
 			}
 	
@@ -133,53 +132,53 @@ form{
 	color: white;
 	  }
 	  10% {
-		transform: rotate(0.5deg);
+		transform: rotate(0.25deg);
 		
 	  }
 	  25% {
-		transform: rotate(1deg);
+		transform: rotate(0.5deg);
 		
 	  }
 	  35%{
-		transform: rotate(1.5deg);
-	
+		transform: rotate(0.75deg);
+		color:cornflowerblue ;
 	  }
 	  40% {
-		transform: rotate(1deg);
+		transform: rotate(0.5deg);
 		
 	  }
 	  
 	  60% {
-		transform: rotate(0.5deg);
-		color:cornflowerblue ;
+		transform: rotate(0.25deg);
+		
 	  }
 	  65% {
 		transform: rotate(0deg);
-
+		color: white;
 	  }
 	  70%{
-		transform: rotate(-0.5deg);
+		transform: rotate(-0.25deg);
 	
 	  }
 	  75% {
-		transform: rotate(-1deg);
+		transform: rotate(-0.5deg);
 		
 	  }
 	  80%{
-		transform: rotate(-1.5deg);
+		transform: rotate(-0.75deg);
 		color:cornflowerblue ;
 	  }
 	  85% {
-		transform: rotate(-1deg);
+		transform: rotate(-0.5deg);
 	
 	  }
 	  90% {
-		transform: rotate(-0.5deg);
+		transform: rotate(-0.25deg);
 		
 	  }
 	  100%{
 		transform: rotate(0deg);
-		color:cornflowerblue ;
+		color: white;
 	  }
 	
 }

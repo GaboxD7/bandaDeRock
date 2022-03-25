@@ -49,7 +49,7 @@ h1, h2 {
 
 h3, h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.6rem;
+  font: size 2rem;
   padding-top: 0.5rem;
   padding-left: 0.3rem;
   text-shadow: 0 0 1rem black;
@@ -124,13 +124,11 @@ h5 {
   border-radius: 0.25rem;
   box-shadow: 0 0 0.25rem #f8f6f6;
   animation-name: animar;
-  animation-duration: 0.8s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 .bg-sha form button:hover {
   background-color: #17183B;
-  transform: scale(1.1);
-  transition: 0.5s;
 }
 .bg-sha a {
   text-decoration: none;
@@ -146,43 +144,44 @@ h5 {
     color: white;
   }
   10% {
-    transform: rotate(0.5deg);
+    transform: rotate(0.25deg);
   }
   25% {
-    transform: rotate(1deg);
+    transform: rotate(0.5deg);
   }
   35% {
-    transform: rotate(1.5deg);
+    transform: rotate(0.75deg);
+    color: cornflowerblue;
   }
   40% {
-    transform: rotate(1deg);
+    transform: rotate(0.5deg);
   }
   60% {
-    transform: rotate(0.5deg);
-    color: cornflowerblue;
+    transform: rotate(0.25deg);
   }
   65% {
     transform: rotate(0deg);
+    color: white;
   }
   70% {
-    transform: rotate(-0.5deg);
+    transform: rotate(-0.25deg);
   }
   75% {
-    transform: rotate(-1deg);
+    transform: rotate(-0.5deg);
   }
   80% {
-    transform: rotate(-1.5deg);
+    transform: rotate(-0.75deg);
     color: cornflowerblue;
   }
   85% {
-    transform: rotate(-1deg);
+    transform: rotate(-0.5deg);
   }
   90% {
-    transform: rotate(-0.5deg);
+    transform: rotate(-0.25deg);
   }
   100% {
     transform: rotate(0deg);
-    color: cornflowerblue;
+    color: white;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 991px) {
@@ -249,7 +248,7 @@ p {
   color: #DB3A34;
   font-size: 1.8rem;
   font-weight: bold;
-  text-shadow: 0 0 0.25rem #f8f6f6;
+  text-shadow: 0 0 1rem #f8f6f6;
   height: 1em;
   width: 1em;
 }
@@ -405,6 +404,29 @@ form button:hover {
   .gallery-item:hover {
     transform: scale(1.05);
     transition: all 1.8s;
+  }
+}
+.img-animada {
+  animation-name: img-wove;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes img-wove {
+  0% {
+    transform: rotateY(0deg);
+  }
+  20% {
+    transform: rotateY(-5deg);
+  }
+  40% {
+    transform: rotateY(-10deg);
+  }
+  60% {
+    transform: rotateY(-5deg);
+  }
+  100% {
+    transform: rotateY(0deg);
   }
 }
 .bg-sha-3 {
