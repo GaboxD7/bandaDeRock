@@ -317,11 +317,13 @@ form button:hover {
   color: white;
   background: linear-gradient(rgba(255, 255, 255, 0), black);
   width: 100%;
+  padding-left: 1rem;
 }
 
 .galeria-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
 }
 .galeria-container .galeria-item {
   position: relative;
@@ -455,7 +457,7 @@ form button:hover {
 }
 .img-animada {
   animation-name: img-wove;
-  animation-duration: 10s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 

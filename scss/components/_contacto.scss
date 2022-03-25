@@ -40,7 +40,9 @@
       flex-direction: column;
       color: #DB3A34;
   }
-  
+
+// Input TEXT, EMAIL 
+
   .formulario input[type="text"], .formulario input[type="email"] {
     margin: 2.25rem 1.5rem;
     color: $color-2;
@@ -54,12 +56,16 @@
     font-size: 1rem;
   }
 
+// placeholder TEXT, EMAIL
+
   .formulario input[type="text"]::placeholder, 
   .formulario input[type="email"]::placeholder {
     color: #1691aa;
     font-size: 1rem;
     font-family:$fallback-font; 
   }
+
+// Input SUBMIT
 
   .formulario input[type="submit"] {
     background-color:#DB3A34;
