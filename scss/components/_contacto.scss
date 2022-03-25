@@ -1,25 +1,27 @@
 @import '../base/variables';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
 
+// Background Formulario
 
-.bg-sha-3{
-   
-    display: flex;
+.bg-formulario { display: flex;
     flex-direction: column;
     align-self:center;
     align-items: center;
     justify-content:space-around;
     width: 100%;
+    h4 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.5rem;
+      padding: 1rem;
+      text-align: center;
+      background-color: rgba($color: $color-1, $alpha: 0.6);
+      box-shadow:  -5px -5px 8px #0d0e22;
+      width: auto;
+    }
 }
-.titulo-formulario {
-    font-family: 'Open Sans', sans-serif;
-	  font-size: 1.5rem;
-    padding: 1rem;
-    text-align: center;
-	  background-color: rgba($color: $color-1, $alpha: 0.6);
-  	box-shadow:  -5px -5px 8px #0d0e22;
-    width: auto;
-}
+
+//  Formulario
+
 .formulario {
     display: block;
     margin: 0rem auto;
@@ -29,23 +31,16 @@
     position: relative;
     overflow: hidden;
     background-color:#17183B;
+    h2{
+      margin: 0.1rem;
+      text-align: center;
+    }
 }
-  .formulario h2 {
-    margin: 0.1rem;
-    text-align: center;
-  }
   .forma {display: flex;
       flex-direction: column;
       color: #DB3A34;
   }
-  .formulario h2{
-    margin: 1rem 1rem 0;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2rem;
-    font-family: $font-h12;
-    letter-spacing: 0.05rem;
-  }
+  
   .formulario input[type="text"], .formulario input[type="email"] {
     margin: 2.25rem 1.5rem;
     color: $color-2;
@@ -88,19 +83,19 @@
     color: $color-1;
     text-align: center;
   }
-  .link-container {
+  .enlace-container {
     text-align: center;
-  }
-  a.more-link {
-    text-transform: uppercase;
-    font-size: 1rem;
-    background-color:#17183B;
-    padding: 0.6rem 0.5rem;
-    border-radius: 0;
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    margin-top: 0.3rem;
-    font-family: $fallback-font;
-    text-shadow: 0 0 1rem black;
+    a{
+      text-transform: uppercase;
+      font-size: 1rem;
+      background-color:#17183B;
+      padding: 0.6rem 0.5rem;
+      border-radius: 0;
+      color: #fff;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 0.3rem;
+      font-family: $fallback-font;
+      text-shadow: 0 0 1rem black;
+    }
   }

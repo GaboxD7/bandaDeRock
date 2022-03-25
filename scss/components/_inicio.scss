@@ -11,6 +11,7 @@ body {
 html {
     scroll-behavior:smooth;
   }
+  // Estilos de las "h"
   h1, h2 {	
 	// font-family: 'Montserrat', sans-serif;
 	font-family: $font-h12;
@@ -20,14 +21,6 @@ html {
 	text-shadow: 0 0 1rem black;
 	color:white;	
 }
-//   h2 {
-// 	font-family: $fallback-font;
-// 	font-size: 2rem;
-// 	padding-top: 0.5rem;
-// 	padding-left: 0.3rem;
-// 	text-shadow: 0 0 0.4rem $color-1;
-// 	color: $color-2;
-// }
 h3, h4 {
 	font-family: $font-h345;
 	font: size 2rem;
@@ -36,29 +29,24 @@ h3, h4 {
 	text-shadow: 0 0 1rem black;
 	color:white;
 }
-// h4{
-// 	color: 	$color-2;
-// 	font-family: 'Montserrat', sans-serif;
-// 	font-size: 1.7rem;
-	
-// 	align-self: center;
-// 	font-weight: lighter;
-// }
+
 h5 {
 	color: $color-2;
 	font-family: $font-h345;
 	font-size: 1.2rem;
 	align-self: center;
-	
 }
 
+// Estilos de los Parrafos
 
-.h5{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.5rem;
-	text-shadow: 0 0 0.4rem $color-1;
-	color: $color-2;	
-}
+p {
+	font-family: $fallback-font;
+	text-align: justify;
+	color: white;
+	font-size: 1.2rem;
+	text-shadow: 0 0 0.5rem $color-1;	
+	}
+// Background  de inicio
 .jumbotron-1 {
 	background-image: url(../imagenes/bg-cdc.jpg);
 	background-attachment: fixed;
@@ -70,31 +58,13 @@ h5 {
  	justify-content:center;
 	align-items: center;
 }
-.jumbotron-2 {
-	background-image: url(../imagenes/bg-cdc.jpg);
-	background-attachment: fixed;
-	height: 100%;
-	background-size: cover;
-	background-position: 0 0;
-	display: flex;
-	flex-direction: column;
- 	justify-content:center;
-	align-items: center;
-}
-.bg-disco{
-	display: flex;
-	flex-direction: column;
-	align-self: flex-start;
-	justify-content: flex-start;
-}
-.bg-sha{
+.bg-inicio{
 	border-radius: 7px;
 	background-color: rgba($color: $color-1, $alpha: 0.9);
 	box-shadow:  -5px -5px 8px #0d0e22;
 &:hover {
 	background-color: rgba($color: $color-1, $alpha: 1);
 }
-
 form{
 	display: flex;
 	justify-content: end;
@@ -109,7 +79,7 @@ form{
 		border-radius: 0.25rem;
 		box-shadow: 0 0 0.25rem rgb(248, 246, 246);
 		animation-name: animar;
-		animation-duration: 2s;
+		animation-duration: 1.5s;
 		animation-iteration-count: infinite;
 		
 		&:hover {
@@ -125,7 +95,9 @@ form{
 		strong {
 			text-transform: uppercase;
 		}
-}
+} 
+// Animacion de Botton Suscribirme
+
 @keyframes animar {
 	0% {
 	transform: rotate(0deg);
@@ -182,7 +154,47 @@ form{
 	  }
 	
 }
-// }MEDIA QUERIES PARA EL JUMBOTRON 320PX A 730PX
+// MIEMBROS DE LA BANDA
+.bg-miembros {
+	border-radius: 7px;
+	box-shadow:  -5px -5px 8px #0d0e22;
+}	
+//Backgroud de Discografia
+.jumbotron-2 {
+	background-image: url(../imagenes/bg-cdc.jpg);
+	background-attachment: fixed;
+	height: 100%;
+	background-size: cover;
+	background-position: 0 0;
+	display: flex;
+	flex-direction: column;
+ 	justify-content:center;
+	align-items: center;
+}
+// Background del Titulo discografia
+.bg-titulo-disco {
+	background-color: #0d0e22;
+	background: linear-gradient(180deg, rgba(23,24,59,1) 65%, rgba(23,24,59,0.67) 100%);
+	}	
+// .bg-disco{
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-self: flex-start;
+// 	justify-content: flex-start;
+// }
+// Estilo titulo Album
+.titulo-album {
+	font-family: $font-h345;
+	font-size: 1.4rem;
+ 	padding: 0.7rem 0.4rem;
+  	text-align: center;
+	background-color: rgba($color: $color-1, $alpha: 0.8);
+	box-shadow:  -5px -5px 8px #0d0e22;
+  	width:fit-content;
+}
+
+// MEDIA QUERIES PARA EL JUMBOTRON | 320PX A 730PX
+
 @media screen and (min-width: 320px) and (max-width: 991px) {
 	.jumbotron-1, .jumbotron-2 {
 		background-image: url(../imagenes/bg-cdc.jpg);
@@ -194,37 +206,17 @@ form{
 		color: white;
 	}
 	}
+// MEDIA QUERIES para background de: inico | 320px a 813 px
 
 @media screen and (min-width: 320px) and (max-width: 813px)  {
-	.bg-sha{
+	.bg-inicio{
 		width: 100%
 	}
 }
-// MIEMBROS DE LA BANDA
-.bg-miembros {
-	border-radius: 7px;
-	box-shadow:  -5px -5px 8px #0d0e22;
-}	
-.bg-disco {
-	background-color: #0d0e22;
-	background: linear-gradient(180deg, rgba(23,24,59,1) 65%, rgba(23,24,59,0.67) 100%);
-	}	
-p {
-	font-family: $fallback-font;
-	text-align: justify;
-	color: white;
-	font-size: 1.2rem;
-	text-shadow: 0 0 0.5rem $color-1;	
-	}
-.titulo-album {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.4rem;
- 	padding: 0.7rem 0.4rem;
-  	text-align: center;
-	background-color: rgba($color: $color-1, $alpha: 0.8);
-	box-shadow:  -5px -5px 8px #0d0e22;
-  	width:fit-content;
-}
+
+
+// MEDIA QUERIES TITULO DE ALBUM 320PX A 425PX
+
 @media screen and (min-width: 320px) and (max-width: 425px) {
 	.titulo-album {
 
