@@ -1,5 +1,9 @@
+// Importando Variables
+
 @import '../base/variables';
+
 //Estilos para las imagenes
+
 .galeria-img {
 	width: 100%;
 	height: 100%;
@@ -68,7 +72,6 @@
 	.galeria-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-	
 	.galeria-item {
 		position: relative;
 		&:nth-child(1) {

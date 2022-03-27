@@ -1,3 +1,5 @@
+// Importando Variables
+
 @import '../base/variables';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
 *{
@@ -13,7 +15,6 @@ html {
   }
   // Estilos de las "h"
   h1, h2 {	
-	// font-family: 'Montserrat', sans-serif;
 	font-family: $font-h12;
 	font-size: 2.3rem;
 	padding-top: 0.5rem;
@@ -23,7 +24,7 @@ html {
 }
 h3, h4 {
 	font-family: $font-h345;
-	font: size 2rem;
+	font-size: 2rem;
 	padding-top: 0.5rem;
 	padding-left: 0.3rem;
 	text-shadow: 0 0 1rem black;
@@ -75,7 +76,7 @@ form{
 		margin-right: 1.5rem;
 		background-color: $color-2;
 		border: none ;
-		text-align: end;
+		text-nbnalign: end;
 		border-radius: 0.25rem;
 		box-shadow: 0 0 0.25rem rgb(248, 246, 246);
 		animation-name: animar;

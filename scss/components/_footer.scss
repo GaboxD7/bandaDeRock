@@ -1,7 +1,7 @@
-@import '../base/variables';
-.pie {
+// Importando Variables
 
-	display: flex;
+@import '../base/variables';
+.pie { display: flex;
 	flex-direction: column;
 	background-color: $color-1;
 	justify-content: space-evenly;
@@ -9,7 +9,7 @@
 	color: white;
 	height: 15rem;
 	border-top: 8px groove rgba(23,24,59,0.2);
-border-radius: 5px;
+	border-radius: 5px;
 	p {
 		color: white;
 		font-size: 1rem;
