@@ -56,6 +56,10 @@
     border: 0;
     text-transform: uppercase;
     font-size: 1rem;
+    &:focus{
+      transition: 1s;
+      transform: scale(1.05);;
+    }
   }
 
 // placeholder TEXT, EMAIL
@@ -65,6 +69,7 @@
     color: #1691aa;
     font-size: 1rem;
     font-family:$fallback-font; 
+
   }
 
 // Input SUBMIT
@@ -83,8 +88,11 @@
     &:hover {
       background-color:#17183B;
     }
+
   }
- 
+//  .formulario input:focus{
+
+//  }
   .zoom-area { 
     margin: 2.5rem auto 3.5rem;
     font-size: 1rem;
